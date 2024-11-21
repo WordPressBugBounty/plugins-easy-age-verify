@@ -1,8 +1,8 @@
 === Easy Age Verify ===
 Contributors: 5starplugins, freemius
-Tags: age gate, age popup, age restriction, age verification, age verify, adult content warning, ada compliant, adult, adult content warning, sex, nude, alcohol, liquor, winery, wine, beer, brewery, vape, vape shop
-Tested up to: 6.4.3
-Stable tag: 1.8.4
+Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
+Tested up to: 6.7
+Stable tag: 1.8.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Age restricts adult only, vape or alcohol sites with a fullscreen popup window. 
 
 ### INSTANTLY RESTRICT ADULT, ALCOHOL AND VAPE WEBSITES
 
-Age gate your site in a few easy steps with turnkey settings for adult, alcohol and vape. Easy Age Verify is used worldwide on WooCommerce, XXX, sexual wellness, adult novelty shops, vape shops, spirits, wine and brewery sites. 
+Age gate your site in a few easy steps with turnkey settings for adult, alcohol and vape. Easy Age Verify is used worldwide on WooCommerce, XXX, sexual wellness, adult novelty shops, vape shops, spirits, wine and brewery sites.
 
 The free standard plugin contains everything needed to age gate visitors. [Easy Age Verify Premium](https://5starplugins.com/easy-website-age-verification/) provides advanced features with Premium support.
 
@@ -60,7 +60,7 @@ Turnkey options pre-configured for the each industry.
 * Built-in cache and cookie clearing updates display.
 * [PREMIUM] Translation ready custom text option.
 * [PREMIUM] Add your logo and welcome message.
-* [PREMIUM] Set button and background colors. 
+* [PREMIUM] Set button and background colors.
 * [PREMIUM] New! SMARTtext color automation sets optimal contrast.
 * [PREMIUM] Set background transparency to hide page 0-100%.
 
@@ -104,7 +104,7 @@ Or use the manual upload method if you have a plugin ZIP file:
 1. Click the Upload option. Choose the plugin zip file. Click the Upload button.
 2. Activate the plugin.
 
-After activation -> head to the plugin page located in the left side menu. Select a turnkey setting and enable verification for it to start showing. Visit our [plugin setup guide](https://support.5starplugins.com/category/103-easy-age-verify-set-up-guide) for instructions. 
+After activation -> head to the plugin page located in the left side menu. Select a turnkey setting and enable verification for it to start showing. Visit our [plugin setup guide](https://support.5starplugins.com/category/103-easy-age-verify-set-up-guide) for instructions.
 
 == Frequently Asked Questions ==
 
@@ -165,9 +165,12 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 8. Design options and additional settings in WordPress Dashboard - Premium Version
 
 == Upgrade Notice ==
-Update to the latest version: Update Freemius SDK to 2.7.4
+Update to the latest version: Updated Freemius SDK to 2.9
 
 == Changelog ==
+= 1.8.5 =
+* Updated: Freemius SDK to 2.9
+
 = 1.8.4 =
 * Updated: Update Freemius SDK to 2.7.4
 
