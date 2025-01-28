@@ -6,7 +6,7 @@
  * Description: Adds a mobile friendly age verification screen to adults only, vape or alcohol websites. Get set-up in minutes.
  * Author:      5 Star Plugins
  * Author URI:  https://5starplugins.com/
- * Version:     1.8.5
+ * Version:     1.9
  *
  * Requires at least: 4.6
  * Requires PHP: 5.6
@@ -99,7 +99,6 @@ if ( !function_exists( 'evav_fs_settings_url' ) ) {
     }
 
 }
-$evav_fs->add_filter( 'connect_url', 'evav_fs_settings_url' );
 $evav_fs->add_filter( 'after_skip_url', 'evav_fs_settings_url' );
 $evav_fs->add_filter( 'after_connect_url', 'evav_fs_settings_url' );
 $evav_fs->add_filter( 'after_pending_connect_url', 'evav_fs_settings_url' );

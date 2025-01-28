@@ -1,8 +1,8 @@
 === Easy Age Verify ===
-Contributors: 5starplugins, freemius
+Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 6.7
-Stable tag: 1.8.5
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -165,9 +165,12 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 8. Design options and additional settings in WordPress Dashboard - Premium Version
 
 == Upgrade Notice ==
-Update to the latest version: Updated Freemius SDK to 2.9
+Update to the latest version: Updated Freemius SDK to latest version
 
 == Changelog ==
+= 1.9 =
+* Updated Freemius SDK to latest version
+
 = 1.8.5 =
 * Updated: Freemius SDK to 2.9
 
