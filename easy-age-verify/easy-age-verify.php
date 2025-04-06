@@ -6,7 +6,7 @@
  * Description: Adds a mobile friendly age verification screen to adults only, vape or alcohol websites. Get set-up in minutes.
  * Author:      5 Star Plugins
  * Author URI:  https://5starplugins.com/
- * Version:     1.9
+ * Version:     1.10
  *
  * Requires at least: 4.6
  * Requires PHP: 5.6
