@@ -440,4 +440,56 @@ function evav_settings_callback_input_type_field() { ?>
 		<option value="checkbox" <?php selected( 'checkbox', get_option( '_evav_input_type', 'dropdowns' ) ); ?>><?php esc_html_e( 'Confirm checkbox', 'easy-age-verify' ); ?></option>
 	</select>
 
-<?php } ?>
+<?php }
+
+/**
+ * Callback for the Page Targeting option field.
+ */
+
+ function evav_settings_callback_pagetargeting_option_field() {
+	if(!function_exists('evav_premium_verify_option')){
+	$selected_option = 'none'; ?>
+	<fieldset>
+	  	<legend class="screen-reader-text"><span><?php esc_html_e( 'Page Targeting', 'easy-age-verify' ); ?></span></legend>
+	  	<p>
+			<label>
+				<input disabled type="radio" name="_evav_pagetargeting_option[option]" value="none" <?php checked($selected_option, 'none'); ?> />
+				<?php esc_html_e( 'Show on all pages (upgrade to unlock)', 'easy-age-verify' ); ?>
+			</label>
+		</p><p>
+			<label>
+				<input disabled type="radio" name="_evav_pagetargeting_option[option]" value="include" <?php checked($selected_option, 'include'); ?> />
+				<?php esc_html_e( 'Show on this page only (upgrade to unlock)', 'easy-age-verify' ); ?>
+			</label>
+	  	</p><p>
+			<label>
+				<input disabled type="radio" name="_evav_pagetargeting_option[option]" value="exclude" <?php checked($selected_option, 'exclude'); ?> />
+				<?php esc_html_e( 'Show everywhere except this page (upgrade to unlock)', 'easy-age-verify' ); ?>
+			</label>
+	  	</p>
+			<select name="_evav_pagetargeting_option[page_id]" id="_evav_pagetargeting_option">
+				<option value="0">Upgrade for page targeting</option>
+			</select>
+	</fieldset>
+	<?php
+	} else {
+	 echo evav_settings_callback_premium_pagetargeting_option_field();
+ }
+}
+
+/**
+ * Sanitize callback for the Page Targeting option.
+ */
+// Page targeting sanitize callback
+function evav_pagetargeting_option_sanitize($input) {
+	$input['option'] = in_array($input['option'], ['include', 'exclude', 'none']) ? $input['option'] : 'none';
+   // If option is 'none', set page_id to 0
+	if ($input['option'] === 'none') {
+		$input['page_id'] = 0;
+	} else {
+		if (!is_numeric($input['page_id'])) {
+				$input['page_id'] = 0;
+		}
+	}
+   return $input;
+}

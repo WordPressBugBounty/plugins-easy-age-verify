@@ -20,7 +20,7 @@ function evav_load_textdomain() {
     load_plugin_textdomain( 'easy-age-verify', false, plugin_basename( dirname( __FILE__ ) ) . '/includes/languages' );
 }
 
-add_action( 'plugins_loaded', 'emav_load_textdomain' );
+add_action( 'plugins_loaded', 'evav_load_textdomain' );
 /**
  * Prints the minimum age.
  *
@@ -248,6 +248,47 @@ function evav_get_user_role() {
 }
 
 /**
+ * Adds thepage targeting to the Body CSS Class
+ *
+ * @since 1.5.3
+ * @echo  string
+ */
+add_filter( 'body_class', 'evav_add_body_pagetargeting_classes' );
+function evav_add_body_pagetargeting_classes(  $classes  ) {
+    $pagetargeting_option = get_option( '_evav_pagetargeting_option' );
+    if ( $pagetargeting_option ) {
+        // Add page targeting option to body class
+        $classes[] = 'evav-targeting-' . esc_attr( $pagetargeting_option['option'] );
+        if ( isset( $pagetargeting_option['page_id'] ) && $pagetargeting_option['page_id'] > 0 ) {
+            // Get the page ID set in the option
+            $targeted_page_id = $pagetargeting_option['page_id'];
+            // Check if WooCommerce is active and if the current page is the shop page
+            if ( class_exists( 'WooCommerce' ) && is_shop() ) {
+                // Add a specific class for the WooCommerce shop page
+                $classes[] = 'page-id-' . get_option( 'woocommerce_shop_page_id' );
+            }
+            // Check if the targeted page ID is 'products'
+            if ( class_exists( 'WooCommerce' ) && is_singular( 'product' ) ) {
+                // Add page class for 'products'
+                $classes[] = 'page-id-999999';
+            }
+            // Check if the targeted page ID is any WooCommerce page
+            if ( class_exists( 'WooCommerce' ) && (is_woocommerce() || is_cart() || is_checkout() || is_account_page() || is_product()) && $targeted_page_id === '9999999' ) {
+                // Add page class for 'products'
+                $classes[] = 'evav-woo';
+            }
+            if ( (is_home() || is_singular( 'post' ) || is_category() || is_tag() || is_date()) && $targeted_page_id === '9999998' ) {
+                // Add a custom class for all single blog post pages
+                $classes[] = 'page-id-9999998';
+            }
+            // Add targeted page ID to body class if set
+            $classes[] = 'evav-targeted-page-' . esc_attr( $targeted_page_id );
+        }
+    }
+    return $classes;
+}
+
+/**
  * Returns the all-important verification form.
  * You can filter this if you like.
  *
@@ -456,7 +497,7 @@ function evav_display_upgrade_features() {
 				<h1>Unlock Premium Features</h1>
 			</th>
 		</tr>
-		<tr><td colspan=2><center><b>3 Months Free with Annual Plan</b></center></td></tr>';
+		<!--<tr><td colspan=2><center><b>Promo Text Here</b></center></td></tr>-->';
     foreach ( evav_premium_features() as $feature => $desc ) {
         $contents .= '<tr>
 				<th class="evav-preBanner" width="30%" scope="column"><span class="dashicons dashicons-yes evav-premium"></span><span class="evav-premium-feature">' . $feature . '</span></th>
@@ -477,13 +518,14 @@ function evav_display_upgrade_features() {
 
 function evav_premium_features() {
     $features = array(
-        __( 'Customizable', 'easy-marijuana-age-verify' )      => __( 'Free-form text option', 'easy-marijuana-age-verify' ),
-        __( 'Translation Ready', 'easy-marijuana-age-verify' ) => __( 'Self translate to any language', 'easy-marijuana-age-verify' ),
-        __( 'Brand It', 'easy-marijuana-age-verify' )          => __( 'Your logo and colors', 'easy-marijuana-age-verify' ),
-        __( 'Design Background', 'easy-marijuana-age-verify' ) => __( 'Set transparency and color', 'easy-marijuana-age-verify' ),
-        __( 'Welcome Message', 'easy-marijuana-age-verify' )   => __( 'Add a welcome message', 'easy-marijuana-age-verify' ),
-        __( 'Remember Visitors', 'easy-marijuana-age-verify' ) => __( '"Remember me" checkbox', 'easy-marijuana-age-verify' ),
-        __( 'Premium Support', 'easy-marijuana-age-verify' )   => __( 'World-class email support from the U.S.', 'easy-marijuana-age-verify' ),
+        __( 'Page Targeting', 'easy-age-verify' )    => __( 'Include / exclude certain pages', 'easy-age-verify' ),
+        __( 'Customizable', 'easy-age-verify' )      => __( 'Free-form text option', 'easy-age-verify' ),
+        __( 'Translation Ready', 'easy-age-verify' ) => __( 'Self translate to any language', 'easy-age-verify' ),
+        __( 'Brand It', 'easy-age-verify' )          => __( 'Your logo and colors', 'easy-age-verify' ),
+        __( 'Design Background', 'easy-age-verify' ) => __( 'Set transparency and color', 'easy-age-verify' ),
+        __( 'Welcome Message', 'easy-age-verify' )   => __( 'Add a welcome message', 'easy-age-verify' ),
+        __( 'Remember Visitors', 'easy-age-verify' ) => __( '"Remember me" checkbox', 'easy-age-verify' ),
+        __( 'Premium Support', 'easy-age-verify' )   => __( 'World-class email support from the U.S.', 'easy-age-verify' ),
     );
     return $features;
 }

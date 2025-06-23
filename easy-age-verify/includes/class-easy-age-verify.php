@@ -40,7 +40,7 @@ final class Easy_Age_Verify {
      *
      * @since 0.2.6
      */
-    const VERSION = '1.9';
+    const VERSION = '2.0';
 
     /**
      * The only instance of this class.
@@ -57,6 +57,8 @@ final class Easy_Age_Verify {
      * @since 0.1.0
      *
      */
+    public $file;
+
     public function __construct() {
         $this->file = $this->file();
         $this->version = self::VERSION;
@@ -271,7 +273,7 @@ final class Easy_Age_Verify {
         //		if (get_option( '_evav_adult_type' ) == 'adult' ) {
         $overlay_style = 'style="display:none;background: rgba(0, 0, 0, 1);"';
         ?>
-        <div id="evav-overlay-wrap" <?php 
+        <div data-nosnippet id="evav-overlay-wrap" <?php 
         echo $overlay_style;
         ?>>
 			<?php 

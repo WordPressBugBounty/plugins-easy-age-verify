@@ -10,6 +10,62 @@ jQuery(document).ready(function ($) {
 		}
 	}
 
+	// Page Targeting drop-down toggle
+	// Get references to the radio buttons and dropdown
+	var radioButtons = $('input[name="_evav_pagetargeting_option[option]"]');
+	var dropdown = $('#_evav_pagetargeting_option');
+	var pageLabel = $('#page-dropdown-label');
+	// Function to toggle the visibility of the dropdown based on the selected radio button
+	function toggleDropdownVisibility(speed) {
+		// Check which radio button is selected
+		var selectedOption = $('input[name="_evav_pagetargeting_option[option]"]:checked').val();
+		// If the "Show on this page only" or "Show everywhere except this page" option is selected, show the dropdown
+		if (selectedOption === 'include' || selectedOption === 'exclude') {
+			if (speed === 'fast') {
+				pageLabel.fadeIn(); // Fade in the label
+				dropdown.fadeIn(); // Show the dropdown
+			} else if (speed === 'slow') {
+				pageLabel.fadeIn(); // Fade in the label
+				dropdown.fadeIn(); // Show the dropdown
+			}
+		} else {
+			if (speed === 'fast') {
+			pageLabel.hide(); // Fade in the label
+			dropdown.hide(); // Show the dropdown
+		} else if (speed === 'slow') {
+			pageLabel.fadeOut(); // Fade in the label
+			dropdown.fadeOut(); // Show the dropdown
+		}
+		}
+	}
+
+
+	// Add an event listener for when the form is submitted
+    $('.evav-settings-form').on('submit', function() {
+        // Get the selected option
+        var option = $('input[name="_evav_pagetargeting_option[option]"]:checked').val();
+
+        // If the selected option is "include" or "exclude"
+        if (option === 'include' || option === 'exclude') {
+              // Check if a page is selected
+              var pageId = $('#_evav_pagetargeting_option').val();
+              if (pageId === '0') {
+                   // If no page is selected, display a warning message
+                   alert('Please select a page.');
+                   return false; // Prevent form submission
+              }
+        }
+    });
+
+
+	// Initial call to toggleDropdownVisibility to set initial visibility
+	toggleDropdownVisibility('fast');
+
+	// Add event listener to each radio button to listen for changes
+	radioButtons.on('change', function() {
+		toggleDropdownVisibility('slow');
+	});
+
     /* Testing the Logo Image onLoad */
     var csl_logo_url_val = $("#evav_logo_field_id").val();
     csl_logo_testImage(csl_logo_url_val);

@@ -32,6 +32,8 @@ final class Easy_Age_Verify_Admin {
      * @since 0.2.6
      *
      */
+    public $version;
+
     public function __construct() {
         global $evav_fs;
         $this->version = Easy_Age_Verify::VERSION;
@@ -177,6 +179,15 @@ final class Easy_Age_Verify_Admin {
             'evav_settings_general'
         );
         register_setting( 'easy-age-verify', '_evav_always_verify', 'esc_attr' );
+        // Page Targeting Option
+        add_settings_field(
+            '_evav_pagetargeting_option',
+            __( 'Page Targeting', 'easy-age-verify' ) . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . __( 'Include or exclude a certain page.', 'easy-age-verify' ) . '"></span>',
+            'evav_settings_callback_pagetargeting_option_field',
+            'easy-age-verify',
+            'evav_settings_general'
+        );
+        register_setting( 'easy-age-verify', '_evav_pagetargeting_option', 'evav_pagetargeting_option_sanitize' );
         // AJAX Section
         // Set to Disabled or Who to verify (not logged in or all)
         add_settings_field(
