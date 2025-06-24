@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 6.8
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -167,9 +167,12 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 8. Design options and additional settings in WordPress Dashboard - Premium Version
 
 == Upgrade Notice ==
-Update! Added page targeting in Premium version, updated Freemius SDK, bug fixes.
+Update! Added page targeting in Premium version, updated Freemius SDK, bug fixes. Moved H1 to H2 to prevent SEO Audit issues.
 
 == Changelog ==
+= 2.0.1 =
+* Moved H1 to H2 to prevent SEO Audit issues.
+
 = 2.0 =
 * Added page targeting in Premium version. Updated Freemius SDK. Bug fix in cookie setting in Premium version. 
 

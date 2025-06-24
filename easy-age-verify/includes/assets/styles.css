@@ -79,7 +79,7 @@
     text-decoration: none !important;
 }
 
-#evav-overlay h1 {
+#evav-overlay h2 {
     font-size: 28px;
     font-weight: 400;
     background:none !important;
@@ -99,7 +99,7 @@
     max-width: 800px;
 }
 
-#evav-overlay h2 {
+#evav-overlay h3 {
     font-size: 24px;
     font-weight: 700;
     background:none !important;
@@ -164,7 +164,7 @@ text-transform: initial;
         max-height: 100vh;
     }
 
-    #evav-overlay h1 {
+    #evav-overlay h2 {
         font-size: 28px;
     }
 
@@ -178,7 +178,7 @@ text-transform: initial;
         max-width: 98%;
     }
 
-    #evav-overlay h2 {
+    #evav-overlay h3 {
         font-size: 22px;
         margin: 15px 0px 12px;
     }
@@ -201,7 +201,7 @@ text-transform: initial;
 }
 
 @media screen and (max-height: 600px) {
-    #evav-overlay h1 {
+    #evav-overlay h2 {
         font-size: 20px;
     }
 
@@ -210,7 +210,7 @@ text-transform: initial;
         line-height: 1.2em;
     }
 
-    #evav-overlay h2 {
+    #evav-overlay h3 {
         font-size: 16px;
         margin: 10px 0px 10px;
     }
@@ -242,7 +242,7 @@ text-transform: initial;
 }
 
 @media screen and (max-width: 375px) {
-    #evav-overlay h1 {
+    #evav-overlay h2 {
         font-size: 20px;
     }
 
@@ -251,7 +251,7 @@ text-transform: initial;
         line-height: 1.2em;
     }
 
-    #evav-overlay h2 {
+    #evav-overlay h3 {
         font-size: 18px;
         margin: 10px 0px 10px;
     }
@@ -269,7 +269,7 @@ text-transform: initial;
 }
 
 @media screen and (max-height: 415px) {
-    #evav-overlay h1 {
+    #evav-overlay h2 {
         font-size: 18px;
         margin: 2px;
     }
@@ -288,7 +288,7 @@ text-transform: initial;
         font-size: 9px;
     }
 
-    #evav-overlay h2 {
+    #evav-overlay h3 {
         font-size: 18px;
         margin: 10px auto 10px;
     }

@@ -694,7 +694,7 @@ function evav_print_header() {
     } else {
         $title = $heading_text_arr[2];
     }
-    printf( '<h2 style="color:' . evav_getContrastYIQ( ltrim( evav_get_overlay_color(), '#' ) ) . ';">%s</h2>', $title );
+    printf( '<h3 style="color:' . evav_getContrastYIQ( ltrim( evav_get_overlay_color(), '#' ) ) . ';">%s</h3>', $title );
 }
 
 function evav_print_disclaimer() {
