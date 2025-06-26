@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 6.8
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -170,6 +170,9 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 Update! Added page targeting in Premium version, updated Freemius SDK, bug fixes. Moved H1 to H2 to prevent SEO Audit issues.
 
 == Changelog ==
+= 2.0.2 =
+* Fix Blog Index page targeting issue (premium version).
+
 = 2.0.1 =
 * Moved H1 to H2 to prevent SEO Audit issues.
 

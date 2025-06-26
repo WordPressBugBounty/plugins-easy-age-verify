@@ -277,6 +277,10 @@ function evav_add_body_pagetargeting_classes(  $classes  ) {
                 // Add page class for 'products'
                 $classes[] = 'evav-woo';
             }
+            if ( is_home() && $targeted_page_id === get_option( 'page_for_posts' ) ) {
+                // Add a custom class for the blog page
+                $classes[] = 'page-id-' . get_option( 'page_for_posts' );
+            }
             if ( (is_home() || is_singular( 'post' ) || is_category() || is_tag() || is_date()) && $targeted_page_id === '9999998' ) {
                 // Add a custom class for all single blog post pages
                 $classes[] = 'page-id-9999998';

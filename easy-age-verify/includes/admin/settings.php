@@ -1,5 +1,4 @@
 <?php
-
 // Don't access this directly, please
 if ( ! defined( 'ABSPATH' ) ) {exit;}
 
@@ -447,7 +446,7 @@ function evav_settings_callback_input_type_field() { ?>
  */
 
  function evav_settings_callback_pagetargeting_option_field() {
-	if(!function_exists('evav_premium_verify_option')){
+	if(!function_exists('evav_settings_callback_premium_pagetargeting_option_field')){
 	$selected_option = 'none'; ?>
 	<fieldset>
 	  	<legend class="screen-reader-text"><span><?php esc_html_e( 'Page Targeting', 'easy-age-verify' ); ?></span></legend>

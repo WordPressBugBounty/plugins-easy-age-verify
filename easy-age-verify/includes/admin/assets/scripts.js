@@ -39,7 +39,6 @@ jQuery(document).ready(function ($) {
 		}
 	}
 
-
 	// Add an event listener for when the form is submitted
     $('.evav-settings-form').on('submit', function() {
         // Get the selected option
@@ -56,7 +55,6 @@ jQuery(document).ready(function ($) {
               }
         }
     });
-
 
 	// Initial call to toggleDropdownVisibility to set initial visibility
 	toggleDropdownVisibility('fast');
