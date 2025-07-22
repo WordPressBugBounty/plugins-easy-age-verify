@@ -10,17 +10,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 02:01+0000\n"
+"PO-Revision-Date: 2025-07-22 03:11+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: fr-FR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hu-HU\n"
 
 #: easy-age-verify.php
 #: includes/admin/settings.php:107
 #. Plugin Name of the plugin
 msgid "Easy Age Verify"
-msgstr "Vérification d'âge facile"
+msgstr "Könnyű Korellenőrzés"
 
 #: easy-age-verify.php
 #. Description of the plugin
@@ -28,14 +28,13 @@ msgid ""
 "Adds a mobile friendly age verification screen to adults only, vape or "
 "alcohol websites. Get set-up in minutes."
 msgstr ""
-"Ajoute un écran de vérification d'âge adapté aux mobiles pour les sites "
-"réservés aux adultes, aux produits de vapotage ou à l'alcool. Configuration "
-"en quelques minutes."
+"Mobilbarát életkor-ellenőrző képernyőt ad hozzá csak felnőtteknek, vape "
+"vagy alkoholtartalmú webhelyekhez. Pár perc alatt beállítható."
 
 #: easy-age-verify.php
 #. Author of the plugin
 msgid "5 Star Plugins"
-msgstr "Plugins 5 étoiles"
+msgstr "5 Csillagos Pluginek"
 
 #: easy-age-verify.php
 #. Author URI of the plugin
@@ -44,194 +43,192 @@ msgstr "https://5starplugins.com/"
 
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "Beállítások"
 
 #: includes/admin/class-easy-age-verify-admin.php:152
 #: includes/admin/class-easy-age-verify-admin.php:163
 #: includes/class-easy-age-verify.php:162
 #: includes/class-easy-age-verify.php:173
 msgid "Cheatin&#8217; huh?"
-msgstr "Tricher&#8217; hein ?"
+msgstr "Csalás&#8217; ugye?"
 
 #: includes/admin/class-easy-age-verify-admin.php:196
 msgid "Enable Verification"
-msgstr "Activer la vérification"
+msgstr "Ellenőrzés engedélyezése"
 
 #: includes/admin/class-easy-age-verify-admin.php:196
 msgid ""
 "Popup will not show when disabled. Use Testing Mode during setup, then show "
 "when it's ready."
 msgstr ""
-"La fenêtre contextuelle ne s'affichera pas lorsqu'elle est désactivée. "
-"Utilisez le mode test pendant la configuration, puis affichez-la "
-"lorsqu'elle est prête."
+"A felugró ablak nem jelenik meg, ha le van tiltva. Használja a Tesztelési "
+"Módot a beállítás során, majd mutassa, amikor készen áll."
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
 #: includes/admin/settings.php:452
 #: includes/functions.php:655
 msgid "Page Targeting"
-msgstr "Ciblage de page"
+msgstr "Oldalcélzás"
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 msgid "Include or exclude a certain page."
-msgstr "Inclure ou exclure une certaine page."
+msgstr "Egy adott oldal bevonása vagy kizárása."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
 msgid "May help caching issues, adds delay to popup."
 msgstr ""
-"Peut aider à résoudre les problèmes de mise en cache, ajoute un délai à la "
-"fenêtre contextuelle."
+"Segíthet a gyorsítótárazási problémákban, késleltetést ad a felugró "
+"ablakhoz."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
 msgid ""
 "Realtime Settings Check <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Vérification des paramètres en temps réel <span class=\"dashicons "
-"dashicons-info evavoptionshovertip\" title=\""
+"Valós idejű Beállítás Ellenőrzés <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
 
 #: includes/admin/class-easy-age-verify-admin.php:224
 msgid "Verify For"
-msgstr "Vérifier pour"
+msgstr "Ellenőrzés Kinek"
 
 #: includes/admin/class-easy-age-verify-admin.php:224
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
-"Sélectionnez un paramètre clé en main. Passez à la version Premium pour "
-"modifier le texte et l'arrière-plan."
+"Válasszon egy kulcsrakész beállítást. Frissítés Prémiumra a szöveg és "
+"háttér szerkesztéséhez."
 
 #: includes/admin/class-easy-age-verify-admin.php:237
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
 msgstr ""
-"Mettez à niveau pour modifier le texte du bouton et du message d'erreur. La "
-"version Premium débloque la possibilité de modifier tout le texte pour la "
-"traduction."
+"Frissítés a gomb és a hibaüzenet szövegének szerkesztéséhez. A Prémium "
+"lehetővé teszi az összes szöveg szerkesztését fordításhoz."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
-msgstr "Question requise."
+msgstr "Kötelező kérdés."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
 msgid ""
 "Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Invite d'âge <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"Kor Kérdés <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
 #: includes/admin/class-easy-age-verify-admin.php:254
 msgid "Optional small print takes HTML link."
-msgstr "Texte en petit caractère facultatif avec lien HTML."
+msgstr "Opcionális kisbetűs szöveg HTML linket vesz igénybe."
 
 #: includes/admin/class-easy-age-verify-admin.php:335
 msgid "Require age verification for this content"
-msgstr "Exiger la vérification d'âge pour ce contenu"
+msgstr "Korellenőrzés megkövetelése ehhez a tartalomhoz"
 
 #: includes/admin/premium/settings-premium.php:26
 #: includes/admin/premium/settings-premium.php:37
 msgid "Enter text..."
-msgstr "Entrez du texte..."
+msgstr "Írjon be szöveget..."
 
 #: includes/admin/premium/settings-premium.php:49
 msgid "Browser cookie checkbox"
-msgstr "Case à cocher des cookies du navigateur"
+msgstr "Böngésző cookie jelölőnégyzet"
 
 #: includes/admin/premium/settings-premium.php:53
 msgid "Show “Remember Me” checkbox"
-msgstr "Afficher la case à cocher « Se souvenir de moi »"
+msgstr "“Emlékezz rám” jelölőnégyzet megjelenítése"
 
 #: includes/admin/premium/settings-premium.php:68
 msgid "Overlay Color"
-msgstr "Couleur de superposition"
+msgstr "Átfedés színe"
 
 #: includes/admin/premium/settings-premium.php:88
 msgid "Styling"
-msgstr "Mise en forme"
+msgstr "Stílusozás"
 
 #: includes/admin/premium/settings-premium.php:92
 msgid "Use built-in CSS on the front-end (recommended)"
-msgstr "Utiliser le CSS intégré sur le front-end (recommandé)"
+msgstr "Beépített CSS használata az előlapon (ajánlott)"
 
 #: includes/admin/premium/settings-premium.php:106
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
-msgstr "Oui, je suis majeur"
+msgstr "Igen, nagykorú vagyok"
 
 #: includes/admin/premium/settings-premium.php:136
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
-msgstr "Non, je suis mineur"
+msgstr "Nem, kiskorú vagyok"
 
 #: includes/admin/premium/settings-premium.php:167
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
-msgstr "Désolé, vous devez être majeur pour entrer sur ce site web."
+msgstr "Sajnálom, nagykorú kell, hogy legyél, hogy belépj erre a weboldalra."
 
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
-msgstr "Afficher sur toutes les pages"
+msgstr "Megjelenítés minden oldalon"
 
 #: includes/admin/premium/settings-premium.php:248
 msgid "Show on this page only"
-msgstr "Afficher uniquement sur cette page"
+msgstr "Megjelenítés csak ezen az oldalon"
 
 #: includes/admin/premium/settings-premium.php:253
 msgid "Show everywhere except this page"
-msgstr "Afficher partout sauf sur cette page"
+msgstr "Megjelenítés mindenhol, kivéve ezen az oldalon"
 
 #: includes/admin/premium/settings-premium.php:265
 msgid "Page "
-msgstr "Page "
+msgstr "Oldal "
 
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
-msgstr "— Sélectionner une page —"
+msgstr "— Válassz egy oldalt —"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
-msgstr "Options Premium"
+msgstr "Prémium opciók"
 
 #: includes/admin/premium/settings-premium.php:354
 msgid "User Experience"
-msgstr "Expérience utilisateur"
+msgstr "Felhasználói élmény"
 
 #: includes/admin/premium/settings-premium.php:360
 msgid "Return Visitor Cookie"
-msgstr "Cookie de visiteur de retour"
+msgstr "Visszatérő látogató cookie"
 
 #: includes/admin/premium/settings-premium.php:360
 msgid "A return visitor cookie allows verified visitors to skip next time."
 msgstr ""
-"Un cookie de visiteur de retour permet aux visiteurs vérifiés de passer la "
-"prochaine fois."
+"A visszatérő látogató cookie lehetővé teszi a hitelesített látogatók "
+"számára, hogy legközelebb kihagyják."
 
 #: includes/admin/premium/settings-premium.php:368
 msgid "Return Visitor Text"
-msgstr "Texte de visiteur de retour"
+msgstr "Visszatérő látogató szöveg"
 
 #: includes/admin/premium/settings-premium.php:372
 #: includes/functions.php:438
 msgid "Remember me next time"
-msgstr "Se souvenir de moi la prochaine fois"
+msgstr "Emlékezz rám legközelebb"
 
 #: includes/admin/premium/settings-premium.php:383
 msgid "Design Buttons"
-msgstr "Concevoir des boutons"
+msgstr "Gombok tervezése"
 
 #: includes/admin/premium/settings-premium.php:389
 msgid "Required to verify."
-msgstr "Nécessaire pour vérifier."
+msgstr "Szükséges az ellenőrzéshez."
 
 #: includes/admin/premium/settings-premium.php:389
 msgid ""
 "Yes Button Text <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Texte du bouton Oui <span class=\"dashicons dashicons-info "
+"Igen gomb szövege <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:397
@@ -240,27 +237,27 @@ msgid ""
 "SMARTtext automatically sets text color to black or white based on button "
 "color."
 msgstr ""
-"SMARTtext définit automatiquement la couleur du texte en noir ou en blanc "
-"en fonction de la couleur du bouton."
+"A SMARTtext automatikusan feketére vagy fehérre állítja a szöveg színét a "
+"gomb színe alapján."
 
 #: includes/admin/premium/settings-premium.php:397
 msgid ""
 "Yes Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Couleur du bouton Oui <span class=\"dashicons dashicons-info "
+"Igen gomb színe <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:405
 msgid "Required to not verify."
-msgstr "Nécessaire pour ne pas vérifier."
+msgstr "Szükséges a nem ellenőrzéshez."
 
 #: includes/admin/premium/settings-premium.php:405
 msgid ""
 "No Button Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Texte du bouton Non <span class=\"dashicons dashicons-info "
+"Nem gomb szövege <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:413
@@ -268,80 +265,80 @@ msgid ""
 "No Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Couleur du bouton Non <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+"Nem gomb színe <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
 
 #: includes/admin/premium/settings-premium.php:421
 msgid "Required. Appears when user clicks no button."
-msgstr "Nécessaire. Apparaît lorsque l'utilisateur clique sur le bouton non."
+msgstr "Szükséges. Akkor jelenik meg, amikor a felhasználó a nem gombra kattint."
 
 #: includes/admin/premium/settings-premium.php:421
 msgid ""
 "Error Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Texte d'erreur <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"Hiba szöveg <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
 #: includes/admin/premium/settings-premium.php:429
 #: includes/functions.php:659
 msgid "Design Background"
-msgstr "Conception de l'arrière-plan"
+msgstr "Háttér kialakítás"
 
 #: includes/admin/premium/settings-premium.php:435
 msgid ""
 "SMARTtext automatically sets text color to black or white based on "
 "background color."
 msgstr ""
-"SMARTtext définit automatiquement la couleur du texte en noir ou en blanc "
-"en fonction de la couleur de l'arrière-plan."
+"A SMARTtext automatikusan feketére vagy fehérre állítja a szöveg színét a "
+"háttér színe alapján."
 
 #: includes/admin/premium/settings-premium.php:435
 msgid ""
 "Background Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Couleur d'arrière-plan <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+"Háttér színe <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
 
 #: includes/admin/premium/settings-premium.php:443
 msgid "Hide content 0-100%."
-msgstr "Masquer le contenu 0-100%."
+msgstr "Tartalom elrejtése 0-100%."
 
 #: includes/admin/premium/settings-premium.php:443
 msgid ""
 "Background Opacity <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Opacité de l'arrière-plan <span class=\"dashicons dashicons-info "
+"Háttér átlátszóság <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:451
 msgid "Customize Branding"
-msgstr "Personnaliser la marque"
+msgstr "Márka testreszabása"
 
 #: includes/admin/premium/settings-premium.php:457
 msgid "Optional headline centers below logo."
-msgstr "Titre facultatif centré sous le logo."
+msgstr "Opcionális főcím középre igazítva a logó alatt."
 
 #: includes/admin/premium/settings-premium.php:457
 msgid ""
 "Add Headline <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Ajouter un titre <span class=\"dashicons dashicons-info "
+"Főcím hozzáadása <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:465
 msgid "Optional body copy."
-msgstr "Texte de corps facultatif."
+msgstr "Opcionális szöveg."
 
 #: includes/admin/premium/settings-premium.php:465
 msgid ""
 "Add Text Below Headline <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Ajouter du texte sous le titre <span class=\"dashicons dashicons-info "
+"Szöveg hozzáadása a főcím alá <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:477
@@ -349,30 +346,28 @@ msgid ""
 "Upload any size or dimension. The responsive display resizes it to 650 "
 "pixels max tall or wide."
 msgstr ""
-"Téléchargez n'importe quelle taille ou dimension. L'affichage réactif le "
-"redimensionne à un maximum de 650 pixels de haut ou de large."
+"Bármilyen méret vagy dimenzió feltöltése. A reszponzív megjelenítés 650 "
+"pixel maximum magasságúra vagy szélesre méretezi."
 
 #: includes/admin/premium/settings-premium.php:477
 msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
-msgstr ""
-"Votre logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+msgstr "A logód <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
 msgstr ""
-"<strong>Effacer le cookie :</strong> La fenêtre contextuelle s'est arrêtée "
-"après avoir cliqué sur oui ? <br/>"
+"<strong>Cookie törlése:</strong> A felugró ablak leállt, miután "
+"rákattintott a igen-re? <br/>"
 
 #: includes/admin/settings.php:125
 msgid ""
 "Detects if a cookie is set in your browser from this plugin and clears it. "
 "Refresh this page to recheck."
 msgstr ""
-"Détecte si un cookie est défini dans votre navigateur par ce plugin et le "
-"supprime. Rafraîchissez cette page pour vérifier à nouveau."
+"Ellenőrzi, hogy a böngésződben be van-e állítva egy cookie a plugin által, "
+"és törli azt. Frissítsd az oldalt az újraellenőrzéshez."
 
 #: includes/admin/settings.php:139
 msgid ""
@@ -381,11 +376,11 @@ msgid ""
 "target=\"_blank\">Knowledge Base</a> or to send an email for Premium "
 "support."
 msgstr ""
-"Besoin d'aide ? Cliquez sur l'icône  en bas à droite pour rechercher dans "
-"notre <a "
+"Segítségre van szükséged? Kattints a  ikonra az oldal jobb alsó sarkában, "
+"hogy keresd a <a "
 "href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
-"target=\"_blank\">Base de connaissances</a> ou pour envoyer un e-mail pour "
-"un support premium."
+"target=\"_blank\">Tudásbázist</a> vagy küldj egy e-mailt a prémium "
+"támogatásért."
 
 #: includes/admin/settings.php:140
 msgid ""
@@ -393,9 +388,9 @@ msgid ""
 "href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
 "not-popping-up\"  target=\"_blank\">My age window isn't showing.</a>"
 msgstr ""
-"Lire : <a "
+"Olvasd el: <a "
 "href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
-"not-popping-up\"  target=\"_blank\">Ma fenêtre d'âge ne s'affiche pas.</a>"
+"not-popping-up\"  target=\"_blank\">Az életkorom ablak nem jelenik meg.</a>"
 
 #: includes/admin/settings.php:141
 msgid ""
@@ -403,18 +398,17 @@ msgid ""
 "to report a bug, suggest a feature, ask a billing question, or request "
 "Premium support."
 msgstr ""
-"<a "
-"href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Contactez-nous</"
-"a> pour signaler un bug, suggérer une fonctionnalité, poser une question de "
-"facturation ou demander un support premium."
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Lépj velünk "
+"kapcsolatba</a> hibabejelentés, funkciójavaslat, számlázási kérdés vagy "
+"prémium támogatás kérésére."
 
 #: includes/admin/settings.php:142
 msgid ""
 "<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visit The "
 "Support Center</a> for more."
 msgstr ""
-"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visitez le "
-"Centre de support</a> pour en savoir plus."
+"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Látogass el "
+"a Támogatási Központba</a> további információkért."
 
 #: includes/admin/settings.php:143
 msgid ""
@@ -422,9 +416,9 @@ msgid ""
 "href=\"https://get.5starplugins.com/pspforageverify/\" "
 "target=\"_blank\">perfectly timed marketing popups</a>."
 msgstr ""
-"Utilisez Age Verify avec Pretty Simple Popup pour <a "
+"Használd az Age Verify-t a Pretty Simple Popup-pal <a "
 "href=\"https://get.5starplugins.com/pspforageverify/\" "
-"target=\"_blank\">des popups marketing parfaitement chronométrés</a>."
+"target=\"_blank\">tökéletes időzítésű marketing felugró ablakokhoz</a>."
 
 #: includes/admin/settings.php:144
 msgid ""
@@ -432,9 +426,9 @@ msgid ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Rate This Plugin</a>"
 msgstr ""
-"Aimez-vous ça ? <a "
+"Tetszik? <a "
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
-"?rate=5#new-post\" target=_blank>Évaluez ce plugin</a>"
+"?rate=5#new-post\" target=_blank>Értékeld ezt a plugint</a>"
 
 #: includes/admin/settings.php:145
 #, php-format
@@ -442,52 +436,52 @@ msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
 "in San Diego, CA"
 msgstr ""
-"Développé et supporté par <a href=\"%s\" target=_blank>5 Star Plugins</a> à "
-"San Diego, CA"
+"Kifejlesztette és támogatja <a href=\"%s\" target=_blank>5 Star Plugins</a> "
+"San Diegóban, CA"
 
 #: includes/admin/settings.php:170
 msgid "Require Verification For:"
-msgstr "Exiger une vérification pour :"
+msgstr "Igazolás szükséges:"
 
 #: includes/admin/settings.php:174
 msgid "Entire site"
-msgstr "L'ensemble du site"
+msgstr "Az egész webhelyre"
 
 #: includes/admin/settings.php:179
 msgid "Specific content"
-msgstr "Contenu spécifique"
+msgstr "Specifikus tartalomra"
 
 #: includes/admin/settings.php:198
 msgid "Enable Verification:"
-msgstr "Activer la vérification :"
+msgstr "Igazolás engedélyezése:"
 
 #: includes/admin/settings.php:202
 msgid "Disable verification to all visitors"
-msgstr "Désactiver la vérification pour tous les visiteurs"
+msgstr "Az igazolás letiltása minden látogató számára"
 
 #: includes/admin/settings.php:207
 msgid "[TESTING MODE] Show only to logged-in Admins"
-msgstr "[MODE TEST] Afficher uniquement aux administrateurs connectés"
+msgstr "[TESZTELÉSI MÓD] Csak bejelentkezett adminok számára jelenjen meg"
 
 #: includes/admin/settings.php:212
 msgid "Show verification except to logged-in users"
-msgstr "Afficher la vérification sauf aux utilisateurs connectés"
+msgstr "Az igazolás megjelenítése a bejelentkezett felhasználók kivételével"
 
 #: includes/admin/settings.php:217
 msgid "Show verification to all visitors"
-msgstr "Afficher la vérification à tous les visiteurs"
+msgstr "Az igazolás megjelenítése minden látogató számára"
 
 #: includes/admin/settings.php:236
 msgid "Select verification type:"
-msgstr "Sélectionnez le type de vérification :"
+msgstr "Válaszd ki az igazolás típusát:"
 
 #: includes/admin/settings.php:240
 msgid "Adults Only 18+"
-msgstr "Adultes uniquement 18+"
+msgstr "Csak felnőttek 18+"
 
 #: includes/admin/settings.php:249
 msgid "Alcohol"
-msgstr "Alcool"
+msgstr "Alkohol"
 
 #: includes/admin/settings.php:258
 msgid "Vape"
@@ -495,35 +489,35 @@ msgstr "Vape"
 
 #: includes/admin/settings.php:275
 msgid "years old or older to view this site"
-msgstr "ans ou plus pour voir ce site"
+msgstr "éves vagy idősebb a webhely megtekintéséhez"
 
 #: includes/admin/settings.php:286
 msgid "minutes"
-msgstr "minutes"
+msgstr "perc"
 
 #: includes/admin/settings.php:299
 msgid "Membership"
-msgstr "Adhésion"
+msgstr "Tagság"
 
 #: includes/admin/settings.php:303
 msgid "Require users to confirm their age before registering to this site"
 msgstr ""
-"Exiger des utilisateurs qu'ils confirment leur âge avant de s'inscrire sur "
-"ce site"
+"Követelje meg a felhasználóktól, hogy erősítsék meg életkorukat a webhelyre "
+"való regisztráció előtt"
 
 #: includes/admin/settings.php:322
 #: includes/admin/settings.php:331
 #: includes/functions.php:588
 msgid "Please verify you are 18 years or older to enter."
-msgstr "Veuillez vérifier que vous avez 18 ans ou plus pour entrer."
+msgstr "Kérjük, igazolja, hogy 18 éves vagy annál idősebb a belépéshez."
 
 #: includes/admin/settings.php:325
 msgid "Are you of legal drinking age 21 or older?"
-msgstr "Avez-vous l'âge légal pour boire, 21 ans ou plus ?"
+msgstr "21 éves vagy annál idősebb vagy a törvényes ivási korhatárhoz?"
 
 #: includes/admin/settings.php:328
 msgid "Are you of legal smoking age?"
-msgstr "Avez-vous l'âge légal pour fumer ?"
+msgstr "A törvényes dohányzási korhatárhoz tartozol?"
 
 #: includes/admin/settings.php:358
 #: includes/admin/settings.php:367
@@ -536,14 +530,13 @@ msgid ""
 "material offends you or it is illegal to view in your location please exit "
 "now."
 msgstr ""
-"AVERTISSEMENT CONTENU ADULTE !\n"
-"Ce site est réservé aux adultes et peut contenir du contenu de nature "
-"adulte ou des matériaux explicites restreints par l'âge, que certains "
-"visiteurs peuvent trouver offensants. En entrant, vous confirmez que vous "
-"avez 18 ans ou plus et que vous n'êtes pas offensé par le visionnage de ce "
-"type de matériel. Si vous avez moins de 18 ans, si ce type de matériel vous "
-"offense ou s'il est illégal de le visionner dans votre région, veuillez "
-"sortir maintenant."
+"FIGYELEM! Felnőtt tartalom!\n"
+"Ez a weboldal kizárólag felnőttek számára készült, és felnőtt jellegű vagy "
+"korlátozott korú, explicit anyagot tartalmazhat, amelyet egyes nézők "
+"sértőnek találhatnak. A belépéssel megerősíted, hogy 18+ éves vagy, és nem "
+"bántanak az ilyen anyag megtekintése. Ha 18 év alatti vagy, ha az ilyen "
+"anyag sértő számodra, vagy ha illegális a megtekintése a helyszínen, "
+"kérjük, távozz most."
 
 #: includes/admin/settings.php:361
 msgid ""
@@ -551,9 +544,10 @@ msgid ""
 "By entering this website, you certify that you are of legal drinking age in "
 "the location in which you reside (age 21+ in the United States)."
 msgstr ""
-"LES PRODUITS ALCOOLIQUES SUR CE SITE SONT RÉSERVÉS AUX ADULTES.\n"
-"En entrant sur ce site, vous certifiez que vous avez l'âge légal pour boire "
-"dans le lieu où vous résidez (âge 21+ aux États-Unis)."
+"A WEBOLDALON ELÉRHETŐ ALKOHOLTERMÉKEK KIZÁRÓLAG FELNŐTTEK RÉSZÉRE "
+"KÉSZÜLTEK.\n"
+"A weboldalra lépéskor igazolja, hogy Ön a lakóhelyén a törvényes ivási "
+"korhatárhoz tartozik (21+ év az Egyesült Államokban)."
 
 #: includes/admin/settings.php:364
 msgid ""
@@ -561,127 +555,127 @@ msgid ""
 "By entering this website, you certify that you are of legal smoking age in "
 "the location in which you reside (age 18+, 19+ and 21+ in some areas)."
 msgstr ""
-"LES PRODUITS SUR CE SITE SONT RÉSERVÉS AUX ADULTES DE L'ÂGE LÉGAL POUR "
-"FUMER.\n"
-"En entrant sur ce site, vous certifiez que vous avez l'âge légal pour fumer "
-"dans le lieu où vous résidez (âge 18+, 19+ et 21+ dans certaines zones)."
+"A WEBOLDALON ELÉRHETŐ TERMÉKEK KIZÁRÓLAG A TÖRVÉNYES DOHÁNYZÁSI KORHATÁRHOZ "
+"TARTOZÓ FELNŐTTEK RÉSZÉRE KÉSZÜLTEK.\n"
+"A weboldalra lépéskor igazolja, hogy Ön a lakóhelyén a törvényes dohányzási "
+"korhatárhoz tartozik (18+, 19+ és 21+ egyes területeken)."
 
 #: includes/admin/settings.php:406
 msgid "Realtime Settings Check"
-msgstr "Vérification des paramètres en temps réel"
+msgstr "Valós idejű beállítások ellenőrzése"
 
 #: includes/admin/settings.php:410
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr ""
-"Confirmer les paramètres \"Activer la vérification\" avant d'afficher la "
-"popup"
+"Erősítse meg az \"Engedélyezze a hitelesítést\" beállításokat a felugró "
+"ablak megjelenítése előtt"
 
 #: includes/admin/settings.php:437
 msgid "Date dropdowns"
-msgstr "Menus déroulants de date"
+msgstr "Dátum legördülők"
 
 #: includes/admin/settings.php:438
 msgid "Inputs"
-msgstr "Entrées"
+msgstr "Bemenetek"
 
 #: includes/admin/settings.php:439
 msgid "Confirm checkbox"
-msgstr "Confirmer la case à cocher"
+msgstr "Jelölőnégyzet megerősítése"
 
 #: includes/admin/settings.php:456
 msgid "Show on all pages (upgrade to unlock)"
-msgstr "Afficher sur toutes les pages (mise à niveau pour débloquer)"
+msgstr "Minden oldalon megjelenítés (frissítés a feloldáshoz)"
 
 #: includes/admin/settings.php:461
 msgid "Show on this page only (upgrade to unlock)"
-msgstr "Afficher uniquement sur cette page (mise à niveau pour débloquer)"
+msgstr "Csak ezen az oldalon való megjelenítés (frissítés a feloldáshoz)"
 
 #: includes/admin/settings.php:466
 msgid "Show everywhere except this page (upgrade to unlock)"
-msgstr "Afficher partout sauf sur cette page (mise à niveau pour débloquer)"
+msgstr "Mindenhol való megjelenítés, kivéve ezt az oldalt (frissítés a feloldáshoz)"
 
 #: includes/class-easy-age-verify.php:342
 #, php-format
 msgid "You must be %1s years old to view this content."
-msgstr "Vous devez avoir %1s ans pour voir ce contenu."
+msgstr "Legalább %1s évesnek kell lenned a tartalom megtekintéséhez."
 
 #: includes/class-easy-age-verify.php:342
 #: includes/functions.php:739
 #: includes/premium/functions-premium.php:141
 msgid "Please verify your age"
-msgstr "Veuillez vérifier votre âge"
+msgstr "Kérjük, ellenőrizd a korodat"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
-msgstr "Entrer le site &raquo;"
+msgstr "Webhely megadása &raquo;"
 
 #: includes/functions.php:604
 msgid "Please confirm your age"
-msgstr "Veuillez confirmer votre âge"
+msgstr "Kérjük, erősítsd meg a korodat"
 
 #: includes/functions.php:645
 msgid "Start 14-Day Free Trial"
-msgstr "Commencer l'essai gratuit de 14 jours"
+msgstr "Indítsd el a 14 napos ingyenes próbát"
 
 #: includes/functions.php:645
 msgid "(risk free, no credit card)"
-msgstr "(sans risque, pas de carte de crédit)"
+msgstr "(kockázatmentes, nincs szükség hitelkártyára)"
 
 #: includes/functions.php:655
 msgid "Include / exclude certain pages"
-msgstr "Inclure / exclure certaines pages"
+msgstr "Bizonyos oldalak bevonása / kizárása"
 
 #: includes/functions.php:656
 msgid "Customizable"
-msgstr "Personnalisable"
+msgstr "Testreszabható"
 
 #: includes/functions.php:656
 msgid "Free-form text option"
-msgstr "Option de texte libre"
+msgstr "Szabad formájú szöveg opció"
 
 #: includes/functions.php:657
 msgid "Translation Ready"
-msgstr "Prêt pour la traduction"
+msgstr "Fordításra kész"
 
 #: includes/functions.php:657
 msgid "Self translate to any language"
-msgstr "Se traduire dans n'importe quelle langue"
+msgstr "Saját magad lefordíthatod bármely nyelvre"
 
 #: includes/functions.php:658
 msgid "Brand It"
-msgstr "Marquez-le"
+msgstr "Márkázd be"
 
 #: includes/functions.php:658
 msgid "Your logo and colors"
-msgstr "Votre logo et vos couleurs"
+msgstr "A logód és színeid"
 
 #: includes/functions.php:659
 msgid "Set transparency and color"
-msgstr "Définir la transparence et la couleur"
+msgstr "Átlátszóság és szín beállítása"
 
 #: includes/functions.php:660
 msgid "Welcome Message"
-msgstr "Message de bienvenue"
+msgstr "Üdvözlő üzenet"
 
 #: includes/functions.php:660
 msgid "Add a welcome message"
-msgstr "Ajouter un message de bienvenue"
+msgstr "Adj hozzá egy üdvözlő üzenetet"
 
 #: includes/functions.php:661
 msgid "Remember Visitors"
-msgstr "Se souvenir des visiteurs"
+msgstr "Látogatók emlékezése"
 
 #: includes/functions.php:661
 msgid "\"Remember me\" checkbox"
-msgstr "Case à cocher \"Se souvenir de moi\""
+msgstr "\"Emlékezz rám\" jelölőnégyzet"
 
 #: includes/functions.php:662
 msgid "Premium Support"
-msgstr "Support Premium"
+msgstr "Prémium támogatás"
 
 #: includes/functions.php:662
 msgid "World-class email support from the U.S."
-msgstr "Support par email de classe mondiale depuis les États-Unis."
+msgstr "Világklasszis e-mail támogatás az Egyesült Államokból"
 
 #: includes/functions.php:673
 #, php-format
@@ -689,8 +683,8 @@ msgid ""
 "Opt-in to help us improve %2$s! Some usage data will be sent to our "
 "platform Freemius."
 msgstr ""
-"Optez pour nous aider à améliorer %2$s ! Certaines données d'utilisation "
-"seront envoyées à notre plateforme Freemius."
+"Válassza az opciót, hogy segítsen nekünk fejleszteni a %2$s-t! Néhány "
+"használati adatot elküldünk a Freemius platformra."
 
 #: includes/functions.php:687
 #, php-format
@@ -699,37 +693,35 @@ msgid ""
 "trial of premium version, %2$s wants to connect usage data to our platform "
 "Freemius."
 msgstr ""
-"Pour profiter de toutes les fonctionnalités, de la fonctionnalité et "
-"activer un essai gratuit de la version premium, %2$s souhaite connecter les "
-"données d'utilisation à notre plateforme Freemius."
+"Ahhoz, hogy élvezhesse az összes funkciót és lehetőséget, valamint "
+"aktiválhassa a prémium verzió ingyenes próbaverzióját, a %2$s szeretné "
+"összekapcsolni a használati adatokat a Freemius platformmal."
 
 #: includes/functions.php:765
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
-msgstr "Vous devez avoir 21 ans pour visiter ce site."
+msgstr "21 évesnek kell lenned a webhely látogatásához."
 
 #: includes/premium/functions-premium.php:220
 msgid "Self Validation"
-msgstr "Validation autonome"
+msgstr "Önellenőrzés"
 
 #: includes/premium/functions-premium.php:228
 msgid "Verify 18+ Recreational"
-msgstr "Vérifiez 18+ Récréatif"
+msgstr "18+ Rekreációs ellenőrzés"
 
 #: includes/premium/functions-premium.php:236
 msgid "Verify 19+ Recreational"
-msgstr "Vérifiez 19+ Récréatif"
+msgstr "19+ Rekreációs ellenőrzés"
 
 #: includes/premium/functions-premium.php:244
 msgid "Verify 21+ Recreational"
-msgstr "Vérifiez 21+ Récréatif"
+msgstr "21+ Rekreációs ellenőrzés"
 
 #: includes/premium/functions-premium.php:252
 msgid "Verify 18+ Medical"
-msgstr "Vérifiez 18+ Médical"
+msgstr "18+ Orvosi ellenőrzés"
 
 #: includes/premium/functions-premium.php:260
 msgid "Are you 21+ or a 18+ valid medical marijuana patient?"
-msgstr ""
-"Avez-vous 21 ans ou êtes-vous un patient valide de marijuana médicale de 18 "
-"ans ?"
+msgstr "21+ éves vagy, vagy 18+ érvényes orvosi marihuána beteg?"

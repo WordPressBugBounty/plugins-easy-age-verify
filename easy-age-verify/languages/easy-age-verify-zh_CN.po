@@ -10,32 +10,29 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 02:01+0000\n"
+"PO-Revision-Date: 2025-07-22 03:04+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: fr-FR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh-CN\n"
 
 #: easy-age-verify.php
 #: includes/admin/settings.php:107
 #. Plugin Name of the plugin
 msgid "Easy Age Verify"
-msgstr "Vérification d'âge facile"
+msgstr "简单年龄验证"
 
 #: easy-age-verify.php
 #. Description of the plugin
 msgid ""
 "Adds a mobile friendly age verification screen to adults only, vape or "
 "alcohol websites. Get set-up in minutes."
-msgstr ""
-"Ajoute un écran de vérification d'âge adapté aux mobiles pour les sites "
-"réservés aux adultes, aux produits de vapotage ou à l'alcool. Configuration "
-"en quelques minutes."
+msgstr "为仅限成人、电子烟或酒精网站添加移动友好的年龄验证屏幕。几分钟内即可设置。"
 
 #: easy-age-verify.php
 #. Author of the plugin
 msgid "5 Star Plugins"
-msgstr "Plugins 5 étoiles"
+msgstr "5星插件"
 
 #: easy-age-verify.php
 #. Author URI of the plugin
@@ -44,335 +41,291 @@ msgstr "https://5starplugins.com/"
 
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "设置"
 
 #: includes/admin/class-easy-age-verify-admin.php:152
 #: includes/admin/class-easy-age-verify-admin.php:163
 #: includes/class-easy-age-verify.php:162
 #: includes/class-easy-age-verify.php:173
 msgid "Cheatin&#8217; huh?"
-msgstr "Tricher&#8217; hein ?"
+msgstr "作弊&#8217; 是吧？"
 
 #: includes/admin/class-easy-age-verify-admin.php:196
 msgid "Enable Verification"
-msgstr "Activer la vérification"
+msgstr "启用验证"
 
 #: includes/admin/class-easy-age-verify-admin.php:196
 msgid ""
 "Popup will not show when disabled. Use Testing Mode during setup, then show "
 "when it's ready."
-msgstr ""
-"La fenêtre contextuelle ne s'affichera pas lorsqu'elle est désactivée. "
-"Utilisez le mode test pendant la configuration, puis affichez-la "
-"lorsqu'elle est prête."
+msgstr "禁用时弹出窗口将不显示。在设置期间使用测试模式，然后在准备就绪时显示。"
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
 #: includes/admin/settings.php:452
 #: includes/functions.php:655
 msgid "Page Targeting"
-msgstr "Ciblage de page"
+msgstr "页面定向"
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 msgid "Include or exclude a certain page."
-msgstr "Inclure ou exclure une certaine page."
+msgstr "包含或排除特定页面。"
 
 #: includes/admin/class-easy-age-verify-admin.php:215
 msgid "May help caching issues, adds delay to popup."
-msgstr ""
-"Peut aider à résoudre les problèmes de mise en cache, ajoute un délai à la "
-"fenêtre contextuelle."
+msgstr "可能有助于缓存问题，给弹出窗口增加延迟。"
 
 #: includes/admin/class-easy-age-verify-admin.php:215
 msgid ""
 "Realtime Settings Check <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
-msgstr ""
-"Vérification des paramètres en temps réel <span class=\"dashicons "
-"dashicons-info evavoptionshovertip\" title=\""
+msgstr "实时设置检查 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/class-easy-age-verify-admin.php:224
 msgid "Verify For"
-msgstr "Vérifier pour"
+msgstr "验证对象"
 
 #: includes/admin/class-easy-age-verify-admin.php:224
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
-msgstr ""
-"Sélectionnez un paramètre clé en main. Passez à la version Premium pour "
-"modifier le texte et l'arrière-plan."
+msgstr "选择一个现成设置。升级到高级版以编辑文本和背景。"
 
 #: includes/admin/class-easy-age-verify-admin.php:237
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
-msgstr ""
-"Mettez à niveau pour modifier le texte du bouton et du message d'erreur. La "
-"version Premium débloque la possibilité de modifier tout le texte pour la "
-"traduction."
+msgstr "升级以编辑按钮和错误信息文本。高级版解锁所有文本的翻译编辑。"
 
 #: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
-msgstr "Question requise."
+msgstr "必填问题。"
 
 #: includes/admin/class-easy-age-verify-admin.php:245
 msgid ""
 "Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
-msgstr ""
-"Invite d'âge <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+msgstr "年龄提示 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/class-easy-age-verify-admin.php:254
 msgid "Optional small print takes HTML link."
-msgstr "Texte en petit caractère facultatif avec lien HTML."
+msgstr "可选的小字需使用HTML链接。"
 
 #: includes/admin/class-easy-age-verify-admin.php:335
 msgid "Require age verification for this content"
-msgstr "Exiger la vérification d'âge pour ce contenu"
+msgstr "要求对此内容进行年龄验证"
 
 #: includes/admin/premium/settings-premium.php:26
 #: includes/admin/premium/settings-premium.php:37
 msgid "Enter text..."
-msgstr "Entrez du texte..."
+msgstr "输入文本..."
 
 #: includes/admin/premium/settings-premium.php:49
 msgid "Browser cookie checkbox"
-msgstr "Case à cocher des cookies du navigateur"
+msgstr "浏览器Cookie复选框"
 
 #: includes/admin/premium/settings-premium.php:53
 msgid "Show “Remember Me” checkbox"
-msgstr "Afficher la case à cocher « Se souvenir de moi »"
+msgstr "显示“记住我”复选框"
 
 #: includes/admin/premium/settings-premium.php:68
 msgid "Overlay Color"
-msgstr "Couleur de superposition"
+msgstr "覆盖颜色"
 
 #: includes/admin/premium/settings-premium.php:88
 msgid "Styling"
-msgstr "Mise en forme"
+msgstr "样式"
 
 #: includes/admin/premium/settings-premium.php:92
 msgid "Use built-in CSS on the front-end (recommended)"
-msgstr "Utiliser le CSS intégré sur le front-end (recommandé)"
+msgstr "在前端使用内置CSS（推荐）"
 
 #: includes/admin/premium/settings-premium.php:106
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
-msgstr "Oui, je suis majeur"
+msgstr "是，我已达到法定年龄"
 
 #: includes/admin/premium/settings-premium.php:136
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
-msgstr "Non, je suis mineur"
+msgstr "否，我未满法定年龄"
 
 #: includes/admin/premium/settings-premium.php:167
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
-msgstr "Désolé, vous devez être majeur pour entrer sur ce site web."
+msgstr "抱歉，您必须达到法定年龄才能进入此网站。"
 
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
-msgstr "Afficher sur toutes les pages"
+msgstr "在所有页面上显示"
 
 #: includes/admin/premium/settings-premium.php:248
 msgid "Show on this page only"
-msgstr "Afficher uniquement sur cette page"
+msgstr "仅在此页面上显示"
 
 #: includes/admin/premium/settings-premium.php:253
 msgid "Show everywhere except this page"
-msgstr "Afficher partout sauf sur cette page"
+msgstr "在除此页面外的所有地方显示"
 
 #: includes/admin/premium/settings-premium.php:265
 msgid "Page "
-msgstr "Page "
+msgstr "页面 "
 
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
-msgstr "— Sélectionner une page —"
+msgstr "— 选择一个页面 —"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
-msgstr "Options Premium"
+msgstr "高级选项"
 
 #: includes/admin/premium/settings-premium.php:354
 msgid "User Experience"
-msgstr "Expérience utilisateur"
+msgstr "用户体验"
 
 #: includes/admin/premium/settings-premium.php:360
 msgid "Return Visitor Cookie"
-msgstr "Cookie de visiteur de retour"
+msgstr "回访者Cookie"
 
 #: includes/admin/premium/settings-premium.php:360
 msgid "A return visitor cookie allows verified visitors to skip next time."
-msgstr ""
-"Un cookie de visiteur de retour permet aux visiteurs vérifiés de passer la "
-"prochaine fois."
+msgstr "回访者Cookie允许已验证的访客下次跳过。"
 
 #: includes/admin/premium/settings-premium.php:368
 msgid "Return Visitor Text"
-msgstr "Texte de visiteur de retour"
+msgstr "回访者文本"
 
 #: includes/admin/premium/settings-premium.php:372
 #: includes/functions.php:438
 msgid "Remember me next time"
-msgstr "Se souvenir de moi la prochaine fois"
+msgstr "下次记住我"
 
 #: includes/admin/premium/settings-premium.php:383
 msgid "Design Buttons"
-msgstr "Concevoir des boutons"
+msgstr "设计按钮"
 
 #: includes/admin/premium/settings-premium.php:389
 msgid "Required to verify."
-msgstr "Nécessaire pour vérifier."
+msgstr "需要进行验证。"
 
 #: includes/admin/premium/settings-premium.php:389
 msgid ""
 "Yes Button Text <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
-msgstr ""
-"Texte du bouton Oui <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "是按钮文本 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:397
 #: includes/admin/premium/settings-premium.php:413
 msgid ""
 "SMARTtext automatically sets text color to black or white based on button "
 "color."
-msgstr ""
-"SMARTtext définit automatiquement la couleur du texte en noir ou en blanc "
-"en fonction de la couleur du bouton."
+msgstr "SMARTtext 根据按钮颜色自动将文本颜色设置为黑色或白色。"
 
 #: includes/admin/premium/settings-premium.php:397
 msgid ""
 "Yes Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
-msgstr ""
-"Couleur du bouton Oui <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "是按钮颜色 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:405
 msgid "Required to not verify."
-msgstr "Nécessaire pour ne pas vérifier."
+msgstr "不需要进行验证。"
 
 #: includes/admin/premium/settings-premium.php:405
 msgid ""
 "No Button Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
-msgstr ""
-"Texte du bouton Non <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "否按钮文本 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:413
 msgid ""
 "No Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
-msgstr ""
-"Couleur du bouton Non <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "否按钮颜色 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:421
 msgid "Required. Appears when user clicks no button."
-msgstr "Nécessaire. Apparaît lorsque l'utilisateur clique sur le bouton non."
+msgstr "必填。当用户点击否按钮时出现。"
 
 #: includes/admin/premium/settings-premium.php:421
 msgid ""
 "Error Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
-msgstr ""
-"Texte d'erreur <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+msgstr "错误文本 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:429
 #: includes/functions.php:659
 msgid "Design Background"
-msgstr "Conception de l'arrière-plan"
+msgstr "设计背景"
 
 #: includes/admin/premium/settings-premium.php:435
 msgid ""
 "SMARTtext automatically sets text color to black or white based on "
 "background color."
-msgstr ""
-"SMARTtext définit automatiquement la couleur du texte en noir ou en blanc "
-"en fonction de la couleur de l'arrière-plan."
+msgstr "SMARTtext 根据背景颜色自动将文本颜色设置为黑色或白色。"
 
 #: includes/admin/premium/settings-premium.php:435
 msgid ""
 "Background Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
-msgstr ""
-"Couleur d'arrière-plan <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "背景颜色 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:443
 msgid "Hide content 0-100%."
-msgstr "Masquer le contenu 0-100%."
+msgstr "隐藏内容 0-100%。"
 
 #: includes/admin/premium/settings-premium.php:443
 msgid ""
 "Background Opacity <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
-msgstr ""
-"Opacité de l'arrière-plan <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "背景不透明度 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:451
 msgid "Customize Branding"
-msgstr "Personnaliser la marque"
+msgstr "自定义品牌"
 
 #: includes/admin/premium/settings-premium.php:457
 msgid "Optional headline centers below logo."
-msgstr "Titre facultatif centré sous le logo."
+msgstr "可选标题位于 logo 下方居中。"
 
 #: includes/admin/premium/settings-premium.php:457
 msgid ""
 "Add Headline <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
-msgstr ""
-"Ajouter un titre <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+msgstr "添加标题 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:465
 msgid "Optional body copy."
-msgstr "Texte de corps facultatif."
+msgstr "可选正文。"
 
 #: includes/admin/premium/settings-premium.php:465
 msgid ""
 "Add Text Below Headline <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Ajouter du texte sous le titre <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+"在标题下方添加文本 <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
 
 #: includes/admin/premium/settings-premium.php:477
 msgid ""
 "Upload any size or dimension. The responsive display resizes it to 650 "
 "pixels max tall or wide."
-msgstr ""
-"Téléchargez n'importe quelle taille ou dimension. L'affichage réactif le "
-"redimensionne à un maximum de 650 pixels de haut ou de large."
+msgstr "上传任何大小或尺寸。响应式显示将其调整为最大 650 像素高或宽。"
 
 #: includes/admin/premium/settings-premium.php:477
 msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
-msgstr ""
-"Votre logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+msgstr "您的徽标 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
-msgstr ""
-"<strong>Effacer le cookie :</strong> La fenêtre contextuelle s'est arrêtée "
-"après avoir cliqué sur oui ? <br/>"
+msgstr "<strong>清除 Cookie:</strong> 点击是后弹出窗口停止了？ <br/>"
 
 #: includes/admin/settings.php:125
 msgid ""
 "Detects if a cookie is set in your browser from this plugin and clears it. "
 "Refresh this page to recheck."
-msgstr ""
-"Détecte si un cookie est défini dans votre navigateur par ce plugin et le "
-"supprime. Rafraîchissez cette page pour vérifier à nouveau."
+msgstr "检测此插件是否在您的浏览器中设置了 Cookie，并清除它。刷新此页面以重新检查。"
 
 #: includes/admin/settings.php:139
 msgid ""
@@ -381,11 +334,9 @@ msgid ""
 "target=\"_blank\">Knowledge Base</a> or to send an email for Premium "
 "support."
 msgstr ""
-"Besoin d'aide ? Cliquez sur l'icône  en bas à droite pour rechercher dans "
-"notre <a "
+"需要帮助吗？点击右下角的  图标搜索我们的 <a "
 "href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
-"target=\"_blank\">Base de connaissances</a> ou pour envoyer un e-mail pour "
-"un support premium."
+"target=\"_blank\">知识库</a> 或发送电子邮件以获取高级支持。"
 
 #: includes/admin/settings.php:140
 msgid ""
@@ -393,9 +344,9 @@ msgid ""
 "href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
 "not-popping-up\"  target=\"_blank\">My age window isn't showing.</a>"
 msgstr ""
-"Lire : <a "
+"阅读： <a "
 "href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
-"not-popping-up\"  target=\"_blank\">Ma fenêtre d'âge ne s'affiche pas.</a>"
+"not-popping-up\"  target=\"_blank\">我的年龄窗口未显示。</a>"
 
 #: includes/admin/settings.php:141
 msgid ""
@@ -403,18 +354,16 @@ msgid ""
 "to report a bug, suggest a feature, ask a billing question, or request "
 "Premium support."
 msgstr ""
-"<a "
-"href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Contactez-nous</"
-"a> pour signaler un bug, suggérer une fonctionnalité, poser une question de "
-"facturation ou demander un support premium."
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">联系我们</a> "
+"以报告错误、建议功能、询问账单问题或请求高级支持。"
 
 #: includes/admin/settings.php:142
 msgid ""
 "<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visit The "
 "Support Center</a> for more."
 msgstr ""
-"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visitez le "
-"Centre de support</a> pour en savoir plus."
+"<a href=\"https://5starplugins.com/get-support/\" "
+"target=_blank>访问支持中心</a>以获取更多信息。"
 
 #: includes/admin/settings.php:143
 msgid ""
@@ -422,9 +371,9 @@ msgid ""
 "href=\"https://get.5starplugins.com/pspforageverify/\" "
 "target=\"_blank\">perfectly timed marketing popups</a>."
 msgstr ""
-"Utilisez Age Verify avec Pretty Simple Popup pour <a "
+"将年龄验证与漂亮简单的弹出窗口配合使用，获取 <a "
 "href=\"https://get.5starplugins.com/pspforageverify/\" "
-"target=\"_blank\">des popups marketing parfaitement chronométrés</a>."
+"target=\"_blank\">完美时机的营销弹出窗口</a>。"
 
 #: includes/admin/settings.php:144
 msgid ""
@@ -432,98 +381,94 @@ msgid ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Rate This Plugin</a>"
 msgstr ""
-"Aimez-vous ça ? <a "
+"喜欢这个吗？ <a "
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
-"?rate=5#new-post\" target=_blank>Évaluez ce plugin</a>"
+"?rate=5#new-post\" target=_blank>给此插件评分</a>"
 
 #: includes/admin/settings.php:145
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
 "in San Diego, CA"
-msgstr ""
-"Développé et supporté par <a href=\"%s\" target=_blank>5 Star Plugins</a> à "
-"San Diego, CA"
+msgstr "由 <a href=\"%s\" target=_blank>5 Star Plugins</a> 在加利福尼亚州圣地亚哥开发和支持"
 
 #: includes/admin/settings.php:170
 msgid "Require Verification For:"
-msgstr "Exiger une vérification pour :"
+msgstr "需要验证的对象："
 
 #: includes/admin/settings.php:174
 msgid "Entire site"
-msgstr "L'ensemble du site"
+msgstr "整个网站"
 
 #: includes/admin/settings.php:179
 msgid "Specific content"
-msgstr "Contenu spécifique"
+msgstr "特定内容"
 
 #: includes/admin/settings.php:198
 msgid "Enable Verification:"
-msgstr "Activer la vérification :"
+msgstr "启用验证："
 
 #: includes/admin/settings.php:202
 msgid "Disable verification to all visitors"
-msgstr "Désactiver la vérification pour tous les visiteurs"
+msgstr "对所有访客禁用验证"
 
 #: includes/admin/settings.php:207
 msgid "[TESTING MODE] Show only to logged-in Admins"
-msgstr "[MODE TEST] Afficher uniquement aux administrateurs connectés"
+msgstr "[测试模式] 仅对已登录的管理员可见"
 
 #: includes/admin/settings.php:212
 msgid "Show verification except to logged-in users"
-msgstr "Afficher la vérification sauf aux utilisateurs connectés"
+msgstr "对已登录用户以外的所有人显示验证"
 
 #: includes/admin/settings.php:217
 msgid "Show verification to all visitors"
-msgstr "Afficher la vérification à tous les visiteurs"
+msgstr "对所有访客显示验证"
 
 #: includes/admin/settings.php:236
 msgid "Select verification type:"
-msgstr "Sélectionnez le type de vérification :"
+msgstr "选择验证类型："
 
 #: includes/admin/settings.php:240
 msgid "Adults Only 18+"
-msgstr "Adultes uniquement 18+"
+msgstr "仅限成人 18+"
 
 #: includes/admin/settings.php:249
 msgid "Alcohol"
-msgstr "Alcool"
+msgstr "酒精"
 
 #: includes/admin/settings.php:258
 msgid "Vape"
-msgstr "Vape"
+msgstr "电子烟"
 
 #: includes/admin/settings.php:275
 msgid "years old or older to view this site"
-msgstr "ans ou plus pour voir ce site"
+msgstr "年满18岁或以上才能查看该网站"
 
 #: includes/admin/settings.php:286
 msgid "minutes"
-msgstr "minutes"
+msgstr "分钟"
 
 #: includes/admin/settings.php:299
 msgid "Membership"
-msgstr "Adhésion"
+msgstr "会员资格"
 
 #: includes/admin/settings.php:303
 msgid "Require users to confirm their age before registering to this site"
-msgstr ""
-"Exiger des utilisateurs qu'ils confirment leur âge avant de s'inscrire sur "
-"ce site"
+msgstr "要求用户在注册该网站之前确认其年龄"
 
 #: includes/admin/settings.php:322
 #: includes/admin/settings.php:331
 #: includes/functions.php:588
 msgid "Please verify you are 18 years or older to enter."
-msgstr "Veuillez vérifier que vous avez 18 ans ou plus pour entrer."
+msgstr "请确认您已年满18岁才能进入。"
 
 #: includes/admin/settings.php:325
 msgid "Are you of legal drinking age 21 or older?"
-msgstr "Avez-vous l'âge légal pour boire, 21 ans ou plus ?"
+msgstr "您已年满21岁，达到合法饮酒年龄吗？"
 
 #: includes/admin/settings.php:328
 msgid "Are you of legal smoking age?"
-msgstr "Avez-vous l'âge légal pour fumer ?"
+msgstr "您已达到合法吸烟年龄吗？"
 
 #: includes/admin/settings.php:358
 #: includes/admin/settings.php:367
@@ -536,14 +481,9 @@ msgid ""
 "material offends you or it is illegal to view in your location please exit "
 "now."
 msgstr ""
-"AVERTISSEMENT CONTENU ADULTE !\n"
-"Ce site est réservé aux adultes et peut contenir du contenu de nature "
-"adulte ou des matériaux explicites restreints par l'âge, que certains "
-"visiteurs peuvent trouver offensants. En entrant, vous confirmez que vous "
-"avez 18 ans ou plus et que vous n'êtes pas offensé par le visionnage de ce "
-"type de matériel. Si vous avez moins de 18 ans, si ce type de matériel vous "
-"offense ou s'il est illégal de le visionner dans votre région, veuillez "
-"sortir maintenant."
+"警告：成人内容！\n"
+"本网站仅供成人使用，可能包含成人性质或年龄限制的内容，某些观众可能会觉得冒犯。通过进入，您确认自己年满18岁，并且不反感观看此类材料。如果您未满18"
+"岁，或者该材料让您感到冒犯，或者在您所在的地方观看此类材料是非法的，请立即退出。"
 
 #: includes/admin/settings.php:361
 msgid ""
@@ -551,9 +491,8 @@ msgid ""
 "By entering this website, you certify that you are of legal drinking age in "
 "the location in which you reside (age 21+ in the United States)."
 msgstr ""
-"LES PRODUITS ALCOOLIQUES SUR CE SITE SONT RÉSERVÉS AUX ADULTES.\n"
-"En entrant sur ce site, vous certifiez que vous avez l'âge légal pour boire "
-"dans le lieu où vous résidez (âge 21+ aux États-Unis)."
+"本网站上的酒精产品仅供成人使用。\n"
+"通过进入本网站，您证明您在居住地的合法饮酒年龄（美国为21岁及以上）。"
 
 #: includes/admin/settings.php:364
 msgid ""
@@ -561,136 +500,130 @@ msgid ""
 "By entering this website, you certify that you are of legal smoking age in "
 "the location in which you reside (age 18+, 19+ and 21+ in some areas)."
 msgstr ""
-"LES PRODUITS SUR CE SITE SONT RÉSERVÉS AUX ADULTES DE L'ÂGE LÉGAL POUR "
-"FUMER.\n"
-"En entrant sur ce site, vous certifiez que vous avez l'âge légal pour fumer "
-"dans le lieu où vous résidez (âge 18+, 19+ et 21+ dans certaines zones)."
+"本网站上的产品仅供达到合法吸烟年龄的成年人使用。\n"
+"通过进入本网站，您证明您在居住地的合法吸烟年龄（某些地区为18岁、19岁和21岁及以上）。"
 
 #: includes/admin/settings.php:406
 msgid "Realtime Settings Check"
-msgstr "Vérification des paramètres en temps réel"
+msgstr "实时设置检查"
 
 #: includes/admin/settings.php:410
 msgid "Confirm \"Enable Verification\" settings before showing popup"
-msgstr ""
-"Confirmer les paramètres \"Activer la vérification\" avant d'afficher la "
-"popup"
+msgstr "在显示弹出窗口之前确认“启用验证”设置"
 
 #: includes/admin/settings.php:437
 msgid "Date dropdowns"
-msgstr "Menus déroulants de date"
+msgstr "日期下拉菜单"
 
 #: includes/admin/settings.php:438
 msgid "Inputs"
-msgstr "Entrées"
+msgstr "输入框"
 
 #: includes/admin/settings.php:439
 msgid "Confirm checkbox"
-msgstr "Confirmer la case à cocher"
+msgstr "确认复选框"
 
 #: includes/admin/settings.php:456
 msgid "Show on all pages (upgrade to unlock)"
-msgstr "Afficher sur toutes les pages (mise à niveau pour débloquer)"
+msgstr "在所有页面上显示（升级以解锁）"
 
 #: includes/admin/settings.php:461
 msgid "Show on this page only (upgrade to unlock)"
-msgstr "Afficher uniquement sur cette page (mise à niveau pour débloquer)"
+msgstr "仅在此页面上显示（升级以解锁）"
 
 #: includes/admin/settings.php:466
 msgid "Show everywhere except this page (upgrade to unlock)"
-msgstr "Afficher partout sauf sur cette page (mise à niveau pour débloquer)"
+msgstr "在此页面以外的所有地方显示（升级以解锁）"
 
 #: includes/class-easy-age-verify.php:342
 #, php-format
 msgid "You must be %1s years old to view this content."
-msgstr "Vous devez avoir %1s ans pour voir ce contenu."
+msgstr "您必须年满 %1s 岁才能查看此内容。"
 
 #: includes/class-easy-age-verify.php:342
 #: includes/functions.php:739
 #: includes/premium/functions-premium.php:141
 msgid "Please verify your age"
-msgstr "Veuillez vérifier votre âge"
+msgstr "请验证您的年龄"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
-msgstr "Entrer le site &raquo;"
+msgstr "进入网站 &raquo;"
 
 #: includes/functions.php:604
 msgid "Please confirm your age"
-msgstr "Veuillez confirmer votre âge"
+msgstr "请确认您的年龄"
 
 #: includes/functions.php:645
 msgid "Start 14-Day Free Trial"
-msgstr "Commencer l'essai gratuit de 14 jours"
+msgstr "开始 14 天免费试用"
 
 #: includes/functions.php:645
 msgid "(risk free, no credit card)"
-msgstr "(sans risque, pas de carte de crédit)"
+msgstr "（无风险，无需信用卡）"
 
 #: includes/functions.php:655
 msgid "Include / exclude certain pages"
-msgstr "Inclure / exclure certaines pages"
+msgstr "包含/排除某些页面"
 
 #: includes/functions.php:656
 msgid "Customizable"
-msgstr "Personnalisable"
+msgstr "可自定义"
 
 #: includes/functions.php:656
 msgid "Free-form text option"
-msgstr "Option de texte libre"
+msgstr "自由格式文本选项"
 
 #: includes/functions.php:657
 msgid "Translation Ready"
-msgstr "Prêt pour la traduction"
+msgstr "准备翻译"
 
 #: includes/functions.php:657
 msgid "Self translate to any language"
-msgstr "Se traduire dans n'importe quelle langue"
+msgstr "自我翻译成任何语言"
 
 #: includes/functions.php:658
 msgid "Brand It"
-msgstr "Marquez-le"
+msgstr "品牌化"
 
 #: includes/functions.php:658
 msgid "Your logo and colors"
-msgstr "Votre logo et vos couleurs"
+msgstr "您的徽标和颜色"
 
 #: includes/functions.php:659
 msgid "Set transparency and color"
-msgstr "Définir la transparence et la couleur"
+msgstr "设置透明度和颜色"
 
 #: includes/functions.php:660
 msgid "Welcome Message"
-msgstr "Message de bienvenue"
+msgstr "欢迎信息"
 
 #: includes/functions.php:660
 msgid "Add a welcome message"
-msgstr "Ajouter un message de bienvenue"
+msgstr "添加欢迎信息"
 
 #: includes/functions.php:661
 msgid "Remember Visitors"
-msgstr "Se souvenir des visiteurs"
+msgstr "记住访客"
 
 #: includes/functions.php:661
 msgid "\"Remember me\" checkbox"
-msgstr "Case à cocher \"Se souvenir de moi\""
+msgstr "\"记住我\" 复选框"
 
 #: includes/functions.php:662
 msgid "Premium Support"
-msgstr "Support Premium"
+msgstr "高级支持"
 
 #: includes/functions.php:662
 msgid "World-class email support from the U.S."
-msgstr "Support par email de classe mondiale depuis les États-Unis."
+msgstr "来自美国的世界级电子邮件支持"
 
 #: includes/functions.php:673
 #, php-format
 msgid ""
 "Opt-in to help us improve %2$s! Some usage data will be sent to our "
 "platform Freemius."
-msgstr ""
-"Optez pour nous aider à améliorer %2$s ! Certaines données d'utilisation "
-"seront envoyées à notre plateforme Freemius."
+msgstr "选择加入以帮助我们改进 %2$s！一些使用数据将被发送到我们的平台 Freemius。"
 
 #: includes/functions.php:687
 #, php-format
@@ -698,38 +631,33 @@ msgid ""
 "In order to enjoy all of the features, functionality and enable a free "
 "trial of premium version, %2$s wants to connect usage data to our platform "
 "Freemius."
-msgstr ""
-"Pour profiter de toutes les fonctionnalités, de la fonctionnalité et "
-"activer un essai gratuit de la version premium, %2$s souhaite connecter les "
-"données d'utilisation à notre plateforme Freemius."
+msgstr "为了享受所有功能和功能，并启用高级版本的免费试用，%2$s 希望将使用数据连接到我们的平台 Freemius。"
 
 #: includes/functions.php:765
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
-msgstr "Vous devez avoir 21 ans pour visiter ce site."
+msgstr "您必须年满 21 岁才能访问此网站。"
 
 #: includes/premium/functions-premium.php:220
 msgid "Self Validation"
-msgstr "Validation autonome"
+msgstr "自我验证"
 
 #: includes/premium/functions-premium.php:228
 msgid "Verify 18+ Recreational"
-msgstr "Vérifiez 18+ Récréatif"
+msgstr "验证 18+ 娱乐"
 
 #: includes/premium/functions-premium.php:236
 msgid "Verify 19+ Recreational"
-msgstr "Vérifiez 19+ Récréatif"
+msgstr "验证 19+ 娱乐"
 
 #: includes/premium/functions-premium.php:244
 msgid "Verify 21+ Recreational"
-msgstr "Vérifiez 21+ Récréatif"
+msgstr "验证 21+ 娱乐"
 
 #: includes/premium/functions-premium.php:252
 msgid "Verify 18+ Medical"
-msgstr "Vérifiez 18+ Médical"
+msgstr "验证 18+ 医疗"
 
 #: includes/premium/functions-premium.php:260
 msgid "Are you 21+ or a 18+ valid medical marijuana patient?"
-msgstr ""
-"Avez-vous 21 ans ou êtes-vous un patient valide de marijuana médicale de 18 "
-"ans ?"
+msgstr "您是否年满 21 岁或是 18 岁以上有效的医疗大麻患者？"

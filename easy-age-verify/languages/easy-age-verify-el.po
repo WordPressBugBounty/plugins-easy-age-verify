@@ -10,17 +10,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 02:01+0000\n"
+"PO-Revision-Date: 2025-07-22 03:10+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: fr-FR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: el\n"
 
 #: easy-age-verify.php
 #: includes/admin/settings.php:107
 #. Plugin Name of the plugin
 msgid "Easy Age Verify"
-msgstr "Vérification d'âge facile"
+msgstr "Εύκολη Επιβεβαίωση Ηλικίας"
 
 #: easy-age-verify.php
 #. Description of the plugin
@@ -28,14 +28,13 @@ msgid ""
 "Adds a mobile friendly age verification screen to adults only, vape or "
 "alcohol websites. Get set-up in minutes."
 msgstr ""
-"Ajoute un écran de vérification d'âge adapté aux mobiles pour les sites "
-"réservés aux adultes, aux produits de vapotage ou à l'alcool. Configuration "
-"en quelques minutes."
+"Προσθέτει μια φιλική προς κινητά οθόνη επιβεβαίωσης ηλικίας σε ιστοσελίδες "
+"μόνο για ενήλικες, ατμιστικά ή αλκοόλ. Ρυθμίστε την σε λίγα λεπτά."
 
 #: easy-age-verify.php
 #. Author of the plugin
 msgid "5 Star Plugins"
-msgstr "Plugins 5 étoiles"
+msgstr "5 Αστερών Πρόσθετα"
 
 #: easy-age-verify.php
 #. Author URI of the plugin
@@ -44,194 +43,196 @@ msgstr "https://5starplugins.com/"
 
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "Ρυθμίσεις"
 
 #: includes/admin/class-easy-age-verify-admin.php:152
 #: includes/admin/class-easy-age-verify-admin.php:163
 #: includes/class-easy-age-verify.php:162
 #: includes/class-easy-age-verify.php:173
 msgid "Cheatin&#8217; huh?"
-msgstr "Tricher&#8217; hein ?"
+msgstr "Απάτη&#8217; ε;"
 
 #: includes/admin/class-easy-age-verify-admin.php:196
 msgid "Enable Verification"
-msgstr "Activer la vérification"
+msgstr "Ενεργοποίηση Επιβεβαίωσης"
 
 #: includes/admin/class-easy-age-verify-admin.php:196
 msgid ""
 "Popup will not show when disabled. Use Testing Mode during setup, then show "
 "when it's ready."
 msgstr ""
-"La fenêtre contextuelle ne s'affichera pas lorsqu'elle est désactivée. "
-"Utilisez le mode test pendant la configuration, puis affichez-la "
-"lorsqu'elle est prête."
+"Το αναδυόμενο παράθυρο δεν θα εμφανιστεί όταν είναι απενεργοποιημένο. "
+"Χρησιμοποιήστε τη Λειτουργία Δοκιμών κατά τη ρύθμιση, στη συνέχεια, "
+"εμφανίστε το όταν είναι έτοιμο."
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
 #: includes/admin/settings.php:452
 #: includes/functions.php:655
 msgid "Page Targeting"
-msgstr "Ciblage de page"
+msgstr "Στοχεύοντας Σελίδα"
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 msgid "Include or exclude a certain page."
-msgstr "Inclure ou exclure une certaine page."
+msgstr "Συμπεριλάβετε ή εξαιρέστε μια συγκεκριμένη σελίδα."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
 msgid "May help caching issues, adds delay to popup."
 msgstr ""
-"Peut aider à résoudre les problèmes de mise en cache, ajoute un délai à la "
-"fenêtre contextuelle."
+"Μπορεί να βοηθήσει σε προβλήματα προσωρινής αποθήκευσης, προσθέτει "
+"καθυστέρηση στο αναδυόμενο παράθυρο."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
 msgid ""
 "Realtime Settings Check <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Vérification des paramètres en temps réel <span class=\"dashicons "
+"Έλεγχος Ρυθμίσεων Σε Πραγματικό Χρόνο <span class=\"dashicons "
 "dashicons-info evavoptionshovertip\" title=\""
 
 #: includes/admin/class-easy-age-verify-admin.php:224
 msgid "Verify For"
-msgstr "Vérifier pour"
+msgstr "Επιβεβαίωση Για"
 
 #: includes/admin/class-easy-age-verify-admin.php:224
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
-"Sélectionnez un paramètre clé en main. Passez à la version Premium pour "
-"modifier le texte et l'arrière-plan."
+"Επιλέξτε μια ρύθμιση έτοιμου προς χρήση. Αναβαθμίστε σε Premium για να "
+"επεξεργαστείτε το κείμενο και το φόντο."
 
 #: includes/admin/class-easy-age-verify-admin.php:237
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
 msgstr ""
-"Mettez à niveau pour modifier le texte du bouton et du message d'erreur. La "
-"version Premium débloque la possibilité de modifier tout le texte pour la "
-"traduction."
+"Αναβαθμίστε για να επεξεργαστείτε το κείμενο του κουμπιού και του μηνύματος "
+"σφάλματος. Το Premium ξεκλειδώνει την επεξεργασία όλων των κειμένων για "
+"μετάφραση."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
-msgstr "Question requise."
+msgstr "Υποχρεωτική ερώτηση."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
 msgid ""
 "Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Invite d'âge <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+"Προτροπή Ηλικίας <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
 
 #: includes/admin/class-easy-age-verify-admin.php:254
 msgid "Optional small print takes HTML link."
-msgstr "Texte en petit caractère facultatif avec lien HTML."
+msgstr "Προαιρετική μικρή εκτύπωση που δέχεται HTML σύνδεσμο."
 
 #: includes/admin/class-easy-age-verify-admin.php:335
 msgid "Require age verification for this content"
-msgstr "Exiger la vérification d'âge pour ce contenu"
+msgstr "Απαιτείτε επιβεβαίωση ηλικίας για αυτό το περιεχόμενο"
 
 #: includes/admin/premium/settings-premium.php:26
 #: includes/admin/premium/settings-premium.php:37
 msgid "Enter text..."
-msgstr "Entrez du texte..."
+msgstr "Εισάγετε κείμενο..."
 
 #: includes/admin/premium/settings-premium.php:49
 msgid "Browser cookie checkbox"
-msgstr "Case à cocher des cookies du navigateur"
+msgstr "Κουτί ελέγχου cookie του προγράμματος περιήγησης"
 
 #: includes/admin/premium/settings-premium.php:53
 msgid "Show “Remember Me” checkbox"
-msgstr "Afficher la case à cocher « Se souvenir de moi »"
+msgstr "Εμφάνιση κουτιού ελέγχου «Να με θυμάστε»"
 
 #: includes/admin/premium/settings-premium.php:68
 msgid "Overlay Color"
-msgstr "Couleur de superposition"
+msgstr "Χρώμα επικάλυψης"
 
 #: includes/admin/premium/settings-premium.php:88
 msgid "Styling"
-msgstr "Mise en forme"
+msgstr "Στυλ"
 
 #: includes/admin/premium/settings-premium.php:92
 msgid "Use built-in CSS on the front-end (recommended)"
-msgstr "Utiliser le CSS intégré sur le front-end (recommandé)"
+msgstr "Χρησιμοποιήστε το ενσωματωμένο CSS στο front-end (συνιστάται)"
 
 #: includes/admin/premium/settings-premium.php:106
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
-msgstr "Oui, je suis majeur"
+msgstr "Ναι, είμαι νόμιμης ηλικίας"
 
 #: includes/admin/premium/settings-premium.php:136
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
-msgstr "Non, je suis mineur"
+msgstr "Όχι, είμαι ανήλικος"
 
 #: includes/admin/premium/settings-premium.php:167
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
-msgstr "Désolé, vous devez être majeur pour entrer sur ce site web."
+msgstr ""
+"Λυπάμαι, πρέπει να είστε νόμιμης ηλικίας για να εισέλθετε σε αυτόν τον "
+"ιστότοπο."
 
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
-msgstr "Afficher sur toutes les pages"
+msgstr "Εμφάνιση σε όλες τις σελίδες"
 
 #: includes/admin/premium/settings-premium.php:248
 msgid "Show on this page only"
-msgstr "Afficher uniquement sur cette page"
+msgstr "Εμφάνιση μόνο σε αυτή τη σελίδα"
 
 #: includes/admin/premium/settings-premium.php:253
 msgid "Show everywhere except this page"
-msgstr "Afficher partout sauf sur cette page"
+msgstr "Εμφάνιση παντού εκτός από αυτή τη σελίδα"
 
 #: includes/admin/premium/settings-premium.php:265
 msgid "Page "
-msgstr "Page "
+msgstr "Σελίδα "
 
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
-msgstr "— Sélectionner une page —"
+msgstr "— Επιλέξτε μια Σελίδα —"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
-msgstr "Options Premium"
+msgstr "Προηγμένες Επιλογές"
 
 #: includes/admin/premium/settings-premium.php:354
 msgid "User Experience"
-msgstr "Expérience utilisateur"
+msgstr "Εμπειρία Χρήστη"
 
 #: includes/admin/premium/settings-premium.php:360
 msgid "Return Visitor Cookie"
-msgstr "Cookie de visiteur de retour"
+msgstr "Cookie Επισκέπτη Επιστροφής"
 
 #: includes/admin/premium/settings-premium.php:360
 msgid "A return visitor cookie allows verified visitors to skip next time."
 msgstr ""
-"Un cookie de visiteur de retour permet aux visiteurs vérifiés de passer la "
-"prochaine fois."
+"Ένα cookie επισκέπτη επιστροφής επιτρέπει στους επαληθευμένους επισκέπτες "
+"να παραλείπουν την επόμενη φορά."
 
 #: includes/admin/premium/settings-premium.php:368
 msgid "Return Visitor Text"
-msgstr "Texte de visiteur de retour"
+msgstr "Κείμενο Επισκέπτη Επιστροφής"
 
 #: includes/admin/premium/settings-premium.php:372
 #: includes/functions.php:438
 msgid "Remember me next time"
-msgstr "Se souvenir de moi la prochaine fois"
+msgstr "Να με θυμάστε την επόμενη φορά"
 
 #: includes/admin/premium/settings-premium.php:383
 msgid "Design Buttons"
-msgstr "Concevoir des boutons"
+msgstr "Σχεδίαση Κουμπιών"
 
 #: includes/admin/premium/settings-premium.php:389
 msgid "Required to verify."
-msgstr "Nécessaire pour vérifier."
+msgstr "Απαιτείται για επαλήθευση."
 
 #: includes/admin/premium/settings-premium.php:389
 msgid ""
 "Yes Button Text <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Texte du bouton Oui <span class=\"dashicons dashicons-info "
+"Κείμενο κουμπιού Ναι <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:397
@@ -240,27 +241,27 @@ msgid ""
 "SMARTtext automatically sets text color to black or white based on button "
 "color."
 msgstr ""
-"SMARTtext définit automatiquement la couleur du texte en noir ou en blanc "
-"en fonction de la couleur du bouton."
+"Το SMARTtext ρυθμίζει αυτόματα το χρώμα του κειμένου σε μαύρο ή λευκό με "
+"βάση το χρώμα του κουμπιού."
 
 #: includes/admin/premium/settings-premium.php:397
 msgid ""
 "Yes Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Couleur du bouton Oui <span class=\"dashicons dashicons-info "
+"Χρώμα κουμπιού Ναι <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:405
 msgid "Required to not verify."
-msgstr "Nécessaire pour ne pas vérifier."
+msgstr "Απαιτείται για να μην επαληθεύσετε."
 
 #: includes/admin/premium/settings-premium.php:405
 msgid ""
 "No Button Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Texte du bouton Non <span class=\"dashicons dashicons-info "
+"Κείμενο κουμπιού Όχι <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:413
@@ -268,80 +269,80 @@ msgid ""
 "No Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Couleur du bouton Non <span class=\"dashicons dashicons-info "
+"Χρώμα κουμπιού Όχι <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:421
 msgid "Required. Appears when user clicks no button."
-msgstr "Nécessaire. Apparaît lorsque l'utilisateur clique sur le bouton non."
+msgstr "Απαιτείται. Εμφανίζεται όταν ο χρήστης κάνει κλικ στο κουμπί Όχι."
 
 #: includes/admin/premium/settings-premium.php:421
 msgid ""
 "Error Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Texte d'erreur <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+"Κείμενο σφάλματος <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:429
 #: includes/functions.php:659
 msgid "Design Background"
-msgstr "Conception de l'arrière-plan"
+msgstr "Σχεδίαση Φόντου"
 
 #: includes/admin/premium/settings-premium.php:435
 msgid ""
 "SMARTtext automatically sets text color to black or white based on "
 "background color."
 msgstr ""
-"SMARTtext définit automatiquement la couleur du texte en noir ou en blanc "
-"en fonction de la couleur de l'arrière-plan."
+"Το SMARTtext ρυθμίζει αυτόματα το χρώμα του κειμένου σε μαύρο ή λευκό με "
+"βάση το χρώμα του φόντου."
 
 #: includes/admin/premium/settings-premium.php:435
 msgid ""
 "Background Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Couleur d'arrière-plan <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+"Χρώμα φόντου <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
 
 #: includes/admin/premium/settings-premium.php:443
 msgid "Hide content 0-100%."
-msgstr "Masquer le contenu 0-100%."
+msgstr "Απόκρυψη περιεχομένου 0-100%."
 
 #: includes/admin/premium/settings-premium.php:443
 msgid ""
 "Background Opacity <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Opacité de l'arrière-plan <span class=\"dashicons dashicons-info "
+"Αδιαφάνεια φόντου <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:451
 msgid "Customize Branding"
-msgstr "Personnaliser la marque"
+msgstr "Προσαρμογή Branding"
 
 #: includes/admin/premium/settings-premium.php:457
 msgid "Optional headline centers below logo."
-msgstr "Titre facultatif centré sous le logo."
+msgstr "Προαιρετικός τίτλος κεντρώνεται κάτω από το λογότυπο."
 
 #: includes/admin/premium/settings-premium.php:457
 msgid ""
 "Add Headline <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Ajouter un titre <span class=\"dashicons dashicons-info "
+"Προσθήκη Τίτλου <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:465
 msgid "Optional body copy."
-msgstr "Texte de corps facultatif."
+msgstr "Προαιρετικό κείμενο σώματος."
 
 #: includes/admin/premium/settings-premium.php:465
 msgid ""
 "Add Text Below Headline <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Ajouter du texte sous le titre <span class=\"dashicons dashicons-info "
+"Προσθήκη Κειμένου Κάτω από τον Τίτλο <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
 #: includes/admin/premium/settings-premium.php:477
@@ -349,30 +350,30 @@ msgid ""
 "Upload any size or dimension. The responsive display resizes it to 650 "
 "pixels max tall or wide."
 msgstr ""
-"Téléchargez n'importe quelle taille ou dimension. L'affichage réactif le "
-"redimensionne à un maximum de 650 pixels de haut ou de large."
+"Ανεβάστε οποιοδήποτε μέγεθος ή διάσταση. Η ευέλικτη εμφάνιση το προσαρμόζει "
+"σε μέγιστο ύψος ή πλάτος 650 εικονοστοιχείων."
 
 #: includes/admin/premium/settings-premium.php:477
 msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr ""
-"Votre logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+"Το Λογότυπό σας <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
 msgstr ""
-"<strong>Effacer le cookie :</strong> La fenêtre contextuelle s'est arrêtée "
-"après avoir cliqué sur oui ? <br/>"
+"<strong>Καθαρίστε το Cookie:</strong> Το αναδυόμενο παράθυρο σταμάτησε μετά "
+"την επιλογή ναι; <br/>"
 
 #: includes/admin/settings.php:125
 msgid ""
 "Detects if a cookie is set in your browser from this plugin and clears it. "
 "Refresh this page to recheck."
 msgstr ""
-"Détecte si un cookie est défini dans votre navigateur par ce plugin et le "
-"supprime. Rafraîchissez cette page pour vérifier à nouveau."
+"Ανιχνεύει αν έχει ρυθμιστεί ένα cookie στον περιηγητή σας από αυτό το "
+"πρόσθετο και το καθαρίζει. Ανανεώστε αυτή τη σελίδα για να ελέγξετε ξανά."
 
 #: includes/admin/settings.php:139
 msgid ""
@@ -381,11 +382,11 @@ msgid ""
 "target=\"_blank\">Knowledge Base</a> or to send an email for Premium "
 "support."
 msgstr ""
-"Besoin d'aide ? Cliquez sur l'icône  en bas à droite pour rechercher dans "
-"notre <a "
+"Χρειάζεστε βοήθεια; Κάντε κλικ στο εικονίδιο στο κάτω δεξί μέρος για να "
+"αναζητήσετε τη <a "
 "href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
-"target=\"_blank\">Base de connaissances</a> ou pour envoyer un e-mail pour "
-"un support premium."
+"target=\"_blank\">Βάση Γνώσεων</a> ή για να στείλετε ένα email για Premium "
+"υποστήριξη."
 
 #: includes/admin/settings.php:140
 msgid ""
@@ -393,9 +394,10 @@ msgid ""
 "href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
 "not-popping-up\"  target=\"_blank\">My age window isn't showing.</a>"
 msgstr ""
-"Lire : <a "
+"Διαβάστε: <a "
 "href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
-"not-popping-up\"  target=\"_blank\">Ma fenêtre d'âge ne s'affiche pas.</a>"
+"not-popping-up\"  target=\"_blank\">Το παράθυρο ηλικίας μου δεν "
+"εμφανίζεται.</a>"
 
 #: includes/admin/settings.php:141
 msgid ""
@@ -403,18 +405,17 @@ msgid ""
 "to report a bug, suggest a feature, ask a billing question, or request "
 "Premium support."
 msgstr ""
-"<a "
-"href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Contactez-nous</"
-"a> pour signaler un bug, suggérer une fonctionnalité, poser une question de "
-"facturation ou demander un support premium."
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Επικοινωνήστε "
+"μαζί μας</a> για να αναφέρετε ένα σφάλμα, να προτείνετε μια δυνατότητα, να "
+"ρωτήσετε σχετικά με χρέωση ή να ζητήσετε Premium υποστήριξη."
 
 #: includes/admin/settings.php:142
 msgid ""
 "<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visit The "
 "Support Center</a> for more."
 msgstr ""
-"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visitez le "
-"Centre de support</a> pour en savoir plus."
+"<a href=\"https://5starplugins.com/get-support/\" "
+"target=_blank>Επισκεφθείτε το Κέντρο Υποστήριξης</a> για περισσότερα."
 
 #: includes/admin/settings.php:143
 msgid ""
@@ -422,9 +423,9 @@ msgid ""
 "href=\"https://get.5starplugins.com/pspforageverify/\" "
 "target=\"_blank\">perfectly timed marketing popups</a>."
 msgstr ""
-"Utilisez Age Verify avec Pretty Simple Popup pour <a "
+"Χρησιμοποιήστε το Age Verify με το Pretty Simple Popup για <a "
 "href=\"https://get.5starplugins.com/pspforageverify/\" "
-"target=\"_blank\">des popups marketing parfaitement chronométrés</a>."
+"target=\"_blank\">τέλεια χρονομετρημένα μάρκετινγκ popups</a>."
 
 #: includes/admin/settings.php:144
 msgid ""
@@ -432,9 +433,9 @@ msgid ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Rate This Plugin</a>"
 msgstr ""
-"Aimez-vous ça ? <a "
+"Σας αρέσει αυτό; <a "
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
-"?rate=5#new-post\" target=_blank>Évaluez ce plugin</a>"
+"?rate=5#new-post\" target=_blank>Βαθμολογήστε αυτό το πρόσθετο</a>"
 
 #: includes/admin/settings.php:145
 #, php-format
@@ -442,88 +443,88 @@ msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
 "in San Diego, CA"
 msgstr ""
-"Développé et supporté par <a href=\"%s\" target=_blank>5 Star Plugins</a> à "
-"San Diego, CA"
+"Αναπτύχθηκε και υποστηρίζεται από <a href=\"%s\" target=_blank>5 Star "
+"Plugins</a> στο Σαν Ντιέγκο, CA"
 
 #: includes/admin/settings.php:170
 msgid "Require Verification For:"
-msgstr "Exiger une vérification pour :"
+msgstr "Απαιτείται Επιβεβαίωση Για:"
 
 #: includes/admin/settings.php:174
 msgid "Entire site"
-msgstr "L'ensemble du site"
+msgstr "Ολόκληρη η ιστοσελίδα"
 
 #: includes/admin/settings.php:179
 msgid "Specific content"
-msgstr "Contenu spécifique"
+msgstr "Συγκεκριμένο περιεχόμενο"
 
 #: includes/admin/settings.php:198
 msgid "Enable Verification:"
-msgstr "Activer la vérification :"
+msgstr "Ενεργοποίηση Επιβεβαίωσης:"
 
 #: includes/admin/settings.php:202
 msgid "Disable verification to all visitors"
-msgstr "Désactiver la vérification pour tous les visiteurs"
+msgstr "Απενεργοποιήστε την επιβεβαίωση για όλους τους επισκέπτες"
 
 #: includes/admin/settings.php:207
 msgid "[TESTING MODE] Show only to logged-in Admins"
-msgstr "[MODE TEST] Afficher uniquement aux administrateurs connectés"
+msgstr "[ΛΕΙΤΟΥΡΓΙΑ ΔΟΚΙΜΗΣ] Εμφάνιση μόνο σε συνδεδεμένους Διαχειριστές"
 
 #: includes/admin/settings.php:212
 msgid "Show verification except to logged-in users"
-msgstr "Afficher la vérification sauf aux utilisateurs connectés"
+msgstr "Εμφάνιση επιβεβαίωσης εκτός από τους συνδεδεμένους χρήστες"
 
 #: includes/admin/settings.php:217
 msgid "Show verification to all visitors"
-msgstr "Afficher la vérification à tous les visiteurs"
+msgstr "Εμφάνιση επιβεβαίωσης σε όλους τους επισκέπτες"
 
 #: includes/admin/settings.php:236
 msgid "Select verification type:"
-msgstr "Sélectionnez le type de vérification :"
+msgstr "Επιλέξτε τύπο επιβεβαίωσης:"
 
 #: includes/admin/settings.php:240
 msgid "Adults Only 18+"
-msgstr "Adultes uniquement 18+"
+msgstr "Μόνο για Ενήλικες 18+"
 
 #: includes/admin/settings.php:249
 msgid "Alcohol"
-msgstr "Alcool"
+msgstr "Αλκοόλ"
 
 #: includes/admin/settings.php:258
 msgid "Vape"
-msgstr "Vape"
+msgstr "Ατμιστικό"
 
 #: includes/admin/settings.php:275
 msgid "years old or older to view this site"
-msgstr "ans ou plus pour voir ce site"
+msgstr "χρόνια ή μεγαλύτεροι για να δουν αυτόν τον ιστότοπο"
 
 #: includes/admin/settings.php:286
 msgid "minutes"
-msgstr "minutes"
+msgstr "λεπτά"
 
 #: includes/admin/settings.php:299
 msgid "Membership"
-msgstr "Adhésion"
+msgstr "Συνδρομή"
 
 #: includes/admin/settings.php:303
 msgid "Require users to confirm their age before registering to this site"
 msgstr ""
-"Exiger des utilisateurs qu'ils confirment leur âge avant de s'inscrire sur "
-"ce site"
+"Απαιτείται οι χρήστες να επιβεβαιώσουν την ηλικία τους πριν εγγραφούν σε "
+"αυτόν τον ιστότοπο"
 
 #: includes/admin/settings.php:322
 #: includes/admin/settings.php:331
 #: includes/functions.php:588
 msgid "Please verify you are 18 years or older to enter."
-msgstr "Veuillez vérifier que vous avez 18 ans ou plus pour entrer."
+msgstr "Παρακαλώ επιβεβαιώστε ότι είστε 18 ετών ή μεγαλύτεροι για να εισέλθετε."
 
 #: includes/admin/settings.php:325
 msgid "Are you of legal drinking age 21 or older?"
-msgstr "Avez-vous l'âge légal pour boire, 21 ans ou plus ?"
+msgstr "Είστε της νόμιμης ηλικίας κατανάλωσης αλκοόλ 21 ετών ή μεγαλύτεροι;"
 
 #: includes/admin/settings.php:328
 msgid "Are you of legal smoking age?"
-msgstr "Avez-vous l'âge légal pour fumer ?"
+msgstr "Είστε της νόμιμης ηλικίας καπνίσματος;"
 
 #: includes/admin/settings.php:358
 #: includes/admin/settings.php:367
@@ -536,14 +537,13 @@ msgid ""
 "material offends you or it is illegal to view in your location please exit "
 "now."
 msgstr ""
-"AVERTISSEMENT CONTENU ADULTE !\n"
-"Ce site est réservé aux adultes et peut contenir du contenu de nature "
-"adulte ou des matériaux explicites restreints par l'âge, que certains "
-"visiteurs peuvent trouver offensants. En entrant, vous confirmez que vous "
-"avez 18 ans ou plus et que vous n'êtes pas offensé par le visionnage de ce "
-"type de matériel. Si vous avez moins de 18 ans, si ce type de matériel vous "
-"offense ou s'il est illégal de le visionner dans votre région, veuillez "
-"sortir maintenant."
+"ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΠΕΡΙΕΧΟΜΕΝΟΥ ΓΙΑ ΕΝΗΛΙΚΟΥΣ!\n"
+"Αυτός ο ιστότοπος προορίζεται μόνο για ενήλικες και μπορεί να περιέχει "
+"περιεχόμενο ενηλίκων ή περιορισμένο από ηλικία, ρητό υλικό, το οποίο "
+"ορισμένοι θεατές μπορεί να βρουν προσβλητικό. Με την είσοδο επιβεβαιώνετε "
+"ότι είστε 18+ ετών και δεν προσβάλλεστε από την προβολή τέτοιου υλικού. Εάν "
+"είστε κάτω των 18 ετών, εάν τέτοιο υλικό σας προσβάλλει ή είναι παράνομο να "
+"το δείτε στην τοποθεσία σας, παρακαλώ εξέλθετε τώρα."
 
 #: includes/admin/settings.php:361
 msgid ""
@@ -551,9 +551,10 @@ msgid ""
 "By entering this website, you certify that you are of legal drinking age in "
 "the location in which you reside (age 21+ in the United States)."
 msgstr ""
-"LES PRODUITS ALCOOLIQUES SUR CE SITE SONT RÉSERVÉS AUX ADULTES.\n"
-"En entrant sur ce site, vous certifiez que vous avez l'âge légal pour boire "
-"dans le lieu où vous résidez (âge 21+ aux États-Unis)."
+"ΤΑ ΠΡΟΪΌΝΤΑ ΑΛΚΟΟΛ ΣΕ ΑΥΤΟΝ ΤΟΝ ΙΣΤΟΤΟΠΟ ΠΡΟΟΡΙΖΟΝΤΑΙ ΜΟΝΟ ΓΙΑ ΕΝΗΛΙΚΕΣ.\n"
+"Με την είσοδό σας σε αυτόν τον ιστότοπο, πιστοποιείτε ότι είστε της νόμιμης "
+"ηλικίας κατανάλωσης αλκοόλ στην τοποθεσία όπου διαμένετε (ηλικία 21+ στις "
+"Ηνωμένες Πολιτείες)."
 
 #: includes/admin/settings.php:364
 msgid ""
@@ -561,127 +562,128 @@ msgid ""
 "By entering this website, you certify that you are of legal smoking age in "
 "the location in which you reside (age 18+, 19+ and 21+ in some areas)."
 msgstr ""
-"LES PRODUITS SUR CE SITE SONT RÉSERVÉS AUX ADULTES DE L'ÂGE LÉGAL POUR "
-"FUMER.\n"
-"En entrant sur ce site, vous certifiez que vous avez l'âge légal pour fumer "
-"dans le lieu où vous résidez (âge 18+, 19+ et 21+ dans certaines zones)."
+"ΤΑ ΠΡΟΪΌΝΤΑ ΣΕ ΑΥΤΟΝ ΤΟΝ ΙΣΤΟΤΟΠΟ ΠΡΟΟΡΙΖΟΝΤΑΙ ΓΙΑ ΕΝΗΛΙΚΕΣ ΤΗΣ ΝΟΜΙΜΗΣ "
+"ΗΛΙΚΙΑΣ ΚΑΠΝΙΣΜΑΤΟΣ.\n"
+"Με την είσοδό σας σε αυτόν τον ιστότοπο, πιστοποιείτε ότι είστε της νόμιμης "
+"ηλικίας καπνίσματος στην τοποθεσία όπου διαμένετε (ηλικία 18+, 19+ και 21+ "
+"σε ορισμένες περιοχές)."
 
 #: includes/admin/settings.php:406
 msgid "Realtime Settings Check"
-msgstr "Vérification des paramètres en temps réel"
+msgstr "Έλεγχος Ρυθμίσεων σε Πραγματικό Χρόνο"
 
 #: includes/admin/settings.php:410
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr ""
-"Confirmer les paramètres \"Activer la vérification\" avant d'afficher la "
-"popup"
+"Επιβεβαιώστε τις ρυθμίσεις \"Ενεργοποίηση Επιβεβαίωσης\" πριν εμφανίσετε το "
+"αναδυόμενο παράθυρο"
 
 #: includes/admin/settings.php:437
 msgid "Date dropdowns"
-msgstr "Menus déroulants de date"
+msgstr "Αναπτυσσόμενα ημερολόγια"
 
 #: includes/admin/settings.php:438
 msgid "Inputs"
-msgstr "Entrées"
+msgstr "Είσοδοι"
 
 #: includes/admin/settings.php:439
 msgid "Confirm checkbox"
-msgstr "Confirmer la case à cocher"
+msgstr "Επιβεβαίωση επιλογής"
 
 #: includes/admin/settings.php:456
 msgid "Show on all pages (upgrade to unlock)"
-msgstr "Afficher sur toutes les pages (mise à niveau pour débloquer)"
+msgstr "Εμφάνιση σε όλες τις σελίδες (αναβάθμιση για ξεκλείδωμα)"
 
 #: includes/admin/settings.php:461
 msgid "Show on this page only (upgrade to unlock)"
-msgstr "Afficher uniquement sur cette page (mise à niveau pour débloquer)"
+msgstr "Εμφάνιση μόνο σε αυτή τη σελίδα (αναβάθμιση για ξεκλείδωμα)"
 
 #: includes/admin/settings.php:466
 msgid "Show everywhere except this page (upgrade to unlock)"
-msgstr "Afficher partout sauf sur cette page (mise à niveau pour débloquer)"
+msgstr "Εμφάνιση παντού εκτός από αυτή τη σελίδα (αναβάθμιση για ξεκλείδωμα)"
 
 #: includes/class-easy-age-verify.php:342
 #, php-format
 msgid "You must be %1s years old to view this content."
-msgstr "Vous devez avoir %1s ans pour voir ce contenu."
+msgstr "Πρέπει να είστε %1s ετών για να δείτε αυτό το περιεχόμενο."
 
 #: includes/class-easy-age-verify.php:342
 #: includes/functions.php:739
 #: includes/premium/functions-premium.php:141
 msgid "Please verify your age"
-msgstr "Veuillez vérifier votre âge"
+msgstr "Παρακαλώ επιβεβαιώστε την ηλικία σας"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
-msgstr "Entrer le site &raquo;"
+msgstr "Εισάγετε τον ιστότοπο &raquo;"
 
 #: includes/functions.php:604
 msgid "Please confirm your age"
-msgstr "Veuillez confirmer votre âge"
+msgstr "Παρακαλώ επιβεβαιώστε την ηλικία σας"
 
 #: includes/functions.php:645
 msgid "Start 14-Day Free Trial"
-msgstr "Commencer l'essai gratuit de 14 jours"
+msgstr "Ξεκινήστε 14ήμερη δωρεάν δοκιμή"
 
 #: includes/functions.php:645
 msgid "(risk free, no credit card)"
-msgstr "(sans risque, pas de carte de crédit)"
+msgstr "(χωρίς ρίσκο, χωρίς πιστωτική κάρτα)"
 
 #: includes/functions.php:655
 msgid "Include / exclude certain pages"
-msgstr "Inclure / exclure certaines pages"
+msgstr "Συμπερίληψη / αποκλεισμός ορισμένων σελίδων"
 
 #: includes/functions.php:656
 msgid "Customizable"
-msgstr "Personnalisable"
+msgstr "Προσαρμόσιμο"
 
 #: includes/functions.php:656
 msgid "Free-form text option"
-msgstr "Option de texte libre"
+msgstr "Επιλογή κειμένου ελεύθερης μορφής"
 
 #: includes/functions.php:657
 msgid "Translation Ready"
-msgstr "Prêt pour la traduction"
+msgstr "Έτοιμο για μετάφραση"
 
 #: includes/functions.php:657
 msgid "Self translate to any language"
-msgstr "Se traduire dans n'importe quelle langue"
+msgstr "Αυτομετάφραση σε οποιαδήποτε γλώσσα"
 
 #: includes/functions.php:658
 msgid "Brand It"
-msgstr "Marquez-le"
+msgstr "Μάρκαρε το"
 
 #: includes/functions.php:658
 msgid "Your logo and colors"
-msgstr "Votre logo et vos couleurs"
+msgstr "Το λογότυπό σας και τα χρώματα"
 
 #: includes/functions.php:659
 msgid "Set transparency and color"
-msgstr "Définir la transparence et la couleur"
+msgstr "Ορίστε τη διαφάνεια και το χρώμα"
 
 #: includes/functions.php:660
 msgid "Welcome Message"
-msgstr "Message de bienvenue"
+msgstr "Μήνυμα καλωσορίσματος"
 
 #: includes/functions.php:660
 msgid "Add a welcome message"
-msgstr "Ajouter un message de bienvenue"
+msgstr "Προσθέστε ένα μήνυμα καλωσορίσματος"
 
 #: includes/functions.php:661
 msgid "Remember Visitors"
-msgstr "Se souvenir des visiteurs"
+msgstr "Να θυμάστε τους επισκέπτες"
 
 #: includes/functions.php:661
 msgid "\"Remember me\" checkbox"
-msgstr "Case à cocher \"Se souvenir de moi\""
+msgstr "\"Να με θυμάσαι\" πλαίσιο ελέγχου"
 
 #: includes/functions.php:662
 msgid "Premium Support"
-msgstr "Support Premium"
+msgstr "Premium υποστήριξη"
 
 #: includes/functions.php:662
 msgid "World-class email support from the U.S."
-msgstr "Support par email de classe mondiale depuis les États-Unis."
+msgstr "Υποστήριξη μέσω email παγκόσμιας κλάσης από τις Η.Π.Α."
 
 #: includes/functions.php:673
 #, php-format
@@ -689,8 +691,8 @@ msgid ""
 "Opt-in to help us improve %2$s! Some usage data will be sent to our "
 "platform Freemius."
 msgstr ""
-"Optez pour nous aider à améliorer %2$s ! Certaines données d'utilisation "
-"seront envoyées à notre plateforme Freemius."
+"Συμμετοχή για να μας βοηθήσετε να βελτιώσουμε το %2$s! Ορισμένα δεδομένα "
+"χρήσης θα σταλούν στην πλατφόρμα μας Freemius."
 
 #: includes/functions.php:687
 #, php-format
@@ -699,37 +701,35 @@ msgid ""
 "trial of premium version, %2$s wants to connect usage data to our platform "
 "Freemius."
 msgstr ""
-"Pour profiter de toutes les fonctionnalités, de la fonctionnalité et "
-"activer un essai gratuit de la version premium, %2$s souhaite connecter les "
-"données d'utilisation à notre plateforme Freemius."
+"Για να απολαύσετε όλες τις δυνατότητες και να ενεργοποιήσετε μια δωρεάν "
+"δοκιμή της premium έκδοσης, το %2$s θέλει να συνδέσει τα δεδομένα χρήσης "
+"στην πλατφόρμα μας Freemius."
 
 #: includes/functions.php:765
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
-msgstr "Vous devez avoir 21 ans pour visiter ce site."
+msgstr "Πρέπει να είστε 21 ετών για να επισκεφθείτε αυτόν τον ιστότοπο."
 
 #: includes/premium/functions-premium.php:220
 msgid "Self Validation"
-msgstr "Validation autonome"
+msgstr "Αυτο-επικύρωση"
 
 #: includes/premium/functions-premium.php:228
 msgid "Verify 18+ Recreational"
-msgstr "Vérifiez 18+ Récréatif"
+msgstr "Επικύρωση 18+ Αναψυχής"
 
 #: includes/premium/functions-premium.php:236
 msgid "Verify 19+ Recreational"
-msgstr "Vérifiez 19+ Récréatif"
+msgstr "Επικύρωση 19+ Αναψυχής"
 
 #: includes/premium/functions-premium.php:244
 msgid "Verify 21+ Recreational"
-msgstr "Vérifiez 21+ Récréatif"
+msgstr "Επικύρωση 21+ Αναψυχής"
 
 #: includes/premium/functions-premium.php:252
 msgid "Verify 18+ Medical"
-msgstr "Vérifiez 18+ Médical"
+msgstr "Επικύρωση 18+ Ιατρικής"
 
 #: includes/premium/functions-premium.php:260
 msgid "Are you 21+ or a 18+ valid medical marijuana patient?"
-msgstr ""
-"Avez-vous 21 ans ou êtes-vous un patient valide de marijuana médicale de 18 "
-"ans ?"
+msgstr "Είστε 21+ ή 18+ έγκυρος ασθενής ιατρικής κάνναβης;"

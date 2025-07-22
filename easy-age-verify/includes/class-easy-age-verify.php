@@ -36,11 +36,11 @@ final class Easy_Age_Verify {
     protected $version;
 
     /**
-     * The plugin version.
+     * The plugin version. Used to append the version to various files and messages to ensure the browser does not cache them.
      *
      * @since 0.2.6
      */
-    const VERSION = '2.0.2';
+    const VERSION = '2.0.3';
 
     /**
      * The only instance of this class.

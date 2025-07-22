@@ -1,0 +1,723 @@
+# Copyright (C) 2025 5 Star Plugins
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Age Verify 2.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-age-verify\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
+"PO-Revision-Date: 2025-07-22 03:06+0000\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: easy-age-verify\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hi-IN\n"
+
+#: easy-age-verify.php
+#: includes/admin/settings.php:107
+#. Plugin Name of the plugin
+msgid "Easy Age Verify"
+msgstr "ईज़ी एज वेरिफाई"
+
+#: easy-age-verify.php
+#. Description of the plugin
+msgid ""
+"Adds a mobile friendly age verification screen to adults only, vape or "
+"alcohol websites. Get set-up in minutes."
+msgstr ""
+"बड़ों के लिए, वाइप या शराब वेबसाइटों पर एक मोबाइल-अनुकूल उम्र सत्यापन "
+"स्क्रीन जोड़ता है। मिनटों में सेटअप करें।"
+
+#: easy-age-verify.php
+#. Author of the plugin
+msgid "5 Star Plugins"
+msgstr "5 स्टार प्लगइन्स"
+
+#: easy-age-verify.php
+#. Author URI of the plugin
+msgid "https://5starplugins.com/"
+msgstr "https://5starplugins.com/"
+
+#: includes/admin/class-easy-age-verify-admin.php:136
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#: includes/admin/class-easy-age-verify-admin.php:152
+#: includes/admin/class-easy-age-verify-admin.php:163
+#: includes/class-easy-age-verify.php:162
+#: includes/class-easy-age-verify.php:173
+msgid "Cheatin&#8217; huh?"
+msgstr "धोखा दे रहे हैं, है ना?"
+
+#: includes/admin/class-easy-age-verify-admin.php:196
+msgid "Enable Verification"
+msgstr "सत्यापन सक्षम करें"
+
+#: includes/admin/class-easy-age-verify-admin.php:196
+msgid ""
+"Popup will not show when disabled. Use Testing Mode during setup, then show "
+"when it's ready."
+msgstr ""
+"जब अक्षम किया जाता है तो पॉपअप नहीं दिखेगा। सेटअप के दौरान परीक्षण मोड का "
+"उपयोग करें, फिर जब यह तैयार हो तो दिखाएँ।"
+
+#: includes/admin/class-easy-age-verify-admin.php:205
+#: includes/admin/premium/settings-premium.php:239
+#: includes/admin/settings.php:452
+#: includes/functions.php:655
+msgid "Page Targeting"
+msgstr "पृष्ठ लक्षित करना"
+
+#: includes/admin/class-easy-age-verify-admin.php:205
+msgid "Include or exclude a certain page."
+msgstr "किसी विशेष पृष्ठ को शामिल या बाहर करें।"
+
+#: includes/admin/class-easy-age-verify-admin.php:215
+msgid "May help caching issues, adds delay to popup."
+msgstr "कैशिंग समस्याओं में मदद कर सकता है, पॉपअप में देरी जोड़ता है।"
+
+#: includes/admin/class-easy-age-verify-admin.php:215
+msgid ""
+"Realtime Settings Check <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"रीयलटाइम सेटिंग्स जांचें <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/class-easy-age-verify-admin.php:224
+msgid "Verify For"
+msgstr "सत्यापन के लिए"
+
+#: includes/admin/class-easy-age-verify-admin.php:224
+msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
+msgstr ""
+"एक टर्नकी सेटिंग चुनें। टेक्स्ट और पृष्ठभूमि संपादित करने के लिए प्रीमियम "
+"में अपग्रेड करें।"
+
+#: includes/admin/class-easy-age-verify-admin.php:237
+msgid ""
+"Upgrade to edit button and error message text. Premium unlocks editing of "
+"all text for translation."
+msgstr ""
+"बटन और त्रुटि संदेश पाठ संपादित करने के लिए अपग्रेड करें। प्रीमियम सभी पाठ "
+"के अनुवाद के लिए संपादन को अनलॉक करता है।"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Required question."
+msgstr "आवश्यक प्रश्न।"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
+msgid ""
+"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"उम्र संकेत <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Optional small print takes HTML link."
+msgstr "वैकल्पिक छोटे प्रिंट में HTML लिंक लेता है।"
+
+#: includes/admin/class-easy-age-verify-admin.php:335
+msgid "Require age verification for this content"
+msgstr "इस सामग्री के लिए उम्र सत्यापन की आवश्यकता है"
+
+#: includes/admin/premium/settings-premium.php:26
+#: includes/admin/premium/settings-premium.php:37
+msgid "Enter text..."
+msgstr "पाठ दर्ज करें..."
+
+#: includes/admin/premium/settings-premium.php:49
+msgid "Browser cookie checkbox"
+msgstr "ब्राउज़र कुकी चेकबॉक्स"
+
+#: includes/admin/premium/settings-premium.php:53
+msgid "Show “Remember Me” checkbox"
+msgstr "“मुझे याद रखें” चेकबॉक्स दिखाएं"
+
+#: includes/admin/premium/settings-premium.php:68
+msgid "Overlay Color"
+msgstr "ओवरले रंग"
+
+#: includes/admin/premium/settings-premium.php:88
+msgid "Styling"
+msgstr "शैलीकरण"
+
+#: includes/admin/premium/settings-premium.php:92
+msgid "Use built-in CSS on the front-end (recommended)"
+msgstr "फ्रंट-एंड पर अंतर्निहित CSS का उपयोग करें (अनुशंसित)"
+
+#: includes/admin/premium/settings-premium.php:106
+#: includes/premium/functions-premium.php:23
+msgid "Yes I am of legal age"
+msgstr "हाँ, मैं कानूनी उम्र का हूँ"
+
+#: includes/admin/premium/settings-premium.php:136
+#: includes/premium/functions-premium.php:87
+msgid "No I am under age"
+msgstr "नहीं, मैं अवयस्क हूँ"
+
+#: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:409
+#: includes/premium/functions-premium.php:58
+msgid "Sorry, you must be of legal age to enter this website."
+msgstr ""
+"क्षमा करें, इस वेबसाइट पर प्रवेश करने के लिए आपको कानूनी उम्र का होना "
+"आवश्यक है।"
+
+#: includes/admin/premium/settings-premium.php:243
+msgid "Show on all pages"
+msgstr "सभी पृष्ठों पर दिखाएँ"
+
+#: includes/admin/premium/settings-premium.php:248
+msgid "Show on this page only"
+msgstr "केवल इस पृष्ठ पर दिखाएँ"
+
+#: includes/admin/premium/settings-premium.php:253
+msgid "Show everywhere except this page"
+msgstr "इस पृष्ठ को छोड़कर हर जगह दिखाएँ"
+
+#: includes/admin/premium/settings-premium.php:265
+msgid "Page "
+msgstr "पृष्ठ "
+
+#: includes/admin/premium/settings-premium.php:274
+msgid "— Select a Page —"
+msgstr "— एक पृष्ठ चुनें —"
+
+#: includes/admin/premium/settings-premium.php:348
+msgid "Premium Options"
+msgstr "प्रीमियम विकल्प"
+
+#: includes/admin/premium/settings-premium.php:354
+msgid "User Experience"
+msgstr "उपयोगकर्ता अनुभव"
+
+#: includes/admin/premium/settings-premium.php:360
+msgid "Return Visitor Cookie"
+msgstr "रिटर्न विज़िटर कुकी"
+
+#: includes/admin/premium/settings-premium.php:360
+msgid "A return visitor cookie allows verified visitors to skip next time."
+msgstr ""
+"एक रिटर्न विज़िटर कुकी प्रमाणित विज़िटर्स को अगली बार छोड़ने की अनुमति देती "
+"है।"
+
+#: includes/admin/premium/settings-premium.php:368
+msgid "Return Visitor Text"
+msgstr "रिटर्न विज़िटर पाठ"
+
+#: includes/admin/premium/settings-premium.php:372
+#: includes/functions.php:438
+msgid "Remember me next time"
+msgstr "मुझे अगली बार याद रखें"
+
+#: includes/admin/premium/settings-premium.php:383
+msgid "Design Buttons"
+msgstr "बटन डिजाइन करें"
+
+#: includes/admin/premium/settings-premium.php:389
+msgid "Required to verify."
+msgstr "सत्यापित करने के लिए आवश्यक।"
+
+#: includes/admin/premium/settings-premium.php:389
+msgid ""
+"Yes Button Text <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"हाँ बटन पाठ <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:397
+#: includes/admin/premium/settings-premium.php:413
+msgid ""
+"SMARTtext automatically sets text color to black or white based on button "
+"color."
+msgstr ""
+"SMARTtext स्वचालित रूप से बटन के रंग के आधार पर पाठ का रंग काला या सफेद सेट "
+"करता है।"
+
+#: includes/admin/premium/settings-premium.php:397
+msgid ""
+"Yes Button Color <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"हाँ बटन रंग <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:405
+msgid "Required to not verify."
+msgstr "सत्यापित न करने के लिए आवश्यक।"
+
+#: includes/admin/premium/settings-premium.php:405
+msgid ""
+"No Button Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"नहीं बटन पाठ <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:413
+msgid ""
+"No Button Color <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"नहीं बटन रंग <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:421
+msgid "Required. Appears when user clicks no button."
+msgstr "आवश्यक। जब उपयोगकर्ता नहीं बटन पर क्लिक करता है तब प्रकट होता है।"
+
+#: includes/admin/premium/settings-premium.php:421
+msgid ""
+"Error Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"त्रुटि पाठ <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:429
+#: includes/functions.php:659
+msgid "Design Background"
+msgstr "डिज़ाइन पृष्ठभूमि"
+
+#: includes/admin/premium/settings-premium.php:435
+msgid ""
+"SMARTtext automatically sets text color to black or white based on "
+"background color."
+msgstr ""
+"SMARTtext स्वचालित रूप से पृष्ठभूमि के रंग के आधार पर पाठ का रंग काला या "
+"सफेद सेट करता है।"
+
+#: includes/admin/premium/settings-premium.php:435
+msgid ""
+"Background Color <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"पृष्ठभूमि रंग <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:443
+msgid "Hide content 0-100%."
+msgstr "सामग्री छिपाएं 0-100%।"
+
+#: includes/admin/premium/settings-premium.php:443
+msgid ""
+"Background Opacity <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"पृष्ठभूमि पारदर्शिता <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:451
+msgid "Customize Branding"
+msgstr "ब्रांडिंग कस्टमाइज़ करें"
+
+#: includes/admin/premium/settings-premium.php:457
+msgid "Optional headline centers below logo."
+msgstr "वैकल्पिक शीर्षक लोगो के नीचे केंद्रित होता है।"
+
+#: includes/admin/premium/settings-premium.php:457
+msgid ""
+"Add Headline <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"शीर्षक जोड़ें <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:465
+msgid "Optional body copy."
+msgstr "वैकल्पिक शरीर की कॉपी।"
+
+#: includes/admin/premium/settings-premium.php:465
+msgid ""
+"Add Text Below Headline <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"शीर्षक के नीचे पाठ जोड़ें <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:477
+msgid ""
+"Upload any size or dimension. The responsive display resizes it to 650 "
+"pixels max tall or wide."
+msgstr ""
+"कोई भी आकार या माप अपलोड करें। प्रतिक्रियाशील प्रदर्शन इसे अधिकतम 650 "
+"पिक्सल ऊँचा या चौड़ा करता है।"
+
+#: includes/admin/premium/settings-premium.php:477
+msgid ""
+"Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"आपका लोगो <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/settings.php:124
+msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
+msgstr ""
+"<strong>कुकी साफ करें:</strong> क्या हाँ पर क्लिक करने के बाद पॉपअप बंद हो "
+"गया? <br/>"
+
+#: includes/admin/settings.php:125
+msgid ""
+"Detects if a cookie is set in your browser from this plugin and clears it. "
+"Refresh this page to recheck."
+msgstr ""
+"यह पता करता है कि क्या इस प्लगइन से आपके ब्राउज़र में एक कुकी सेट की गई है "
+"और इसे साफ करता है। पुनः जांचने के लिए इस पृष्ठ को रिफ्रेश करें।"
+
+#: includes/admin/settings.php:139
+msgid ""
+"Need Help? Click the  icon on the bottom right to search our <a "
+"href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
+"target=\"_blank\">Knowledge Base</a> or to send an email for Premium "
+"support."
+msgstr ""
+"क्या मदद चाहिए? हमारे <a "
+"href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
+"target=\"_blank\">ज्ञान आधार</a> को खोजने के लिए नीचे दाईं ओर आइकन पर क्लिक "
+"करें या प्रीमियम समर्थन के लिए ईमेल भेजें।"
+
+#: includes/admin/settings.php:140
+msgid ""
+"Read: <a "
+"href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
+"not-popping-up\"  target=\"_blank\">My age window isn't showing.</a>"
+msgstr ""
+"पढ़ें: <a "
+"href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
+"not-popping-up\"  target=\"_blank\">मेरी उम्र की विंडो नहीं दिख रही है।</a>"
+
+#: includes/admin/settings.php:141
+msgid ""
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Contact Us</a> "
+"to report a bug, suggest a feature, ask a billing question, or request "
+"Premium support."
+msgstr ""
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">हमसे संपर्क "
+"करें</a> एक बग रिपोर्ट करने, फीचर का सुझाव देने, बिलिंग प्रश्न पूछने, या "
+"प्रीमियम समर्थन के लिए अनुरोध करने के लिए।"
+
+#: includes/admin/settings.php:142
+msgid ""
+"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visit The "
+"Support Center</a> for more."
+msgstr ""
+"<a href=\"https://5starplugins.com/get-support/\" target=_blank>सहायता "
+"केंद्र पर जाएं</a> अधिक जानकारी के लिए।"
+
+#: includes/admin/settings.php:143
+msgid ""
+"Use Age Verify with Pretty Simple Popup for <a "
+"href=\"https://get.5starplugins.com/pspforageverify/\" "
+"target=\"_blank\">perfectly timed marketing popups</a>."
+msgstr ""
+"अच्छा है? <a "
+"href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
+"?rate=5#new-post\" target=_blank>इस प्लगइन को रेट करें</a>"
+
+#: includes/admin/settings.php:144
+msgid ""
+"Like this? <a "
+"href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
+"?rate=5#new-post\" target=_blank>Rate This Plugin</a>"
+msgstr ""
+"विकसित और समर्थित <a href=\"%s\" target=_blank>5 स्टार प्लगइन्स</a> द्वारा "
+"सैन डिएगो, CA में"
+
+#: includes/admin/settings.php:145
+#, php-format
+msgid ""
+"Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
+"in San Diego, CA"
+msgstr "सत्यापन की आवश्यकता:"
+
+#: includes/admin/settings.php:170
+msgid "Require Verification For:"
+msgstr "पूरा साइट"
+
+#: includes/admin/settings.php:174
+msgid "Entire site"
+msgstr "विशिष्ट सामग्री"
+
+#: includes/admin/settings.php:179
+msgid "Specific content"
+msgstr "सत्यापन सक्षम करें:"
+
+#: includes/admin/settings.php:198
+msgid "Enable Verification:"
+msgstr "सभी आगंतुकों के लिए सत्यापन को निष्क्रिय करें"
+
+#: includes/admin/settings.php:202
+msgid "Disable verification to all visitors"
+msgstr "[परीक्षण मोड] केवल लॉगिन किए हुए प्रशासकों को दिखाएं"
+
+#: includes/admin/settings.php:207
+msgid "[TESTING MODE] Show only to logged-in Admins"
+msgstr "लॉगिन किए हुए उपयोगकर्ताओं को छोड़कर सत्यापन दिखाएं"
+
+#: includes/admin/settings.php:212
+msgid "Show verification except to logged-in users"
+msgstr "सभी आगंतुकों को सत्यापन दिखाएं"
+
+#: includes/admin/settings.php:217
+msgid "Show verification to all visitors"
+msgstr "सत्यापन प्रकार चुनें:"
+
+#: includes/admin/settings.php:236
+msgid "Select verification type:"
+msgstr "केवल वयस्क 18+"
+
+#: includes/admin/settings.php:240
+msgid "Adults Only 18+"
+msgstr ""
+
+#: includes/admin/settings.php:249
+msgid "Alcohol"
+msgstr "शराब"
+
+#: includes/admin/settings.php:258
+msgid "Vape"
+msgstr "वेप"
+
+#: includes/admin/settings.php:275
+msgid "years old or older to view this site"
+msgstr "इस साइट को देखने के लिए 18 वर्ष या उससे अधिक उम्र के होना चाहिए"
+
+#: includes/admin/settings.php:286
+msgid "minutes"
+msgstr "मिनट"
+
+#: includes/admin/settings.php:299
+msgid "Membership"
+msgstr "सदस्यता"
+
+#: includes/admin/settings.php:303
+msgid "Require users to confirm their age before registering to this site"
+msgstr ""
+"इस साइट पर पंजीकरण से पहले उपयोगकर्ताओं से उनकी उम्र की पुष्टि करने की "
+"आवश्यकता है"
+
+#: includes/admin/settings.php:322
+#: includes/admin/settings.php:331
+#: includes/functions.php:588
+msgid "Please verify you are 18 years or older to enter."
+msgstr "कृपया सत्यापित करें कि आप 18 वर्ष या उससे अधिक उम्र के हैं।"
+
+#: includes/admin/settings.php:325
+msgid "Are you of legal drinking age 21 or older?"
+msgstr "क्या आप कानूनी शराब पीने की उम्र 21 वर्ष या उससे अधिक हैं?"
+
+#: includes/admin/settings.php:328
+msgid "Are you of legal smoking age?"
+msgstr "क्या आप कानूनी धूम्रपान की उम्र के हैं?"
+
+#: includes/admin/settings.php:358
+#: includes/admin/settings.php:367
+msgid ""
+"WARNING ADULT CONTENT!\n"
+"This website is intended for adults only and may contain content of an "
+"adult nature or age restricted, explicit material, which some viewers may "
+"find offensive. By entering you confirm that you are 18+ years and are not "
+"offended by viewing such material. If you are under the age of 18, if such "
+"material offends you or it is illegal to view in your location please exit "
+"now."
+msgstr ""
+"चेतावनी वयस्क सामग्री!\n"
+"यह वेबसाइट केवल वयस्कों के लिए है और इसमें वयस्क प्रकृति की सामग्री या "
+"उम्र-सीमित, स्पष्ट सामग्री हो सकती है, जिसे कुछ दर्शक आपत्तिजनक मान सकते "
+"हैं। प्रवेश करके, आप पुष्टि करते हैं कि आप 18+ वर्ष के हैं और ऐसी सामग्री "
+"को देखने से आपत्तिजनक नहीं हैं। यदि आप 18 वर्ष से कम हैं, यदि ऐसी सामग्री "
+"आपको आपत्तिजनक लगती है या आपकी लोकेशन में इसे देखना अवैध है तो कृपया अभी "
+"बाहर निकलें।"
+
+#: includes/admin/settings.php:361
+msgid ""
+"THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
+"By entering this website, you certify that you are of legal drinking age in "
+"the location in which you reside (age 21+ in the United States)."
+msgstr ""
+"इस वेबसाइट पर शराब उत्पाद केवल वयस्कों के लिए हैं।\n"
+"इस वेबसाइट में प्रवेश करके, आप प्रमाणित करते हैं कि आप जिस स्थान पर रहते "
+"हैं, वहाँ कानूनी शराब पीने की उम्र के हैं (संयुक्त राज्य अमेरिका में उम्र "
+"21+)।"
+
+#: includes/admin/settings.php:364
+msgid ""
+"THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
+"By entering this website, you certify that you are of legal smoking age in "
+"the location in which you reside (age 18+, 19+ and 21+ in some areas)."
+msgstr ""
+"इस वेबसाइट पर उत्पाद कानूनी धूम्रपान उम्र के वयस्कों के लिए हैं।\n"
+"इस वेबसाइट में प्रवेश करके, आप प्रमाणित करते हैं कि आप जिस स्थान पर रहते "
+"हैं, वहाँ कानूनी धूम्रपान उम्र के हैं (कुछ क्षेत्रों में उम्र 18+, 19+ और "
+"21+)।"
+
+#: includes/admin/settings.php:406
+msgid "Realtime Settings Check"
+msgstr "रियलटाइम सेटिंग्स जाँच"
+
+#: includes/admin/settings.php:410
+msgid "Confirm \"Enable Verification\" settings before showing popup"
+msgstr "पॉपअप दिखाने से पहले \"सत्यापन सक्षम करें\" सेटिंग्स की पुष्टि करें"
+
+#: includes/admin/settings.php:437
+msgid "Date dropdowns"
+msgstr "तारीख ड्रॉपडाउन"
+
+#: includes/admin/settings.php:438
+msgid "Inputs"
+msgstr "इनपुट"
+
+#: includes/admin/settings.php:439
+msgid "Confirm checkbox"
+msgstr "चेकबॉक्स की पुष्टि करें"
+
+#: includes/admin/settings.php:456
+msgid "Show on all pages (upgrade to unlock)"
+msgstr "सभी पृष्ठों पर दिखाएँ (अनलॉक करने के लिए अपग्रेड करें)"
+
+#: includes/admin/settings.php:461
+msgid "Show on this page only (upgrade to unlock)"
+msgstr "केवल इस पृष्ठ पर दिखाएँ (अनलॉक करने के लिए अपग्रेड करें)"
+
+#: includes/admin/settings.php:466
+msgid "Show everywhere except this page (upgrade to unlock)"
+msgstr "इस पृष्ठ को छोड़कर हर जगह दिखाएँ (अनलॉक करने के लिए अपग्रेड करें)"
+
+#: includes/class-easy-age-verify.php:342
+#, php-format
+msgid "You must be %1s years old to view this content."
+msgstr "आपको इस सामग्री को देखने के लिए %1s वर्ष का होना चाहिए।"
+
+#: includes/class-easy-age-verify.php:342
+#: includes/functions.php:739
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "कृपया अपनी आयु सत्यापित करें"
+
+#: includes/functions.php:413
+msgid "Enter Site &raquo;"
+msgstr "साइट में प्रवेश करें &raquo;"
+
+#: includes/functions.php:604
+msgid "Please confirm your age"
+msgstr "कृपया अपनी आयु की पुष्टि करें"
+
+#: includes/functions.php:645
+msgid "Start 14-Day Free Trial"
+msgstr "14-दिन का निःशुल्क परीक्षण प्रारंभ करें"
+
+#: includes/functions.php:645
+msgid "(risk free, no credit card)"
+msgstr "(जोखिम-मुक्त, कोई क्रेडिट कार्ड नहीं)"
+
+#: includes/functions.php:655
+msgid "Include / exclude certain pages"
+msgstr "कुछ पृष्ठों को शामिल / बहिष्कृत करें"
+
+#: includes/functions.php:656
+msgid "Customizable"
+msgstr "कस्टमाइज़ करने योग्य"
+
+#: includes/functions.php:656
+msgid "Free-form text option"
+msgstr "मुक्त-रूप पाठ विकल्प"
+
+#: includes/functions.php:657
+msgid "Translation Ready"
+msgstr "अनुवाद के लिए तैयार"
+
+#: includes/functions.php:657
+msgid "Self translate to any language"
+msgstr "किसी भी भाषा में स्व-संवाद करें"
+
+#: includes/functions.php:658
+msgid "Brand It"
+msgstr "ब्रांड बनाएं"
+
+#: includes/functions.php:658
+msgid "Your logo and colors"
+msgstr "आपका लोगो और रंग"
+
+#: includes/functions.php:659
+msgid "Set transparency and color"
+msgstr "पारदर्शिता और रंग सेट करें"
+
+#: includes/functions.php:660
+msgid "Welcome Message"
+msgstr "स्वागत संदेश"
+
+#: includes/functions.php:660
+msgid "Add a welcome message"
+msgstr "एक स्वागत संदेश जोड़ें"
+
+#: includes/functions.php:661
+msgid "Remember Visitors"
+msgstr "याद रखें आगंतुकों"
+
+#: includes/functions.php:661
+msgid "\"Remember me\" checkbox"
+msgstr "\"मुझे याद रखें\" चेकबॉक्स"
+
+#: includes/functions.php:662
+msgid "Premium Support"
+msgstr "प्रीमियम समर्थन"
+
+#: includes/functions.php:662
+msgid "World-class email support from the U.S."
+msgstr "यू.एस. से विश्व-स्तरीय ईमेल समर्थन"
+
+#: includes/functions.php:673
+#, php-format
+msgid ""
+"Opt-in to help us improve %2$s! Some usage data will be sent to our "
+"platform Freemius."
+msgstr ""
+"हमें %2$s में सुधार करने में मदद करने के लिए ऑप्ट-इन करें! कुछ उपयोग डेटा "
+"हमारी प्लेटफ़ॉर्म Freemius को भेजा जाएगा।"
+
+#: includes/functions.php:687
+#, php-format
+msgid ""
+"In order to enjoy all of the features, functionality and enable a free "
+"trial of premium version, %2$s wants to connect usage data to our platform "
+"Freemius."
+msgstr ""
+"सभी फ़ीचर्स, कार्यक्षमता का आनंद लेने और प्रीमियम संस्करण के मुफ्त परीक्षण "
+"को सक्षम करने के लिए, %2$s हमारे प्लेटफ़ॉर्म Freemius से उपयोग डेटा कनेक्ट "
+"करना चाहता है।"
+
+#: includes/functions.php:765
+#: includes/premium/functions-premium.php:128
+msgid "You must be 21 years old to visit this site."
+msgstr "इस साइट पर जाने के लिए आपकी उम्र 21 वर्ष होनी चाहिए।"
+
+#: includes/premium/functions-premium.php:220
+msgid "Self Validation"
+msgstr "स्व-सत्यापन"
+
+#: includes/premium/functions-premium.php:228
+msgid "Verify 18+ Recreational"
+msgstr "18+ मनोरंजक की पुष्टि करें"
+
+#: includes/premium/functions-premium.php:236
+msgid "Verify 19+ Recreational"
+msgstr "19+ मनोरंजक की पुष्टि करें"
+
+#: includes/premium/functions-premium.php:244
+msgid "Verify 21+ Recreational"
+msgstr "21+ मनोरंजक की पुष्टि करें"
+
+#: includes/premium/functions-premium.php:252
+msgid "Verify 18+ Medical"
+msgstr "18+ चिकित्सा की पुष्टि करें"
+
+#: includes/premium/functions-premium.php:260
+msgid "Are you 21+ or a 18+ valid medical marijuana patient?"
+msgstr "क्या आप 21+ हैं या 18+ के मान्य चिकित्सा मारिजुआना मरीज हैं?"
