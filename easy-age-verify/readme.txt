@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 6.8
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -167,9 +167,12 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 8. Design options and additional settings in WordPress Dashboard - Premium Version
 
 == Upgrade Notice ==
-Update! Added a bunch of translations. Updated Freemius SDK. Add Return Visitor Text option to relabel that cookie checkbox text as desired.
+Update! Fixed error with saving due to page targeting option not checked properly.
 
 == Changelog ==
+= 2.0.4 =
+* Fixed error with saving due to page targeting option not checked properly.
+
 = 2.0.3 =
 * Updated Freemius SDK. Add Return Visitor Text option to relabel that cookie checkbox text as desired. Added a bunch of language translations for: es_ES, fr_FR, de_DE, it_IT, pt_PT, nl_NL, ru_RU, zh_CN, ja, ko_KR, ar, tr_TR, hi_IN, pl_PL, sv_SE, da_DK, fi, el, cs_CZ , hu_HU, th, he_IL
 

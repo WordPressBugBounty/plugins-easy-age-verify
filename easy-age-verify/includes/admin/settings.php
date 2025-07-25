@@ -481,14 +481,13 @@ function evav_settings_callback_input_type_field() { ?>
  */
 // Page targeting sanitize callback
 function evav_pagetargeting_option_sanitize($input) {
-	$input['option'] = in_array($input['option'], ['include', 'exclude', 'none']) ? $input['option'] : 'none';
-   // If option is 'none', set page_id to 0
-	if ($input['option'] === 'none') {
+	$option = isset($input['option']) ? $input['option'] : 'none';
+	$input['option'] = in_array($option, ['include', 'exclude', 'none']) ? $option : 'none';
+
+	// Set page_id to 0 if not numeric or if option is 'none'
+	if ($input['option'] === 'none' || !isset($input['page_id']) || !is_numeric($input['page_id'])) {
 		$input['page_id'] = 0;
-	} else {
-		if (!is_numeric($input['page_id'])) {
-				$input['page_id'] = 0;
-		}
 	}
-   return $input;
+
+	return $input;
 }
