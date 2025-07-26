@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 6.8
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -167,9 +167,12 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 8. Design options and additional settings in WordPress Dashboard - Premium Version
 
 == Upgrade Notice ==
-Update! Fixed error with saving due to page targeting option not checked properly.
+Update! Fixed extra character output issues.
 
 == Changelog ==
+= 2.0.5 =
+* Fixed extra character output issues.
+
 = 2.0.4 =
 * Fixed error with saving due to page targeting option not checked properly.
 

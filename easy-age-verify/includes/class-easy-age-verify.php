@@ -40,7 +40,7 @@ final class Easy_Age_Verify {
      *
      * @since 0.2.6
      */
-    const VERSION = '2.0.4';
+    const VERSION = '2.0.5';
 
     /**
      * The only instance of this class.
