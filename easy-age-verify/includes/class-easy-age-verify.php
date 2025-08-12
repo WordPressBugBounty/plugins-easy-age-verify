@@ -40,7 +40,7 @@ final class Easy_Age_Verify {
      *
      * @since 0.2.6
      */
-    const VERSION = '2.0.6';
+    const VERSION = '2.0.7';
 
     /**
      * The only instance of this class.
@@ -316,7 +316,17 @@ final class Easy_Age_Verify {
         if ( !evav_content_is_restricted() ) {
             return $content;
         }
-        return sprintf( apply_filters( 'evav_restricted_content_message', __( 'You must be %1s years old to view this content.', 'easy-age-verify' ) . ' <a href="%2s">' . __( 'Please verify your age', 'easy-age-verify' ) . '</a>.' ), esc_html( evav_get_minimum_age() ), esc_url( get_permalink( get_the_ID() ) ) );
+        return sprintf(
+            apply_filters( 
+                'evav_restricted_content_message',
+                /* translators: %1$s: minimum age required, %2$s: URL to verify age */
+                __( 'You must be %1$s years old to view this content. <a href="%2$s">Please verify your age</a>.', 'easy-age-verify' )
+             ),
+            $minimum_age,
+            esc_url( $verify_url ),
+            esc_html( evav_get_minimum_age() ),
+            esc_url( get_permalink( get_the_ID() ) )
+        );
     }
 
     /**

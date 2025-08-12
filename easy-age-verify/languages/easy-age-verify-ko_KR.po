@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:05+0000\n"
+"PO-Revision-Date: 2025-08-12 06:52+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -39,6 +39,26 @@ msgstr "5 스타 플러그인"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "쉬운 나이 인증을 즐기고 계신가요?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr "저희를 지원하기 위해 <a href=\"%s\" target=\"_blank\">5성 리뷰를 남겨주세요</a>! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "나중에 알림"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "닫기"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "설정"
@@ -62,7 +82,7 @@ msgstr "비활성화 시 팝업이 표시되지 않습니다. 설정 중에는 �
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "페이지 타겟팅"
@@ -98,20 +118,30 @@ msgid ""
 msgstr "버튼과 오류 메시지 텍스트를 편집하려면 업그레이드하세요. 프리미엄은 모든 텍스트 편집을 잠금 해제합니다."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "나이 확인"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "필수 질문입니다."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr "연령 프롬프트 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(최대 50자)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "면책 조항"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "선택적 소규모 인쇄는 HTML 링크를 사용합니다."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(최대 400자)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "이 콘텐츠에 대한 연령 확인 필요"
 
@@ -141,16 +171,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "프론트엔드에서 내장 CSS 사용 (권장)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "예, 저는 법적 연령입니다"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "아니오, 저는 미성년자입니다"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -393,93 +426,94 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>이 플러그인 평가하기</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
 "in San Diego, CA"
 msgstr "샌디에이고, CA의 <a href=\"%s\" target=_blank>5 Star Plugins</a>에서 개발 및 지원"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "검증 필요:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "전체 사이트"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "특정 콘텐츠"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "검증 활성화:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "모든 방문자에게 검증 비활성화"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[테스트 모드] 로그인한 관리자에게만 표시"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "로그인한 사용자를 제외하고 검증 표시"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "모든 방문자에게 검증 표시"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "검증 유형 선택:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "성인 전용 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "알코올"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "전자담배"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "이 웹사이트를 보려면 18세 이상이어야 합니다"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "분"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "회원가입"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr "사용자가 이 사이트에 등록하기 전에 자신의 나이를 확인하도록 요구합니다"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "입장하려면 18세 이상인지 확인해 주세요."
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "법적으로 음주 가능한 나이인 21세 이상인가요?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "법적으로 흡연 가능한 나이인가요?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -494,7 +528,7 @@ msgstr ""
 "있습니다. 입장함으로써 귀하는 18세 이상이며 이러한 자료를 보는 것이 불쾌하지 않음을 확인합니다. 18세 미만이거나 이러한 자료가 "
 "불쾌감을 주거나 귀하의 위치에서 보기 불법인 경우 지금 즉시 나가 주세요."
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -503,7 +537,7 @@ msgstr ""
 "이 웹사이트의 알코올 제품은 성인만을 위한 것입니다.\n"
 "이 웹사이트에 들어가면 거주하는 지역에서 법적으로 음주 가능한 나이(미국에서 21세 이상)임을 인증합니다."
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -513,62 +547,79 @@ msgstr ""
 "이 웹사이트에 들어가면 거주하는 지역에서 법적으로 흡연 가능한 나이(18세 이상, 일부 지역에서는 19세 이상 및 21세 이상)임을 "
 "인증합니다."
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "실시간 설정 확인"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "\"확인 활성화\" 설정을 팝업 표시 전에 확인하세요"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "날짜 드롭다운"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "입력"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "확인 체크박스"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "모든 페이지에 표시 (잠금을 해제하려면 업그레이드 필요)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "이 페이지에만 표시 (잠금을 해제하려면 업그레이드 필요)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "이 페이지를 제외한 모든 곳에 표시 (잠금을 해제하려면 업그레이드 필요)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "이 콘텐츠를 보려면 %1s세 이상이어야 합니다."
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr "이 콘텐츠를 보려면 %1$s세 이상이어야 합니다. <a href=\"%2$s\">나이를 확인해 주세요</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "귀하의 나이를 확인해 주세요"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "저는 18세 이상입니다 [사이트 입력]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "저는 18세 미만입니다"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "사이트 입력 &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "귀하의 나이를 확인해 주세요"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "프리미엄 기능 잠금 해제"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "새 프로모션 텍스트"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "지금 업그레이드"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "14일 무료 체험 시작하기"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(위험 없음, 신용 카드 필요 없음)"
 
@@ -628,24 +679,31 @@ msgstr "프리미엄 지원"
 msgid "World-class email support from the U.S."
 msgstr "미국에서 제공하는 세계적 수준의 이메일 지원"
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
-msgstr "%2$s의 개선을 도와주기 위해 참여하세요! 일부 사용 데이터가 우리 플랫폼 Freemius에 전송됩니다."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
+msgstr "안녕하세요 %1$s,<br>%2$s 개선을 위해 참여해 주세요! 일부 사용 데이터가 저희 플랫폼인 Freemius로 전송됩니다."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"모든 기능과 기능을 즐기고 프리미엄 버전의 무료 체험을 활성화하기 위해 %2$s는 사용 데이터를 우리 플랫폼 Freemius에 "
-"연결하고자 합니다."
+"안녕하세요 %1$s,<br>모든 기능과 기능을 즐기고 프리미엄 버전의 무료 체험을 활성화하려면 %2$s가 사용 데이터를 저희 플랫폼인 "
+"Freemius에 연결하기를 원합니다."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "귀하의 나이를 확인해 주세요"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "이 사이트를 방문하려면 21세 이상이어야 합니다."

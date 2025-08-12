@@ -320,8 +320,8 @@ function evav_get_verify_form() {
             break;
     }
     // Button Array Labels
-    $age_confirm_btn_arr = array('', 'Yes I am of legal age', 'I am 18 or older [Enter Site]');
-    $age_btn_arr = array('', 'No I am under age', 'I am under 18');
+    $age_confirm_btn_arr = array('', __( 'Yes I am of legal age', 'easy-age-verify' ), __( 'I am 18 or older [Enter Site]', 'easy-age-verify' ));
+    $age_btn_arr = array('', __( 'No I am under age', 'easy-age-verify' ), __( 'I am under 18', 'easy-age-verify' ));
     // Selected Button Label Option
     $age_confirm_btn_label = $age_confirm_btn_arr[$optionID];
     $age_btn_label = $age_btn_arr[$optionID];
@@ -333,7 +333,7 @@ function evav_get_verify_form() {
         $not_confirm_btn_style = 'style="background-color:#cc3232;"';
     }
     // Default error text
-    $no_error_text = 'Sorry, you must be of legal age to enter this website.';
+    $no_error_text = __( 'Sorry, you must be of legal age to enter this website.', 'easy-age-verify' );
     $submit_button_label = apply_filters( 'evav_form_submit_label', __( 'Enter Site &raquo;', 'easy-age-verify' ) );
     $form = '';
     $form .= '<form id="evav_verify_form" action="' . esc_url( home_url( '/' ) ) . '" method="post">';
@@ -496,12 +496,12 @@ function evav_upgrade_url(  $params = array()  ) {
 
 function evav_display_upgrade_features() {
     $contents = '<table class="form-table evav-premium-features">
-		<tr class="evav-premiumHead">
-			<th class="evav-preBanner" scope="column" colspan=2>
-				<h1>Unlock Premium Features</h1>
-			</th>
-		</tr>
-		<!--<tr><td colspan=2><center><b>Promo Text Here</b></center></td></tr>-->';
+    <tr class="evav-premiumHead">
+        <th class="evav-preBanner" scope="column" colspan="2">
+            <h1>' . esc_html__( 'Unlock Premium Features', 'easy-age-verify' ) . '</h1>
+        </th>
+    </tr>
+	<!--<tr><td colspan=2><center><b>' . esc_html__( 'New Promo Text', 'easy-age-verify' ) . '</b></center></td></tr>-->';
     foreach ( evav_premium_features() as $feature => $desc ) {
         $contents .= '<tr>
 				<th class="evav-preBanner" width="30%" scope="column"><span class="dashicons dashicons-yes evav-premium"></span><span class="evav-premium-feature">' . $feature . '</span></th>
@@ -510,11 +510,16 @@ function evav_display_upgrade_features() {
 			</tr>';
     }
     $contents .= '<tr>
-			<th style="text-align: center; padding: 20px 0;" scope="column" colspan="2"><a class="evav-btnBuy" href="' . esc_url( evav_upgrade_url() ) . '">Upgrade Now</a>
-			</th></tr>';
+    <th style="text-align: center; padding: 20px 0;" scope="column" colspan="2">
+        <a class="evav-btnBuy" href="' . esc_url( evav_upgrade_url() ) . '">' . esc_html__( 'Upgrade Now', 'easy-age-verify' ) . '</a>
+    </th></tr>';
     if ( !evav_fs()->is_trial() ) {
         $contents .= '<tr>
-			<th style="text-align: center; padding-bottom: 20px;" scope="column" colspan="2"><a class="evav-trialLink" href="' . esc_url( '/wp-admin/admin.php?trial=true&page=easy-age-verify-pricing' ) . '">' . __( 'Start 14-Day Free Trial', 'easy-age-verify' ) . '</a><span style="font-weight: 400;">' . __( '(risk free, no credit card)', 'easy-age-verify' ) . '</span></th></tr>';
+			<th style="text-align: center; padding-bottom: 20px;" scope="column" colspan="2">
+				<a class="evav-trialLink" href="' . esc_url( '/wp-admin/admin.php?trial=true&page=easy-age-verify-pricing' ) . '">' . esc_html__( 'Start 14-Day Free Trial', 'easy-age-verify' ) . '</a>
+				<span style="font-weight: 400;">' . esc_html__( '(risk free, no credit card)', 'easy-age-verify' ) . '</span>
+			</th>
+		</tr>';
     }
     $contents .= '</table>';
     return $contents;
@@ -546,12 +551,13 @@ function evav_fs_custom_connect_message_on_update(
     $freemius_link
 ) {
     return sprintf(
-        __( 'Hey %1$s' ) . ',<br>' . __( 'Opt-in to help us improve %2$s! Some usage data will be sent to our platform Freemius.', 'easy-age-verify' ),
+        /* translators: %1$s: user first name, %2$s: plugin title */
+        __( 'Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent to our platform Freemius.', 'easy-age-verify' ),
         $user_first_name,
-        '<b>' . $plugin_title . '</b>',
-        '<b>' . $user_login . '</b>',
-        $site_link,
-        $freemius_link
+        '<b>' . esc_html( $plugin_title ) . '</b>',
+        '<b>' . esc_html( $user_login ) . '</b>',
+        esc_url( $site_link ),
+        esc_url( $freemius_link )
     );
 }
 
@@ -566,13 +572,19 @@ function evav_freemius_new_message(
     $site_link,
     $freemius_link
 ) {
+    $plugin_title_html = '<b>' . esc_html( $plugin_title ) . '</b>';
+    $user_login_html = '<b>' . esc_html( $user_login ) . '</b>';
+    $site_link_html = esc_url( $site_link );
+    $freemius_link_html = esc_url( $freemius_link );
+    /* translators: %1$s: user first name %2$s: plugin title (HTML allowed) */
+    $format = __( 'Hey %1$s,<br>In order to enjoy all of the features, functionality and enable a free trial of premium version, %2$s wants to connect usage data to our platform Freemius.', 'easy-age-verify' );
     return sprintf(
-        __( 'hey-x' ) . '<br>' . __( 'In order to enjoy all of the features, functionality and enable a free trial of premium version, %2$s wants to connect usage data to our platform Freemius.', 'easy-age-verify' ),
-        $user_first_name,
-        '<b>' . $plugin_title . '</b>',
-        '<b>' . $user_login . '</b>',
-        $site_link,
-        $freemius_link
+        $format,
+        esc_html( $user_first_name ),
+        $plugin_title_html,
+        $user_login_html,
+        $site_link_html,
+        $freemius_link_html
     );
 }
 

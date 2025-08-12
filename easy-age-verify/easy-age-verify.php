@@ -6,7 +6,7 @@
  * Description: Adds a mobile friendly age verification screen to adults only, vape or alcohol websites. Get set-up in minutes.
  * Author:      5 Star Plugins
  * Author URI:  https://5starplugins.com/
- * Version:     2.0.6
+ * Version:     2.0.7
  *
  * Requires at least: 4.6
  * Requires PHP: 5.6
@@ -158,8 +158,23 @@ if ( is_admin() ) {
         $remind_url = add_query_arg( 'evav_review_action', 'remind' );
         $dismiss_url = add_query_arg( 'evav_review_action', 'dismiss' );
         echo '<div class="notice notice-success is-dismissible">';
-        echo '<p><strong>Enjoying Easy Age Verify?</strong> Please <a href="' . esc_url( $review_url ) . '" target="_blank">leave a 5-star review</a> to support us! 🙌</p>';
-        echo '<p><a href="' . esc_url( $remind_url ) . '">Remind me later</a> | <a href="' . esc_url( $dismiss_url ) . '">Dismiss</a></p>';
+        echo '<p><strong>' . esc_html__( 'Enjoying Easy Age Verify?', 'easy-age-verify' ) . '</strong> ' . sprintf( wp_kses( 
+            /* translators: %s: review URL */
+            __( 'Please <a href="%s" target="_blank">leave a 5-star review</a> to support us! 🙌', 'easy-age-verify' ),
+            [
+                'a' => [
+                    'href'   => [],
+                    'target' => [],
+                ],
+            ]
+         ), esc_url( $review_url ) ) . '</p>';
+        echo '<p>' . sprintf(
+            '<a href="%1$s">%2$s</a> | <a href="%3$s">%4$s</a>',
+            esc_url( $remind_url ),
+            esc_html__( 'Remind me later', 'easy-age-verify' ),
+            esc_url( $dismiss_url ),
+            esc_html__( 'Dismiss', 'easy-age-verify' )
+        ) . '</p>';
         echo '</div>';
     } );
 }

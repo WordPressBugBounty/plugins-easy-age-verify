@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:09+0000\n"
+"PO-Revision-Date: 2025-08-12 06:52+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -41,6 +41,28 @@ msgstr "5 Tähtipluginia"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "Nautitko Easy Age Verify -palvelusta?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"Ole hyvä ja <a href=\"%s\" target=\"_blank\">jätä 5 tähden arvio</a> "
+"tukeaksesi meitä! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "Muistuta minua myöhemmin"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "Hylkää"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "Asetukset"
@@ -66,7 +88,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "Sivun Kohdistaminen"
@@ -106,22 +128,30 @@ msgstr ""
 "mahdollisuuden muokata kaikkia tekstejä käännöstä varten."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "Ikäpyyntö"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "Pakollinen kysymys."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"Ikäkehotus <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(max 50 merkkiä)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "Vastuuvapauslauseke"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "Valinnainen pieni teksti ottaa HTML-linkin."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(max 400 merkkiä)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "Vaadi ikä vahvistus tälle sisällölle"
 
@@ -151,16 +181,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "Käytä sisäänrakennettua CSS:ää etupäässä (suositeltavaa)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "Kyllä, olen täysi-ikäinen"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "Ei, olen alaikäinen"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -430,7 +463,8 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Arvosta tätä lisäosaa</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
@@ -439,86 +473,86 @@ msgstr ""
 "Kehittänyt ja tukenut <a href=\"%s\" target=_blank>5 Star Plugins</a> San "
 "Diegossa, CA"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "Vaadi vahvistus:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "Koko sivusto"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "Erityinen sisältö"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "Ota vahvistus käyttöön:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "Poista vahvistus käytöstä kaikilta kävijöiltä"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[TESTAUSMODE] Näytä vain kirjautuneille ylläpitäjille"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "Näytä vahvistus paitsi kirjautuneille käyttäjille"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "Näytä vahvistus kaikille kävijöille"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "Valitse vahvistustyyppi:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "Vain aikuisille 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "Alkoholi"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "Vapetta"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "vuotta tai vanhempi nähdäkseen tämän sivuston"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "minuuttia"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "Jäsenyys"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr "Vaadi käyttäjiä vahvistamaan ikänsä ennen tämän sivuston rekisteröitymistä"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "Vahvista, että olet 18 vuotta tai vanhempi päästäksesi sisään."
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "Oletko laillisen juomisiän 21 vuotta tai vanhempi?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "Oletko laillisen tupakointisiän?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -537,7 +571,7 @@ msgstr ""
 "materiaali loukkaa sinua tai se on laitonta katsottavaksesi sijainnissasi, "
 "poistu nyt."
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -547,7 +581,7 @@ msgstr ""
 "Sisään päästessäsi vahvistat, että olet laillisen juomisiän sijainnissasi "
 "(ikä 21+ Yhdysvalloissa)."
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -558,64 +592,83 @@ msgstr ""
 "Sisään päästessäsi vahvistat, että olet laillisen tupakointisiän "
 "sijainnissasi (ikä 18+, 19+ ja 21+ joillakin alueilla)."
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "Reaaliaikaiset asetukset Tarkista"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr ""
 "Vahvista \"Ota vahvistus käyttöön\" -asetukset ennen ponnahdusikkunan "
 "näyttämistä"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "Päivämäärävalikot"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "Syötteet"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "Vahvista valintaruutu"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "Näytä kaikilla sivuilla (päivitys avaa)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "Näytä vain tällä sivulla (päivitys avaa)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "Näytä kaikkialla paitsi tällä sivulla (päivitys avaa)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "Sinun on oltava %1s vuotta vanha voidaksesi katsella tätä sisältöä."
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"Sinun on oltava %1$s vuotta vanha voidaksesi nähdä tämän sisällön. <a "
+"href=\"%2$s\">Vahvista ikäsi</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "Vahvista ikäsi"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "Olen 18-vuotias tai vanhempi [Siirry sivustolle]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "Olen alle 18-vuotias"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "Siirry sivustolle &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "Vahvista ikäsi"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "Avaa Premium-ominaisuudet"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "Uusi tarjousviesti"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "Päivitä nyt"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "Aloita 14 päivän ilmainen kokeilu"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(ilman riskiä, ei luottokorttia)"
 
@@ -675,27 +728,34 @@ msgstr "Premium-tuki"
 msgid "World-class email support from the U.S."
 msgstr "Maailmanluokan sähköpostituki Yhdysvalloista"
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"Liity mukaan auttaaksesi meitä parantamaan %2$s! Joitakin käyttödataa "
-"lähetetään alustallemme Freemius."
+"Hei %1$s,<br>Liity mukaan auttamaan meitä parantamaan %2$s! Joitakin "
+"käyttödataa lähetetään alustallemme Freemius."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
+msgstr ""
+"Hei %1$s,<br>Jotta voit nauttia kaikista toiminnoista ja mahdollistaa "
+"premium-version ilmaisjakson, %2$s haluaa liittää käyttödataa alustallemme "
 "Freemius."
-msgstr ""
-"Jotta voit nauttia kaikista ominaisuuksista ja toiminnoista sekä aktivoida "
-"premium-version ilmaisen kokeilujakson, %2$s haluaa yhdistää käyttödataa "
-"alustallemme Freemius."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "Vahvista ikäsi"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "Sinun on oltava 21-vuotias voidaksesi vierailla tällä sivustolla."

@@ -221,7 +221,7 @@ final class Easy_Age_Verify_Admin {
         // Heading
         add_settings_field(
             '_evav_heading',
-            '<label for="_evav_heading">' . __( 'Age Prompt' . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . __( 'Required question.', 'easy-age-verify' ) . '"></span>' . $this->small( '(max 50 characters)' ), 'easy-age-verify' ) . '</label>',
+            '<label for="_evav_heading">' . esc_html__( 'Age Prompt', 'easy-age-verify' ) . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . esc_attr__( 'Required question.', 'easy-age-verify' ) . '"></span>' . $this->small( esc_html__( '(max 50 characters)', 'easy-age-verify' ) ) . '</label>',
             'evav_settings_callback_heading_field',
             'easy-age-verify',
             'evav_settings_general'
@@ -230,7 +230,7 @@ final class Easy_Age_Verify_Admin {
         // Disclaimer
         add_settings_field(
             '_evav_disclaimer',
-            sprintf( '<label for="evav_disclaimer">%s</label>', __( 'Disclaimer' . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . __( 'Optional small print takes HTML link.', 'easy-age-verify' ) . '"></span>' . $this->small( '(max 400 characters)' ) ), 'easy-age-verify' ),
+            esc_html__( 'Disclaimer', 'easy-age-verify' ) . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . esc_attr__( 'Optional small print takes HTML link.', 'easy-age-verify' ) . '"></span>' . $this->small( esc_html__( '(max 400 characters)', 'easy-age-verify' ) ),
             'evav_settings_callback_disclaimer_field',
             'easy-age-verify',
             'evav_settings_general'

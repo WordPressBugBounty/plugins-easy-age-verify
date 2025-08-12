@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:06+0000\n"
+"PO-Revision-Date: 2025-08-12 06:52+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -41,6 +41,28 @@ msgstr "5 स्टार प्लगइन्स"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "आसान उम्र सत्यापन का आनंद ले रहे हैं?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"कृपया <a href=\"%s\" target=\"_blank\">5-स्टार समीक्षा छोड़ें</a> ताकि आप "
+"हमें समर्थन करें! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "बाद में याद दिलाएं"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "अस्वीकृत करें"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "सेटिंग्स"
@@ -66,7 +88,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "पृष्ठ लक्षित करना"
@@ -106,22 +128,30 @@ msgstr ""
 "के अनुवाद के लिए संपादन को अनलॉक करता है।"
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "उम्र संकेत"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "आवश्यक प्रश्न।"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"उम्र संकेत <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(अधिकतम 50 अक्षर)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "अस्वीकृति"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "वैकल्पिक छोटे प्रिंट में HTML लिंक लेता है।"
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(अधिकतम 400 अक्षर)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "इस सामग्री के लिए उम्र सत्यापन की आवश्यकता है"
 
@@ -151,16 +181,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "फ्रंट-एंड पर अंतर्निहित CSS का उपयोग करें (अनुशंसित)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "हाँ, मैं कानूनी उम्र का हूँ"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "नहीं, मैं अवयस्क हूँ"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -430,95 +463,96 @@ msgstr ""
 "विकसित और समर्थित <a href=\"%s\" target=_blank>5 स्टार प्लगइन्स</a> द्वारा "
 "सैन डिएगो, CA में"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
 "in San Diego, CA"
 msgstr "सत्यापन की आवश्यकता:"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "पूरा साइट"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "विशिष्ट सामग्री"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "सत्यापन सक्षम करें:"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "सभी आगंतुकों के लिए सत्यापन को निष्क्रिय करें"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "[परीक्षण मोड] केवल लॉगिन किए हुए प्रशासकों को दिखाएं"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "लॉगिन किए हुए उपयोगकर्ताओं को छोड़कर सत्यापन दिखाएं"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "सभी आगंतुकों को सत्यापन दिखाएं"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "सत्यापन प्रकार चुनें:"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "केवल वयस्क 18+"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
-msgstr ""
+msgstr "केवल वयस्क 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "शराब"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "वेप"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "इस साइट को देखने के लिए 18 वर्ष या उससे अधिक उम्र के होना चाहिए"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "मिनट"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "सदस्यता"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr ""
 "इस साइट पर पंजीकरण से पहले उपयोगकर्ताओं से उनकी उम्र की पुष्टि करने की "
 "आवश्यकता है"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "कृपया सत्यापित करें कि आप 18 वर्ष या उससे अधिक उम्र के हैं।"
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "क्या आप कानूनी शराब पीने की उम्र 21 वर्ष या उससे अधिक हैं?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "क्या आप कानूनी धूम्रपान की उम्र के हैं?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -536,7 +570,7 @@ msgstr ""
 "आपको आपत्तिजनक लगती है या आपकी लोकेशन में इसे देखना अवैध है तो कृपया अभी "
 "बाहर निकलें।"
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -547,7 +581,7 @@ msgstr ""
 "हैं, वहाँ कानूनी शराब पीने की उम्र के हैं (संयुक्त राज्य अमेरिका में उम्र "
 "21+)।"
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -558,62 +592,81 @@ msgstr ""
 "हैं, वहाँ कानूनी धूम्रपान उम्र के हैं (कुछ क्षेत्रों में उम्र 18+, 19+ और "
 "21+)।"
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "रियलटाइम सेटिंग्स जाँच"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "पॉपअप दिखाने से पहले \"सत्यापन सक्षम करें\" सेटिंग्स की पुष्टि करें"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "तारीख ड्रॉपडाउन"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "इनपुट"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "चेकबॉक्स की पुष्टि करें"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "सभी पृष्ठों पर दिखाएँ (अनलॉक करने के लिए अपग्रेड करें)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "केवल इस पृष्ठ पर दिखाएँ (अनलॉक करने के लिए अपग्रेड करें)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "इस पृष्ठ को छोड़कर हर जगह दिखाएँ (अनलॉक करने के लिए अपग्रेड करें)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "आपको इस सामग्री को देखने के लिए %1s वर्ष का होना चाहिए।"
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"आपको इस सामग्री को देखने के लिए %1$s वर्ष का होना चाहिए। <a "
+"href=\"%2$s\">कृपया अपनी उम्र सत्यापित करें</a>।"
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "कृपया अपनी आयु सत्यापित करें"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "मैं 18 या उससे अधिक हूँ [साइट दर्ज करें]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "मैं 18 से कम हूँ"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "साइट में प्रवेश करें &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "कृपया अपनी आयु की पुष्टि करें"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "प्रीमियम सुविधाएँ अनलॉक करें"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "नया प्रचार पाठ"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "अब अपग्रेड करें"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "14-दिन का निःशुल्क परीक्षण प्रारंभ करें"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(जोखिम-मुक्त, कोई क्रेडिट कार्ड नहीं)"
 
@@ -673,27 +726,34 @@ msgstr "प्रीमियम समर्थन"
 msgid "World-class email support from the U.S."
 msgstr "यू.एस. से विश्व-स्तरीय ईमेल समर्थन"
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"हमें %2$s में सुधार करने में मदद करने के लिए ऑप्ट-इन करें! कुछ उपयोग डेटा "
-"हमारी प्लेटफ़ॉर्म Freemius को भेजा जाएगा।"
+"नमस्ते %1$s,<br>हमें %2$s को बेहतर बनाने में मदद करने के लिए ऑप्ट-इन करें! "
+"कुछ उपयोग डेटा हमारे प्लेटफार्म Freemius पर भेजा जाएगा।"
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"सभी फ़ीचर्स, कार्यक्षमता का आनंद लेने और प्रीमियम संस्करण के मुफ्त परीक्षण "
-"को सक्षम करने के लिए, %2$s हमारे प्लेटफ़ॉर्म Freemius से उपयोग डेटा कनेक्ट "
-"करना चाहता है।"
+"नमस्ते %1$s,<br>सभी सुविधाओं का आनंद लेने और प्रीमियम संस्करण के मुफ्त "
+"परीक्षण को सक्षम करने के लिए, %2$s हमारे प्लेटफार्म Freemius से उपयोग डेटा "
+"कनेक्ट करना चाहता है।"
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "कृपया अपनी आयु सत्यापित करें"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "इस साइट पर जाने के लिए आपकी उम्र 21 वर्ष होनी चाहिए।"

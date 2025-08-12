@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:12+0000\n"
+"PO-Revision-Date: 2025-08-12 06:53+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -41,6 +41,28 @@ msgstr "תוספי 5 כוכבים"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "נהנים מאימות גיל קל?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"אנא <a href=\"%s\" target=\"_blank\">השאירו ביקורת של 5 כוכבים</a> כדי "
+"לתמוך בנו! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "תזכיר לי מאוחר יותר"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "סגור"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "הגדרות"
@@ -66,7 +88,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "מיקוד דף"
@@ -104,22 +126,30 @@ msgstr ""
 "הטקסט לתרגום."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "הנחיית גיל"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "שאלה חובה."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"הנחיית גיל <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(מקסימום 50 תווים)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "הבהרה"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "הדפסה קטנה אופציונלית לוקחת קישור HTML."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(מקסימום 400 תווים)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "דרוש אימות גיל עבור תוכן זה"
 
@@ -149,16 +179,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "השתמש ב-CSS המובנה בחזית (מומלץ)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "כן, אני בגיל החוקי"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "לא, אני מתחת לגיל החוקי"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -415,7 +448,8 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>דרג את התוסף הזה</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
@@ -424,86 +458,86 @@ msgstr ""
 "פותח ומאוחסן על ידי <a href=\"%s\" target=_blank>5 Star Plugins</a> בסן "
 "דייגו, קליפורניה"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "דרוש אימות עבור:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "האתר כולו"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "תוכן ספציפי"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "הפעל אימות:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "בטל אימות לכל המבקרים"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[מצב ניסוי] הצג רק למנהלי מערכת מחוברים"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "הצג אימות למעט למשתמשים מחוברים"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "הצג אימות לכל המבקרים"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "בחר סוג אימות:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "מבוגרים בלבד 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "אלכוהול"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "וייפ"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "גיל 18 ומעלה כדי לראות את האתר הזה"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "דקות"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "חברות"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr "דרוש מהמשתמשים לאשר את גילם לפני הרשמה לאתר הזה"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "אנא ודא שאתה בן 18 ומעלה כדי להיכנס."
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "האם אתה בגיל החוקי לשתיית אלכוהול (21 ומעלה)?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "האם אתה בגיל החוקי לעישון?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -519,7 +553,7 @@ msgstr ""
 "ומעלה ואינך נעלב מלהתבונן בחומר כזה. אם אתה מתחת לגיל 18, אם חומר כזה פוגע "
 "בך או אם זה לא חוקי לצפות בו במיקומך, אנא צא עכשיו."
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -529,7 +563,7 @@ msgstr ""
 "על ידי הכניסה לאתר זה, אתה מאשר שאתה בגיל החוקי לשתיית אלכוהול במיקום שבו "
 "אתה גר (גיל 21+ בארצות הברית)."
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -539,62 +573,81 @@ msgstr ""
 "על ידי הכניסה לאתר זה, אתה מאשר שאתה בגיל החוקי לעישון במיקום שבו אתה גר "
 "(גיל 18+, 19+ ו-21+ באזורים מסוימים)."
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "בדיקת הגדרות בזמן אמת"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "אשר את הגדרות \"אפשר אימות\" לפני הצגת החלון הקופץ"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "תפריטי תאריך"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "קלטים"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "אשר תיבת סימון"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "הצג בכל הדפים (שדרג כדי לשחרר)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "הצג רק בדף זה (שדרג כדי לשחרר)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "הצג בכל מקום חוץ מדף זה (שדרג כדי לשחרר)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "עליך להיות בן %1s שנים כדי לצפות בתוכן זה."
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"אתה חייב להיות בן %1$s לפחות כדי לצפות בתוכן זה. <a href=\"%2$s\">אנא אישר "
+"את גילך</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "אנא אשר את גילך"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "אני בן 18 או יותר [כניסה לאתר]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "אני מתחת לגיל 18"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "הכנס אתר &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "אנא אשר את גילך"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "שחרר תכונות פרימיום"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "טקסט פרומו חדש"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "שדרג עכשיו"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "התחל ניסוי חינם ל-14 ימים"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(ללא סיכון, ללא כרטיס אשראי)"
 
@@ -654,26 +707,33 @@ msgstr "תמיכה פרימיום"
 msgid "World-class email support from the U.S."
 msgstr "תמיכה בדוא\"ל ברמה עולמית מהארה\"ב."
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"הצטרף כדי לעזור לנו לשפר את %2$s! חלק מנתוני השימוש יישלחו לפלטפורמת "
-"Freemius שלנו."
+"היי %1$s,<br>הצטרף כדי לעזור לנו לשפר את %2$s! נתוני שימוש מסוימים יישלחו "
+"לפלטפורמה שלנו Freemius."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"על מנת ליהנות מכל התכונות והפונקציות ולאפשר תקופת ניסיון חינם של גרסה "
-"פרימיום, %2$s רוצה לחבר את נתוני השימוש לפלטפורמת Freemius שלנו."
+"היי %1$s,<br>כדי ליהנות מכל התכונות והפונקציות ולאפשר ניסיון חינם של הגרסה "
+"הפרימיום, %2$s רוצה לחבר נתוני שימוש לפלטפורמה שלנו Freemius."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "אנא אשר את גילך"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "אתה חייב להיות בן 21 כדי לבקר באתר הזה."

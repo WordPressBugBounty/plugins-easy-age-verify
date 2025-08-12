@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:10+0000\n"
+"PO-Revision-Date: 2025-08-12 06:53+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
@@ -41,6 +41,28 @@ msgstr "5 Star Plugins"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "Užíváte si snadné ověření věku?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"Prosím <a href=\"%s\" target=\"_blank\">nechte nám 5-hvězdičkovou "
+"recenzi</a> abyste nás podpořili! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "Připomeňte mi později"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "Zavřít"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "Nastavení"
@@ -66,7 +88,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "Cílení na stránku"
@@ -106,22 +128,30 @@ msgstr ""
 "úpravu veškerého textu pro překlad."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "Výzva k ověření věku"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "Povinná otázka."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"Výzva k věku <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(max 50 znaků)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "Zřeknutí se odpovědnosti"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "Volitelný malý tisk bere HTML odkaz."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(max 400 znaků)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "Požadovat ověření věku pro tento obsah"
 
@@ -151,16 +181,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "Použít vestavěné CSS na front-endu (doporučeno)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "Ano, jsem zletilý"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "Ne, jsem nezletilý"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -433,7 +466,8 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Ohodnoťte tento plugin</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
@@ -442,86 +476,86 @@ msgstr ""
 "Vyvinul a podporuje <a href=\"%s\" target=_blank>5 Star Plugins</a> v San "
 "Diegu, CA"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "Vyžadovat ověření pro:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "Celý web"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "Specifický obsah"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "Povolit ověření:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "Deaktivovat ověření pro všechny návštěvníky"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[TESTOVACÍ REŽIM] Zobrazit pouze přihlášeným administrátorům"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "Zobrazit ověření kromě přihlášených uživatelů"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "Zobrazit ověření pro všechny návštěvníky"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "Vyberte typ ověření:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "Pouze dospělí 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "Alkohol"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "Vape"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "let nebo starší pro zobrazení této stránky"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "minuty"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "Členství"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr "Požadovat od uživatelů potvrzení jejich věku před registrací na tuto stránku"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "Prosím, ověřte, že máte 18 let nebo více pro vstup."
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "Jste v legálním věku pro konzumaci alkoholu 21 let nebo starší?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "Jste v legálním věku pro kouření?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -539,7 +573,7 @@ msgstr ""
 "takový materiál uráží nebo je zobrazení takového materiálu ve vaší lokalitě "
 "ilegální, prosím, opusťte tuto stránku nyní."
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -549,7 +583,7 @@ msgstr ""
 "Vstupem na tuto webovou stránku potvrzujete, že jste v legálním věku pro "
 "konzumaci alkoholu v místě, kde žijete (věk 21+ v USA)."
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -560,62 +594,81 @@ msgstr ""
 "Vstupem na tuto webovou stránku potvrzujete, že jste v legálním věku pro "
 "kouření v místě, kde žijete (věk 18+, 19+ a 21+ v některých oblastech)."
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "Kontrola nastavení v reálném čase"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "Potvrďte nastavení \"Povolit ověření\" před zobrazením vyskakovacího okna"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "Rozbalovací seznamy dat"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "Vstupy"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "Potvrdit zaškrtávací políčko"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "Zobrazit na všech stránkách (upgradujte pro odemčení)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "Zobrazit pouze na této stránce (upgradujte pro odemčení)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "Zobrazit všude kromě této stránky (upgradujte pro odemčení)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "Musíte být %1s let starý, abyste mohli zobrazit tento obsah."
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"Musíte být %1$s let, abyste mohli zobrazit tento obsah. <a "
+"href=\"%2$s\">Prosím ověřte svůj věk</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "Prosím, ověřte svůj věk"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "Je mi 18 nebo více [Přejít na stránku]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "Je mi méně než 18"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "Zadejte web &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "Prosím, potvrďte svůj věk"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "Odemknout prémiové funkce"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "Nový propagační text"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "Udělejte upgrade nyní"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "Začněte 14denní bezplatnou zkušební verzi"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(bez rizika, žádná kreditní karta)"
 
@@ -675,27 +728,34 @@ msgstr "Prémiová podpora"
 msgid "World-class email support from the U.S."
 msgstr "Podpora e-mailem světové úrovně z USA"
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"Přihlaste se k odběru, abyste nám pomohli zlepšit %2$s! Některá data o "
-"využití budou odeslána na naši platformu Freemius."
+"Ahoj %1$s,<br>Přihlaste se, abyste nám pomohli zlepšit %2$s! Některá data o "
+"použití budou odeslána na naši platformu Freemius."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"Abychom si užili všechny funkce a umožnili bezplatnou zkušební verzi "
-"prémiové verze, %2$s chce připojit data o využití na naši platformu "
+"Ahoj %1$s,<br>Abychom mohli využívat všechny funkce a umožnili zkušební "
+"verzi prémiové verze, %2$s chce připojit data o použití na naši platformu "
 "Freemius."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "Prosím, ověřte svůj věk"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "Musíte být starší 21 let, abyste navštívili tuto stránku."

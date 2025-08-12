@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:11+0000\n"
+"PO-Revision-Date: 2025-08-12 06:53+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -41,6 +41,28 @@ msgstr "5 สตาร์ปลั๊กอิน"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "กำลังเพลิดเพลินกับการตรวจสอบอายุที่ง่ายอยู่หรือเปล่า?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"กรุณา <a href=\"%s\" target=\"_blank\">ฝากรีวิว 5 ดาว</a> เพื่อสนับสนุนเรา! "
+"🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "เตือนฉันทีหลัง"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "ปฏิเสธ"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "การตั้งค่า"
@@ -66,7 +88,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "การกำหนดเป้าหมายหน้า"
@@ -106,22 +128,30 @@ msgstr ""
 "พรีเมียมปลดล็อกการแก้ไขข้อความทั้งหมดสำหรับการแปล."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "การแจ้งเตือนอายุ"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "คำถามที่จำเป็น."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"คำถามอายุ <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(สูงสุด 50 ตัวอักษร)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "ข้อจำกัดความรับผิดชอบ"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "ข้อความเล็ก ๆ ที่เลือกได้ใช้ลิงก์ HTML."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(สูงสุด 400 ตัวอักษร)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "ต้องการการตรวจสอบอายุสำหรับเนื้อหานี้"
 
@@ -151,16 +181,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "ใช้ CSS ที่มีในตัวบนส่วนหน้า (แนะนำ)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "ใช่ ฉันมีอายุถึงเกณฑ์"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "ไม่ ฉันอายุต่ำกว่าเกณฑ์"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -422,7 +455,8 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>ให้คะแนนปลั๊กอินนี้</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
@@ -431,86 +465,86 @@ msgstr ""
 "พัฒนาและสนับสนุนโดย <a href=\"%s\" target=_blank>5 Star Plugins</a> "
 "ในซานดิเอโก, แคลิฟอร์เนีย"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "ต้องการการตรวจสอบสำหรับ:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "ทั้งเว็บไซต์"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "เนื้อหาที่เฉพาะเจาะจง"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "เปิดใช้งานการตรวจสอบ:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "ปิดการตรวจสอบสำหรับผู้เข้าชมทั้งหมด"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[โหมดทดสอบ] แสดงเฉพาะสำหรับผู้ดูแลระบบที่ล็อกอิน"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "แสดงการตรวจสอบยกเว้นผู้ใช้ที่ล็อกอิน"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "แสดงการตรวจสอบสำหรับผู้เข้าชมทั้งหมด"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "เลือกประเภทการตรวจสอบ:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "เฉพาะผู้ใหญ่ 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "แอลกอฮอล์"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "บุหรี่ไฟฟ้า"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "อายุ 18 ปีขึ้นไปเพื่อเข้าชมเว็บไซต์นี้"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "นาที"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "สมาชิก"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr "ต้องให้ผู้ใช้ยืนยันอายุของตนก่อนลงทะเบียนเข้าชมเว็บไซต์นี้"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "โปรดยืนยันว่าคุณอายุ 18 ปีขึ้นไปเพื่อเข้าใช้งาน"
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "คุณมีอายุถึงเกณฑ์ในการดื่มตามกฎหมาย 21 ปีขึ้นไปหรือไม่?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "คุณมีอายุถึงเกณฑ์ในการสูบบุหรี่อยู่หรือไม่?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -528,7 +562,7 @@ msgstr ""
 "หากเนื้อหาดังกล่าวทำให้คุณรู้สึกไม่พอใจหรือเป็นสิ่งผิดกฎหมายในการเข้าชมในสถา"
 "นที่ของคุณ กรุณาออกจากเว็บไซต์ในขณะนี้"
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -539,7 +573,7 @@ msgstr ""
 "คุณยืนยันว่าคุณมีอายุถึงเกณฑ์ในการดื่มตามกฎหมายในสถานที่ที่คุณอาศัยอยู่ "
 "(อายุ 21 ปีขึ้นไปในสหรัฐอเมริกา)"
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -550,62 +584,81 @@ msgstr ""
 "คุณยืนยันว่าคุณมีอายุถึงเกณฑ์ในการสูบบุหรี่ในสถานที่ที่คุณอาศัยอยู่ (อายุ "
 "18 ปีขึ้นไป, 19 ปีขึ้นไป และ 21 ปีขึ้นไปในบางพื้นที่)"
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "ตรวจสอบการตั้งค่าเรียลไทม์"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "ยืนยันการตั้งค่า \"เปิดใช้งานการตรวจสอบ\" ก่อนแสดงป๊อปอัพ"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "ดรอปดาวน์วันที่"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "ข้อมูลนำเข้า"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "ยืนยันช่องทำเครื่องหมาย"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "แสดงในทุกหน้า (อัปเกรดเพื่อปลดล็อก)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "แสดงในหน้านี้เท่านั้น (อัปเกรดเพื่อปลดล็อก)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "แสดงทุกที่ยกเว้นหน้านี้ (อัปเกรดเพื่อปลดล็อก)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "คุณต้องมีอายุ %1s ปีขึ้นไปเพื่อดูเนื้อหานี้。"
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"คุณต้องมีอายุ %1$s ปีขึ้นไปจึงจะสามารถดูเนื้อหานี้ได้ <a "
+"href=\"%2$s\">กรุณายืนยันอายุของคุณ</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "กรุณายืนยันอายุของคุณ"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "ฉันอายุ 18 ปีขึ้นไป [เข้าสู่เว็บไซต์]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "ฉันอายุต่ำกว่า 18 ปี"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "เข้าสู่เว็บไซต์ &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "กรุณายืนยันอายุของคุณ"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "ปลดล็อกฟีเจอร์พรีเมียม"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "ข้อความโปรโมชั่นใหม่"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "อัปเกรดตอนนี้"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "เริ่มทดลองใช้ฟรี 14 วัน"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(ไม่มีความเสี่ยง, ไม่มีบัตรเครดิต)"
 
@@ -665,27 +718,36 @@ msgstr "การสนับสนุนพรีเมียม"
 msgid "World-class email support from the U.S."
 msgstr "การสนับสนุนทางอีเมลระดับโลกจากสหรัฐอเมริกา"
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"เข้าร่วมเพื่อช่วยปรับปรุง %2$s! "
+"สวัสดี %1$s,<br>เข้าร่วมเพื่อช่วยเราในการปรับปรุง %2$s! "
 "ข้อมูลการใช้งานบางส่วนจะถูกส่งไปยังแพลตฟอร์ม Freemius ของเรา."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"เพื่อเพลิดเพลินกับฟีเจอร์และฟังก์ชันการทำงานทั้งหมดและเปิดใช้งานการทดลองใช้ง"
-"านฟรีของรุ่นพรีเมียม, %2$s ต้องการเชื่อมต่อข้อมูลการใช้งานกับแพลตฟอร์ม "
-"Freemius ของเรา."
+"สวัสดี "
+"%1$s,"
+"<br>เพื่อที่จะเพลิดเพลินกับฟีเจอร์ทั้งหมดและเปิดใช้งานการทดลองใช้งานฟรีของเว"
+"อร์ชันพรีเมียม, %2$s ต้องการเชื่อมต่อข้อมูลการใช้งานไปยังแพลตฟอร์ม Freemius "
+"ของเรา."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "กรุณายืนยันอายุของคุณ"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "คุณต้องมีอายุ 21 ปีขึ้นไปเพื่อเข้าชมเว็บไซต์นี้."

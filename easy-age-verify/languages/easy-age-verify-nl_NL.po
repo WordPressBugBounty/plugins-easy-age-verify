@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:02+0000\n"
+"PO-Revision-Date: 2025-08-12 06:52+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -41,6 +41,28 @@ msgstr "5 Sterren Plugins"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "Geniet je van Easy Age Verify?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"Gelieve <a href=\"%s\" target=\"_blank\">een 5-sterrenbeoordeling achter te "
+"laten</a> om ons te steunen! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "Herinner me later"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "Afwijzen"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "Instellingen"
@@ -66,7 +88,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "Pagina Targeting"
@@ -106,22 +128,30 @@ msgstr ""
 "het bewerken van alle tekst voor vertaling."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "Leeftijdsverzoek"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "Vereiste vraag."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"Leeftijd Prompt <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(max 50 tekens)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "Onafhankelijkheidsverklaring"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "Optionele kleine lettertjes nemen HTML-link."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(max 400 tekens)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "Leeftijdsverificatie vereist voor deze inhoud"
 
@@ -151,16 +181,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "Gebruik ingebouwde CSS aan de voorkant (aanbevolen)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "Ja, ik ben meerderjarig"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "Nee, ik ben minderjarig"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -426,7 +459,8 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Beoordeel deze plugin</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
@@ -435,88 +469,88 @@ msgstr ""
 "Ontwikkeld en ondersteund door <a href=\"%s\" target=_blank>5 Star "
 "Plugins</a> in San Diego, CA"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "Verificatie vereisen voor:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "Hele site"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "Specifieke inhoud"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "Verificatie inschakelen:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "Verificatie voor alle bezoekers uitschakelen"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[TESTMODUS] Alleen tonen aan ingelogde beheerders"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "Verificatie tonen, behalve voor ingelogde gebruikers"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "Verificatie tonen aan alle bezoekers"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "Selecteer verificatietype:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "Alleen volwassenen 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "Alcohol"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "Vape"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "jaar of ouder om deze site te bekijken"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "minuten"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "Lidmaatschap"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr ""
 "Vereis dat gebruikers hun leeftijd bevestigen voordat ze zich registreren "
 "op deze site"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "Bevestig alstublieft dat u 18 jaar of ouder bent om binnen te gaan."
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "Bent u van de wettelijke drinkleeftijd van 21 jaar of ouder?"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "Bent u van de wettelijke rokleeftijd?"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -535,7 +569,7 @@ msgstr ""
 "dergelijk materiaal u beledigt of het illegaal is om dit in uw locatie te "
 "bekijken, verlaat dan nu de site."
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -547,7 +581,7 @@ msgstr ""
 "drinkleeftijd heeft in de locatie waar u woont (leeftijd 21+ in de "
 "Verenigde Staten)."
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -559,62 +593,81 @@ msgstr ""
 "heeft in de locatie waar u woont (leeftijd 18+, 19+ en 21+ in sommige "
 "gebieden)."
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "Realtime Instellingen Controle"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "Bevestig \"Verificatie Inschakelen\" instellingen voordat u de pop-up toont"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "Datum keuzelijsten"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "Invoeren"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "Bevestig selectievakje"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "Toon op alle pagina's (upgrade om te ontgrendelen)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "Toon alleen op deze pagina (upgrade om te ontgrendelen)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "Toon overal behalve deze pagina (upgrade om te ontgrendelen)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "Je moet %1s jaar oud zijn om deze inhoud te bekijken."
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"Je moet %1$s jaar oud zijn om deze inhoud te bekijken. <a "
+"href=\"%2$s\">Verifieer alsjeblieft je leeftijd</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "Verifieer alstublieft uw leeftijd"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "Ik ben 18 of ouder [Voer site in]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "Ik ben onder de 18"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "Voer Site &raquo; in"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "Bevestig alstublieft uw leeftijd"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "Ontgrendel Premium Functies"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "Nieuwe Promo Tekst"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "Upgrade Nu"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "Start 14-daagse gratis proefperiode"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(risicoloos, geen creditcard)"
 
@@ -674,27 +727,34 @@ msgstr "Premium ondersteuning"
 msgid "World-class email support from the U.S."
 msgstr "Wereldklasse e-mailondersteuning vanuit de VS."
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"Opt-in om ons te helpen %2$s te verbeteren! Sommige gebruiksgegevens worden "
-"naar ons platform Freemius gestuurd."
+"Hey %1$s,<br>Schrijf je in om ons te helpen %2$s te verbeteren! Sommige "
+"gebruiksgegevens worden naar ons platform Freemius gestuurd."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"Om te genieten van alle functies, functionaliteit en een gratis proefversie "
-"van de premium versie, wil %2$s gebruiksgegevens verbinden met ons platform "
-"Freemius."
+"Hey %1$s,<br>Om van alle functies te genieten en een gratis proefperiode "
+"van de premium versie mogelijk te maken, wil %2$s gebruiksgegevens aan ons "
+"platform Freemius koppelen."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "Verifieer alstublieft uw leeftijd"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "Je moet 21 jaar of ouder zijn om deze site te bezoeken."

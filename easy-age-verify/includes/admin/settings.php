@@ -142,7 +142,11 @@ function evav_settings_page() {
 		<p/><?php echo sprintf( __( '<a href="https://5starplugins.com/get-support/" target=_blank>Visit The Support Center</a> for more.', 'easy-age-verify' ) ); ?>
 		<p/><?php echo sprintf( __( 'Use Age Verify with Pretty Simple Popup for <a href="https://get.5starplugins.com/pspforageverify/" target="_blank">perfectly timed marketing popups</a>.', 'easy-age-verify' )); ?>
 		<p/><?php echo sprintf( __( 'Like this? <a href="http://wordpress.org/support/view/plugin-reviews/easy-age-verify/?rate=5#new-post" target=_blank>Rate This Plugin</a>', 'easy-age-verify' )); ?>
-		<p/><?php echo sprintf( __( 'Developed and supported by <a href="%s" target=_blank>5 Star Plugins</a> in San Diego, CA', 'easy-age-verify' ), esc_url('https://5starplugins.com/')); ?> <img class="footerLogo" src="<?php echo plugins_url( 'images/5StarPlugins_Logo80x80.png', dirname(__FILE__) );?>" width="20">
+		<?php
+		/* translators: %s: URL to 5 Star Plugins website */
+		echo sprintf( __( 'Developed and supported by <a href="%s" target=_blank>5 Star Plugins</a> in San Diego, CA', 'easy-age-verify' ), esc_url('https://5starplugins.com/'));
+		?>
+		<img class="footerLogo" src="<?php echo plugins_url( 'images/5StarPlugins_Logo80x80.png', dirname(__FILE__) );?>" width="20">
 	</div>
 <?php }
 

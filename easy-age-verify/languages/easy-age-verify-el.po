@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-07-22 03:10+0000\n"
+"PO-Revision-Date: 2025-08-12 06:53+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -41,6 +41,28 @@ msgstr "5 Αστερών Πρόσθετα"
 msgid "https://5starplugins.com/"
 msgstr "https://5starplugins.com/"
 
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "Απολαμβάνετε το Easy Age Verify;"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"Παρακαλώ <a href=\"%s\" target=\"_blank\">αφήστε μια κριτική 5 αστέρων</a> "
+"για να μας υποστηρίξετε! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "Υπενθύμισέ μου αργότερα"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "Απόρριψη"
+
 #: includes/admin/class-easy-age-verify-admin.php:136
 msgid "Settings"
 msgstr "Ρυθμίσεις"
@@ -67,7 +89,7 @@ msgstr ""
 
 #: includes/admin/class-easy-age-verify-admin.php:205
 #: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:452
+#: includes/admin/settings.php:456
 #: includes/functions.php:655
 msgid "Page Targeting"
 msgstr "Στοχεύοντας Σελίδα"
@@ -110,22 +132,30 @@ msgstr ""
 "μετάφραση."
 
 #: includes/admin/class-easy-age-verify-admin.php:245
+msgid "Age Prompt"
+msgstr "Προτροπή Ηλικίας"
+
+#: includes/admin/class-easy-age-verify-admin.php:245
 msgid "Required question."
 msgstr "Υποχρεωτική ερώτηση."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
-msgid ""
-"Age Prompt <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
-msgstr ""
-"Προτροπή Ηλικίας <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:246
+msgid "(max 50 characters)"
+msgstr "(μέγιστο 50 χαρακτήρες)"
 
 #: includes/admin/class-easy-age-verify-admin.php:254
+msgid "Disclaimer"
+msgstr "Αποποίηση Ευθύνης"
+
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Optional small print takes HTML link."
 msgstr "Προαιρετική μικρή εκτύπωση που δέχεται HTML σύνδεσμο."
 
-#: includes/admin/class-easy-age-verify-admin.php:335
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "(max 400 characters)"
+msgstr "(μέγιστο 400 χαρακτήρες)"
+
+#: includes/admin/class-easy-age-verify-admin.php:337
 msgid "Require age verification for this content"
 msgstr "Απαιτείτε επιβεβαίωση ηλικίας για αυτό το περιεχόμενο"
 
@@ -155,16 +185,19 @@ msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "Χρησιμοποιήστε το ενσωματωμένο CSS στο front-end (συνιστάται)"
 
 #: includes/admin/premium/settings-premium.php:106
+#: includes/functions.php:368
 #: includes/premium/functions-premium.php:23
 msgid "Yes I am of legal age"
 msgstr "Ναι, είμαι νόμιμης ηλικίας"
 
 #: includes/admin/premium/settings-premium.php:136
+#: includes/functions.php:373
 #: includes/premium/functions-premium.php:87
 msgid "No I am under age"
 msgstr "Όχι, είμαι ανήλικος"
 
 #: includes/admin/premium/settings-premium.php:167
+#: includes/functions.php:390
 #: includes/functions.php:409
 #: includes/premium/functions-premium.php:58
 msgid "Sorry, you must be of legal age to enter this website."
@@ -437,7 +470,8 @@ msgstr ""
 "href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
 "?rate=5#new-post\" target=_blank>Βαθμολογήστε αυτό το πρόσθετο</a>"
 
-#: includes/admin/settings.php:145
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
 #, php-format
 msgid ""
 "Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
@@ -446,88 +480,88 @@ msgstr ""
 "Αναπτύχθηκε και υποστηρίζεται από <a href=\"%s\" target=_blank>5 Star "
 "Plugins</a> στο Σαν Ντιέγκο, CA"
 
-#: includes/admin/settings.php:170
+#: includes/admin/settings.php:174
 msgid "Require Verification For:"
 msgstr "Απαιτείται Επιβεβαίωση Για:"
 
-#: includes/admin/settings.php:174
+#: includes/admin/settings.php:178
 msgid "Entire site"
 msgstr "Ολόκληρη η ιστοσελίδα"
 
-#: includes/admin/settings.php:179
+#: includes/admin/settings.php:183
 msgid "Specific content"
 msgstr "Συγκεκριμένο περιεχόμενο"
 
-#: includes/admin/settings.php:198
+#: includes/admin/settings.php:202
 msgid "Enable Verification:"
 msgstr "Ενεργοποίηση Επιβεβαίωσης:"
 
-#: includes/admin/settings.php:202
+#: includes/admin/settings.php:206
 msgid "Disable verification to all visitors"
 msgstr "Απενεργοποιήστε την επιβεβαίωση για όλους τους επισκέπτες"
 
-#: includes/admin/settings.php:207
+#: includes/admin/settings.php:211
 msgid "[TESTING MODE] Show only to logged-in Admins"
 msgstr "[ΛΕΙΤΟΥΡΓΙΑ ΔΟΚΙΜΗΣ] Εμφάνιση μόνο σε συνδεδεμένους Διαχειριστές"
 
-#: includes/admin/settings.php:212
+#: includes/admin/settings.php:216
 msgid "Show verification except to logged-in users"
 msgstr "Εμφάνιση επιβεβαίωσης εκτός από τους συνδεδεμένους χρήστες"
 
-#: includes/admin/settings.php:217
+#: includes/admin/settings.php:221
 msgid "Show verification to all visitors"
 msgstr "Εμφάνιση επιβεβαίωσης σε όλους τους επισκέπτες"
 
-#: includes/admin/settings.php:236
+#: includes/admin/settings.php:240
 msgid "Select verification type:"
 msgstr "Επιλέξτε τύπο επιβεβαίωσης:"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:244
 msgid "Adults Only 18+"
 msgstr "Μόνο για Ενήλικες 18+"
 
-#: includes/admin/settings.php:249
+#: includes/admin/settings.php:253
 msgid "Alcohol"
 msgstr "Αλκοόλ"
 
-#: includes/admin/settings.php:258
+#: includes/admin/settings.php:262
 msgid "Vape"
 msgstr "Ατμιστικό"
 
-#: includes/admin/settings.php:275
+#: includes/admin/settings.php:279
 msgid "years old or older to view this site"
 msgstr "χρόνια ή μεγαλύτεροι για να δουν αυτόν τον ιστότοπο"
 
-#: includes/admin/settings.php:286
+#: includes/admin/settings.php:290
 msgid "minutes"
 msgstr "λεπτά"
 
-#: includes/admin/settings.php:299
+#: includes/admin/settings.php:303
 msgid "Membership"
 msgstr "Συνδρομή"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:307
 msgid "Require users to confirm their age before registering to this site"
 msgstr ""
 "Απαιτείται οι χρήστες να επιβεβαιώσουν την ηλικία τους πριν εγγραφούν σε "
 "αυτόν τον ιστότοπο"
 
-#: includes/admin/settings.php:322
-#: includes/admin/settings.php:331
-#: includes/functions.php:588
+#: includes/admin/settings.php:326
+#: includes/admin/settings.php:335
+#: includes/functions.php:583
 msgid "Please verify you are 18 years or older to enter."
 msgstr "Παρακαλώ επιβεβαιώστε ότι είστε 18 ετών ή μεγαλύτεροι για να εισέλθετε."
 
-#: includes/admin/settings.php:325
+#: includes/admin/settings.php:329
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "Είστε της νόμιμης ηλικίας κατανάλωσης αλκοόλ 21 ετών ή μεγαλύτεροι;"
 
-#: includes/admin/settings.php:328
+#: includes/admin/settings.php:332
 msgid "Are you of legal smoking age?"
 msgstr "Είστε της νόμιμης ηλικίας καπνίσματος;"
 
-#: includes/admin/settings.php:358
-#: includes/admin/settings.php:367
+#: includes/admin/settings.php:362
+#: includes/admin/settings.php:371
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -545,7 +579,7 @@ msgstr ""
 "είστε κάτω των 18 ετών, εάν τέτοιο υλικό σας προσβάλλει ή είναι παράνομο να "
 "το δείτε στην τοποθεσία σας, παρακαλώ εξέλθετε τώρα."
 
-#: includes/admin/settings.php:361
+#: includes/admin/settings.php:365
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -556,7 +590,7 @@ msgstr ""
 "ηλικίας κατανάλωσης αλκοόλ στην τοποθεσία όπου διαμένετε (ηλικία 21+ στις "
 "Ηνωμένες Πολιτείες)."
 
-#: includes/admin/settings.php:364
+#: includes/admin/settings.php:368
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -568,64 +602,83 @@ msgstr ""
 "ηλικίας καπνίσματος στην τοποθεσία όπου διαμένετε (ηλικία 18+, 19+ και 21+ "
 "σε ορισμένες περιοχές)."
 
-#: includes/admin/settings.php:406
+#: includes/admin/settings.php:410
 msgid "Realtime Settings Check"
 msgstr "Έλεγχος Ρυθμίσεων σε Πραγματικό Χρόνο"
 
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr ""
 "Επιβεβαιώστε τις ρυθμίσεις \"Ενεργοποίηση Επιβεβαίωσης\" πριν εμφανίσετε το "
 "αναδυόμενο παράθυρο"
 
-#: includes/admin/settings.php:437
+#: includes/admin/settings.php:441
 msgid "Date dropdowns"
 msgstr "Αναπτυσσόμενα ημερολόγια"
 
-#: includes/admin/settings.php:438
+#: includes/admin/settings.php:442
 msgid "Inputs"
 msgstr "Είσοδοι"
 
-#: includes/admin/settings.php:439
+#: includes/admin/settings.php:443
 msgid "Confirm checkbox"
 msgstr "Επιβεβαίωση επιλογής"
 
-#: includes/admin/settings.php:456
+#: includes/admin/settings.php:460
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "Εμφάνιση σε όλες τις σελίδες (αναβάθμιση για ξεκλείδωμα)"
 
-#: includes/admin/settings.php:461
+#: includes/admin/settings.php:465
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "Εμφάνιση μόνο σε αυτή τη σελίδα (αναβάθμιση για ξεκλείδωμα)"
 
-#: includes/admin/settings.php:466
+#: includes/admin/settings.php:470
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "Εμφάνιση παντού εκτός από αυτή τη σελίδα (αναβάθμιση για ξεκλείδωμα)"
 
-#: includes/class-easy-age-verify.php:342
+#: includes/class-easy-age-verify.php:345
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
-msgid "You must be %1s years old to view this content."
-msgstr "Πρέπει να είστε %1s ετών για να δείτε αυτό το περιεχόμενο."
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"Πρέπει να είστε %1$s ετών για να δείτε αυτό το περιεχόμενο. <a "
+"href=\"%2$s\">Παρακαλώ επιβεβαιώστε την ηλικία σας</a>."
 
-#: includes/class-easy-age-verify.php:342
-#: includes/functions.php:739
-#: includes/premium/functions-premium.php:141
-msgid "Please verify your age"
-msgstr "Παρακαλώ επιβεβαιώστε την ηλικία σας"
+#: includes/functions.php:369
+msgid "I am 18 or older [Enter Site]"
+msgstr "Είμαι 18 ή μεγαλύτερος [Είσοδος στο Site]"
+
+#: includes/functions.php:374
+msgid "I am under 18"
+msgstr "Είμαι κάτω των 18"
 
 #: includes/functions.php:413
 msgid "Enter Site &raquo;"
 msgstr "Εισάγετε τον ιστότοπο &raquo;"
 
-#: includes/functions.php:604
+#: includes/functions.php:599
 msgid "Please confirm your age"
 msgstr "Παρακαλώ επιβεβαιώστε την ηλικία σας"
 
-#: includes/functions.php:645
+#: includes/functions.php:621
+msgid "Unlock Premium Features"
+msgstr "Ξεκλειδώστε τις Premium Λειτουργίες"
+
+#: includes/functions.php:624
+msgid "New Promo Text"
+msgstr "Νέος Προωθητικός Κείμενος"
+
+#: includes/functions.php:636
+msgid "Upgrade Now"
+msgstr "Αναβάθμιση Τώρα"
+
+#: includes/functions.php:642
 msgid "Start 14-Day Free Trial"
 msgstr "Ξεκινήστε 14ήμερη δωρεάν δοκιμή"
 
-#: includes/functions.php:645
+#: includes/functions.php:643
 msgid "(risk free, no credit card)"
 msgstr "(χωρίς ρίσκο, χωρίς πιστωτική κάρτα)"
 
@@ -685,27 +738,34 @@ msgstr "Premium υποστήριξη"
 msgid "World-class email support from the U.S."
 msgstr "Υποστήριξη μέσω email παγκόσμιας κλάσης από τις Η.Π.Α."
 
-#: includes/functions.php:673
+#: includes/functions.php:675
+#. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
-"Opt-in to help us improve %2$s! Some usage data will be sent to our "
-"platform Freemius."
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
 msgstr ""
-"Συμμετοχή για να μας βοηθήσετε να βελτιώσουμε το %2$s! Ορισμένα δεδομένα "
-"χρήσης θα σταλούν στην πλατφόρμα μας Freemius."
+"Γεια σου %1$s,<br>Επιλέξτε να μας βοηθήσετε να βελτιώσουμε το %2$s! "
+"Ορισμένα δεδομένα χρήσης θα αποσταλούν στην πλατφόρμα μας Freemius."
 
-#: includes/functions.php:687
+#: includes/functions.php:696
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
-"In order to enjoy all of the features, functionality and enable a free "
-"trial of premium version, %2$s wants to connect usage data to our platform "
-"Freemius."
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
 msgstr ""
-"Για να απολαύσετε όλες τις δυνατότητες και να ενεργοποιήσετε μια δωρεάν "
-"δοκιμή της premium έκδοσης, το %2$s θέλει να συνδέσει τα δεδομένα χρήσης "
-"στην πλατφόρμα μας Freemius."
+"Γεια σου %1$s,<br>Για να απολαύσετε όλες τις δυνατότητες, τη "
+"λειτουργικότητα και να επιτρέψετε μια δωρεάν δοκιμή της premium έκδοσης, το "
+"%2$s θέλει να συνδέσει δεδομένα χρήσης στην πλατφόρμα μας Freemius."
 
-#: includes/functions.php:765
+#: includes/functions.php:749
+#: includes/premium/functions-premium.php:141
+msgid "Please verify your age"
+msgstr "Παρακαλώ επιβεβαιώστε την ηλικία σας"
+
+#: includes/functions.php:775
 #: includes/premium/functions-premium.php:128
 msgid "You must be 21 years old to visit this site."
 msgstr "Πρέπει να είστε 21 ετών για να επισκεφθείτε αυτόν τον ιστότοπο."
