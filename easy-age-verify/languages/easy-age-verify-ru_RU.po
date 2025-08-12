@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
@@ -99,30 +99,31 @@ msgid "Include or exclude a certain page."
 msgstr "Включить или исключить определенную страницу."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "Проверка настроек в реальном времени"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr ""
 "Может помочь с проблемами кэширования, добавляет задержку к всплывающему "
 "окну."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"Проверка настроек в реальном времени <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "Узнать больше"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "Проверить на"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
 "Выберите готовую настройку. Обновите до Премиум, чтобы редактировать текст "
 "и фон."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -130,31 +131,31 @@ msgstr ""
 "Обновите, чтобы редактировать текст кнопки и сообщения об ошибке. Премиум "
 "разблокирует редактирование всего текста для перевода."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "Запрос возраста"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "Обязательный вопрос."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(макс 50 символов)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "Отказ от ответственности"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "Необязательный мелкий шрифт принимает HTML-ссылку."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(макс 400 символов)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "Требовать проверку возраста для этого контента"
 
@@ -202,6 +203,54 @@ msgstr "Нет, я несовершеннолетний"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "Извините, вы должны быть совершеннолетним, чтобы войти на этот сайт."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "Добавить логотип"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "Выбрать логотип"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "Очистить логотип"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% непрозрачности"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% непрозрачности"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "Показать на всех страницах"
@@ -221,6 +270,29 @@ msgstr "Страница "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— Выберите страницу —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(Главная)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(Индекс блога)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "Записи блога"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "Страницы продуктов"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "Все страницы WooCommerce"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -390,6 +462,60 @@ msgid ""
 msgstr ""
 "Ваш логотип <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "Кэш WP Rocket очищен."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "Кэш W3TC очищен."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "Кэш WP Super Cache очищен."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "Кэш WP Fastest Cache очищен."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "Кэш WPEngine очищен."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "Кэш SiteGround Optimizer очищен."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "Кэш LiteSpeed очищен."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Кэш Cache Enabler очищен."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Кэш Pagely очищен."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Кэш Autoptimize очищен."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Кэш Comet Cache очищен."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Кэш Hummingbird очищен."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"ПРИМЕЧАНИЕ: Пожалуйста, убедитесь, что вы очистили кэши страниц, чтобы "
+"новые настройки отобразились."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -596,10 +722,6 @@ msgstr ""
 "Входя на этот веб-сайт, вы подтверждаете, что вы достигли законного "
 "возраста для курения в месте, где вы проживаете (возраст 18+, 19+ и 21+ в "
 "некоторых районах)."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "Проверка настроек в реальном времени"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

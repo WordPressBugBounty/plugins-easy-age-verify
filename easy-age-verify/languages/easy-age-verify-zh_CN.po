@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -92,54 +92,57 @@ msgid "Include or exclude a certain page."
 msgstr "包含或排除特定页面。"
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "实时设置检查"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "可能有助于缓存问题，给弹出窗口增加延迟。"
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr "实时设置检查 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "了解更多"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "验证对象"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr "选择一个现成设置。升级到高级版以编辑文本和背景。"
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
 msgstr "升级以编辑按钮和错误信息文本。高级版解锁所有文本的翻译编辑。"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "年龄提示"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "必填问题。"
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(最多50个字符)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "免责声明"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "可选的小字需使用HTML链接。"
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(最多400个字符)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "要求对此内容进行年龄验证"
 
@@ -187,6 +190,54 @@ msgstr "否，我未满法定年龄"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "抱歉，您必须达到法定年龄才能进入此网站。"
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "添加徽标"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "选择徽标"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "清除徽标"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% 不透明度"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% 不透明度"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "在所有页面上显示"
@@ -206,6 +257,29 @@ msgstr "页面 "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— 选择一个页面 —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(首页)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(博客索引)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "博客文章"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "产品页面"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "所有 WooCommerce 页面"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -349,6 +423,58 @@ msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr "您的徽标 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "WP Rocket 缓存已清除。"
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "W3TC 缓存已清除。"
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "WP Super Cache 缓存已清除。"
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "WP Fastest Cache 缓存已清除。"
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "WPEngine 缓存已清除。"
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "SiteGround Optimizer 缓存已清除。"
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "LiteSpeed 缓存已清除。"
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Cache Enabler 缓存已清除。"
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Pagely 缓存已清除。"
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Autoptimize 缓存已清除。"
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Comet Cache 缓存已清除。"
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Hummingbird 缓存已清除。"
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr "注意：请确保清除任何页面缓存，以便新设置能够显示。"
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -536,10 +662,6 @@ msgid ""
 msgstr ""
 "本网站上的产品仅供达到合法吸烟年龄的成年人使用。\n"
 "通过进入本网站，您证明您在居住地的合法吸烟年龄（某些地区为18岁、19岁和21岁及以上）。"
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "实时设置检查"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

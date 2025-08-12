@@ -13,78 +13,78 @@ if( ! function_exists('evav_clear_cache') ) {
 		// WP Rocket
 		if ( function_exists( 'rocket_clean_domain' ) ) {
 			rocket_clean_domain();
-			echo "<div class='notice notice-success is-dismissible'><p>WP Rocket cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'WP Rocket cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// W3 Total Cache : w3tc
 		if ( function_exists( 'w3tc_pgcache_flush' ) ) {
 			w3tc_pgcache_flush();
-			echo "<div class='notice notice-success is-dismissible'><p>W3TC cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'W3TC cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// WP Super Cache : wp-super-cache
 		if ( function_exists( 'wp_cache_clear_cache' ) ) {
 			wp_cache_clear_cache();
-			echo "<div class='notice notice-success is-dismissible'><p>WP Super Cache cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'WP Super Cache cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// WP Fastest Cache
 		if( function_exists('wpfc_clear_all_cache') ) {
 			wpfc_clear_all_cache(true);
-			echo "<div class='notice notice-success is-dismissible'><p>WP Fastest Cache cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'WP Fastest Cache cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// WPEngine
 		if ( class_exists( 'WpeCommon' ) && method_exists( 'WpeCommon', 'purge_memcached' ) ) {
 			WpeCommon::purge_memcached();
 			WpeCommon::purge_varnish_cache();
-			echo "<div class='notice notice-success is-dismissible'><p>WPEngine cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'WPEngine cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// SG Optimizer by Siteground
 		if ( function_exists( 'sg_cachepress_purge_cache' ) ) {
 			sg_cachepress_purge_cache();
-			echo "<div class='notice notice-success is-dismissible'><p>SiteGround Optimizer cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'SiteGround Optimizer cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// LiteSpeed
 		if( class_exists('LiteSpeed_Cache_API') && method_exists('LiteSpeed_Cache_API', 'purge_all') ) {
 			LiteSpeed_Cache_API::purge_all();
-			echo "<div class='notice notice-success is-dismissible'><p>LiteSpeed cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'LiteSpeed cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// Cache Enabler
 		if( class_exists('Cache_Enabler') && method_exists('Cache_Enabler', 'clear_total_cache') ) {
 			Cache_Enabler::clear_total_cache();
-			echo "<div class='notice notice-success is-dismissible'><p>Cache Enabler cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Cache Enabler cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// Pagely
 		if ( class_exists('PagelyCachePurge') && method_exists('PagelyCachePurge','purgeAll') ) {
 			PagelyCachePurge::purgeAll();
-			echo "<div class='notice notice-success is-dismissible'><p>Pagely cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Pagely cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// Autoptimize
 		if( class_exists('autoptimizeCache') && method_exists( 'autoptimizeCache', 'clearall') ) {
 			autoptimizeCache::clearall();
-			echo "<div class='notice notice-success is-dismissible'><p>Autoptimize cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Autoptimize cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// Comet cache
 		if( class_exists('comet_cache') && method_exists('comet_cache', 'clear') ) {
 			comet_cache::clear();
-			echo "<div class='notice notice-success is-dismissible'><p>Comet Cache cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Comet Cache cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		// Hummingbird Cache
 		if( class_exists('\Hummingbird\WP_Hummingbird') && method_exists('\Hummingbird\WP_Hummingbird', 'flush_cache') ) {
 			\Hummingbird\WP_Hummingbird::flush_cache();
-			echo "<div class='notice notice-success is-dismissible'><p>Hummingbird cache cleared.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Hummingbird cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
 		if (! $evav_cleared == TRUE) {
-			echo "<div class='notice notice-success is-dismissible'><p>NOTE: Please be sure to clear any page caches for new settings to display.</p></div>";
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'NOTE: Please be sure to clear any page caches for new settings to display.', 'easy-age-verify' ) . "</p></div>";
 		}
 	}
 }

@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:53+0000\n"
+"PO-Revision-Date: 2025-08-12 19:17+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -98,28 +98,29 @@ msgid "Include or exclude a certain page."
 msgstr "รวมหรือยกเว้นหน้าที่เฉพาะ"
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "ตรวจสอบการตั้งค่าเรียลไทม์"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "อาจช่วยปัญหาการแคช เพิ่มความล่าช้าให้กับป๊อปอัพ."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"ตรวจสอบการตั้งค่าเรียลไทม์ <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "เรียนรู้เพิ่มเติม"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "ตรวจสอบสำหรับ"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
 "เลือกการตั้งค่าที่พร้อมใช้งาน "
 "อัปเกรดเป็นพรีเมียมเพื่อแก้ไขข้อความและพื้นหลัง."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -127,31 +128,31 @@ msgstr ""
 "อัปเกรดเพื่อแก้ไขข้อความปุ่มและข้อความแสดงข้อผิดพลาด "
 "พรีเมียมปลดล็อกการแก้ไขข้อความทั้งหมดสำหรับการแปล."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "การแจ้งเตือนอายุ"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "คำถามที่จำเป็น."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(สูงสุด 50 ตัวอักษร)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "ข้อจำกัดความรับผิดชอบ"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "ข้อความเล็ก ๆ ที่เลือกได้ใช้ลิงก์ HTML."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(สูงสุด 400 ตัวอักษร)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "ต้องการการตรวจสอบอายุสำหรับเนื้อหานี้"
 
@@ -199,6 +200,54 @@ msgstr "ไม่ ฉันอายุต่ำกว่าเกณฑ์"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "ขอโทษ คุณต้องมีอายุถึงเกณฑ์เพื่อเข้าสู่เว็บไซต์นี้."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "เพิ่มโลโก้"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "เลือกโลโก้"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "ลบโลโก้"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "ความทึบ 60%"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "ความทึบ 65%"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "ความทึบ 70%"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "ความทึบ 75%"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "ความทึบ 80%"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "ความทึบ 85%"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "ความทึบ 90%"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "ความทึบ 95%"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "ความทึบ 100%"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "แสดงในทุกหน้า"
@@ -218,6 +267,29 @@ msgstr "หน้า "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— เลือกหน้า —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(หน้าแรก)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(ดัชนีบล็อก)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "โพสต์บล็อก"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "หน้าผลิตภัณฑ์"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "หน้าทั้งหมดของ WooCommerce"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -383,6 +455,60 @@ msgid ""
 msgstr ""
 "โลโก้ของคุณ <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "ล้างแคช WP Rocket แล้ว"
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "ล้างแคช W3TC แล้ว"
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "ล้างแคช WP Super Cache แล้ว"
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "ล้างแคช WP Fastest Cache แล้ว"
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "ล้างแคช WPEngine แล้ว"
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "ล้างแคช SiteGround Optimizer แล้ว"
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "ล้างแคช LiteSpeed แล้ว"
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "ล้างแคช Cache Enabler แล้ว"
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "ล้างแคช Pagely แล้ว"
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "ล้างแคช Autoptimize แล้ว"
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "ล้างแคช Comet Cache แล้ว"
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "ล้างแคช Hummingbird แล้ว"
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"หมายเหตุ: กรุณาให้แน่ใจว่าคุณได้ล้างแคชของหน้าใด ๆ "
+"เพื่อให้การตั้งค่าใหม่แสดงออกมา"
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -583,10 +709,6 @@ msgstr ""
 "ด้วยการเข้าชมเว็บไซต์นี้ "
 "คุณยืนยันว่าคุณมีอายุถึงเกณฑ์ในการสูบบุหรี่ในสถานที่ที่คุณอาศัยอยู่ (อายุ "
 "18 ปีขึ้นไป, 19 ปีขึ้นไป และ 21 ปีขึ้นไปในบางพื้นที่)"
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "ตรวจสอบการตั้งค่าเรียลไทม์"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

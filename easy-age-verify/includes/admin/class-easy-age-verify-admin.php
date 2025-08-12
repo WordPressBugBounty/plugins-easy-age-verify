@@ -192,7 +192,7 @@ final class Easy_Age_Verify_Admin {
         // Set to Disabled or Who to verify (not logged in or all)
         add_settings_field(
             '_evav_settings_ajax',
-            __( 'Realtime Settings Check' . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . __( 'May help caching issues, adds delay to popup.', 'easy-age-verify' ) . '"></span>' . $this->small( '(<a href="https://support.5starplugins.com/article/202-realtime-settings-check" target="_blank">Learn more</a>)' ), 'easy-age-verify' ),
+            esc_html__( 'Realtime Settings Check', 'easy-age-verify' ) . ' <span class="dashicons dashicons-info evavoptionshovertip" title="' . esc_attr__( 'May help caching issues, adds delay to popup.', 'easy-age-verify' ) . '"></span> ' . $this->small( sprintf( '(<a href="%1$s" target="_blank">%2$s</a>)', esc_url( 'https://support.5starplugins.com/article/202-realtime-settings-check' ), esc_html__( 'Learn more', 'easy-age-verify' ) ) ),
             'evav_settings_callback_ajax_check',
             'easy-age-verify',
             'evav_settings_general'

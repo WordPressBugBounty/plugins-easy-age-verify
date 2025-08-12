@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 6.8
-Stable tag: 2.0.7
+Stable tag: 2.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -170,6 +170,9 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 Update! Fixed languages path. Updated language files, fixed translation bugs
 
 == Changelog ==
+= 2.0.8 =
+* Fixed a few more translation issues
+
 = 2.0.7 =
 * Updated language files, fixed translation bugs
 

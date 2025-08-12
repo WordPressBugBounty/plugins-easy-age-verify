@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:15+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -100,30 +100,31 @@ msgid "Include or exclude a certain page."
 msgstr "Inclure ou exclure une certaine page."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "Vérification des paramètres en temps réel"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr ""
 "Peut aider à résoudre les problèmes de mise en cache, ajoute un délai à la "
 "fenêtre contextuelle."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"Vérification des paramètres en temps réel <span class=\"dashicons "
-"dashicons-info evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "En savoir plus"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "Vérifier pour"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
 "Sélectionnez un paramètre clé en main. Passez à la version Premium pour "
 "modifier le texte et l'arrière-plan."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -132,31 +133,31 @@ msgstr ""
 "version Premium débloque la possibilité de modifier tout le texte pour la "
 "traduction."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "Alerte d'âge"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "Question requise."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(max 50 caractères)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "Avertissement"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "Texte en petit caractère facultatif avec lien HTML."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(max 400 caractères)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "Exiger la vérification d'âge pour ce contenu"
 
@@ -204,6 +205,54 @@ msgstr "Non, je suis mineur"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "Désolé, vous devez être majeur pour entrer sur ce site web."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "Ajouter un logo"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "Sélectionner un logo"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "Effacer le logo"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% d'opacité"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% d'opacité"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "Afficher sur toutes les pages"
@@ -223,6 +272,29 @@ msgstr "Page "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— Sélectionner une page —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(Accueil)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(Index du blog)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "Articles de blog"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "Pages de produits"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "Toutes les pages WooCommerce"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -392,6 +464,60 @@ msgid ""
 msgstr ""
 "Votre logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "Cache WP Rocket vidé."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "Cache W3TC vidé."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "Cache WP Super Cache vidé."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "Cache WP Fastest Cache vidé."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "Cache WPEngine vidé."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "Cache SiteGround Optimizer vidé."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "Cache LiteSpeed vidé."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Cache Cache Enabler vidé."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Cache Pagely vidé."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Cache Autoptimize vidé."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Cache Comet Cache vidé."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Cache Hummingbird vidé."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"REMARQUE : Veuillez vous assurer de vider les caches de page pour que les "
+"nouveaux paramètres s'affichent."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -599,10 +725,6 @@ msgstr ""
 "FUMER.\n"
 "En entrant sur ce site, vous certifiez que vous avez l'âge légal pour fumer "
 "dans le lieu où vous résidez (âge 18+, 19+ et 21+ dans certaines zones)."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "Vérification des paramètres en temps réel"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

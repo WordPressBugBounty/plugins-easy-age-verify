@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -98,28 +98,29 @@ msgid "Include or exclude a certain page."
 msgstr "Belirli bir sayfayı dahil et veya hariç tut."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "Gerçek Zamanlı Ayarlar Kontrolü"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "Önbellek sorunlarına yardımcı olabilir, açılır pencereye gecikme ekler."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"Gerçek Zamanlı Ayarlar Kontrolü <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "Daha fazla bilgi edinin"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "Doğrulamak İçin"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
 "Anahtar teslim bir ayar seçin. Metni ve arka planı düzenlemek için "
 "Premium'a yükseltin."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -127,31 +128,31 @@ msgstr ""
 "Düğme ve hata mesajı metnini düzenlemek için yükseltin. Premium, tüm "
 "metinlerin çeviri için düzenlenmesini açar."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "Yaş İsteği"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "Zorunlu soru."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(maks 50 karakter)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "Feragatname"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "İsteğe bağlı küçük yazı HTML bağlantısı alır."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(maks 400 karakter)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "Bu içerik için yaş doğrulamasını gerektir"
 
@@ -199,6 +200,54 @@ msgstr "Hayır, ben reşit değilim"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "Üzgünüm, bu web sitesine girmek için yasal yaşta olmalısınız."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "Logo Ekle"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "Logo Seç"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "Logo Temizle"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% Opaklık"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% Opaklık"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "Tüm sayfalarda göster"
@@ -218,6 +267,29 @@ msgstr "Sayfa "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— Bir Sayfa Seçin —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(Ana Sayfa)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(Blog İndeksi)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "Blog Yazıları"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "Ürün Sayfaları"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "Tüm WooCommerce Sayfaları"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -385,6 +457,60 @@ msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr "Logonuz <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "WP Rocket önbelleği temizlendi."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "W3TC önbelleği temizlendi."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "WP Super Cache önbelleği temizlendi."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "WP Fastest Cache önbelleği temizlendi."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "WPEngine önbelleği temizlendi."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "SiteGround Optimizer önbelleği temizlendi."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "LiteSpeed önbelleği temizlendi."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Cache Enabler önbelleği temizlendi."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Pagely önbelleği temizlendi."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Autoptimize önbelleği temizlendi."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Comet Cache önbelleği temizlendi."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Hummingbird önbelleği temizlendi."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"NOT: Yeni ayarların görüntülenmesi için lütfen sayfa önbelleklerini "
+"temizlediğinizden emin olun."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -590,10 +716,6 @@ msgstr ""
 "BU WEB SİTESİNDEKİ ÜRÜNLER YASAL SİGARA İÇME YAŞINDAKİ YETİŞKİNLER İÇİNDİR.\n"
 "Bu web sitesine girdiğinizde, yaşadığınız yerde yasal sigara içme yaşı "
 "olduğunuzu (bazı bölgelerde 18+, 19+ ve 21+) onaylamış olursunuz."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "Gerçek Zamanlı Ayarlar Kontrolü"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

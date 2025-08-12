@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -92,56 +92,57 @@ msgid "Include or exclude a certain page."
 msgstr "특정 페이지를 포함하거나 제외합니다."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "실시간 설정 확인"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "캐싱 문제에 도움이 될 수 있으며, 팝업에 지연을 추가합니다."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"실시간 설정 확인 <span class=\"dashicons dashicons-info evavoptionshovertip\" "
-"title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "자세히 알아보기"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "확인 대상"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr "턴키 설정을 선택하세요. 텍스트 및 배경을 편집하려면 프리미엄으로 업그레이드하세요."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
 msgstr "버튼과 오류 메시지 텍스트를 편집하려면 업그레이드하세요. 프리미엄은 모든 텍스트 편집을 잠금 해제합니다."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "나이 확인"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "필수 질문입니다."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(최대 50자)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "면책 조항"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "선택적 소규모 인쇄는 HTML 링크를 사용합니다."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(최대 400자)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "이 콘텐츠에 대한 연령 확인 필요"
 
@@ -189,6 +190,54 @@ msgstr "아니오, 저는 미성년자입니다"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "죄송합니다. 이 웹사이트에 들어가려면 법적 연령이어야 합니다."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "로고 추가"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "로고 선택"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "로고 지우기"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% 불투명도"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% 불투명도"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "모든 페이지에 표시"
@@ -208,6 +257,29 @@ msgstr "페이지 "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— 페이지 선택 —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(홈)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(블로그 인덱스)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "블로그 게시물"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "제품 페이지"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "모든 WooCommerce 페이지"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -357,6 +429,58 @@ msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr "귀하의 로고 <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "WP Rocket 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "W3TC 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "WP Super Cache 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "WP Fastest Cache 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "WPEngine 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "SiteGround Optimizer 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "LiteSpeed 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Cache Enabler 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Pagely 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Autoptimize 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Comet Cache 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Hummingbird 캐시가 지워졌습니다."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr "참고: 새 설정을 표시하려면 페이지 캐시를 반드시 지우십시오."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -546,10 +670,6 @@ msgstr ""
 "이 웹사이트의 제품은 법적으로 흡연 가능한 성인만을 위한 것입니다.\n"
 "이 웹사이트에 들어가면 거주하는 지역에서 법적으로 흡연 가능한 나이(18세 이상, 일부 지역에서는 19세 이상 및 21세 이상)임을 "
 "인증합니다."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "실시간 설정 확인"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

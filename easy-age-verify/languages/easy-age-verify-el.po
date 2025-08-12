@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:53+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -99,30 +99,31 @@ msgid "Include or exclude a certain page."
 msgstr "Συμπεριλάβετε ή εξαιρέστε μια συγκεκριμένη σελίδα."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "Έλεγχος Ρυθμίσεων σε Πραγματικό Χρόνο"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr ""
 "Μπορεί να βοηθήσει σε προβλήματα προσωρινής αποθήκευσης, προσθέτει "
 "καθυστέρηση στο αναδυόμενο παράθυρο."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"Έλεγχος Ρυθμίσεων Σε Πραγματικό Χρόνο <span class=\"dashicons "
-"dashicons-info evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "Μάθετε περισσότερα"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "Επιβεβαίωση Για"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
 "Επιλέξτε μια ρύθμιση έτοιμου προς χρήση. Αναβαθμίστε σε Premium για να "
 "επεξεργαστείτε το κείμενο και το φόντο."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -131,31 +132,31 @@ msgstr ""
 "σφάλματος. Το Premium ξεκλειδώνει την επεξεργασία όλων των κειμένων για "
 "μετάφραση."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "Προτροπή Ηλικίας"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "Υποχρεωτική ερώτηση."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(μέγιστο 50 χαρακτήρες)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "Αποποίηση Ευθύνης"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "Προαιρετική μικρή εκτύπωση που δέχεται HTML σύνδεσμο."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(μέγιστο 400 χαρακτήρες)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "Απαιτείτε επιβεβαίωση ηλικίας για αυτό το περιεχόμενο"
 
@@ -205,6 +206,54 @@ msgstr ""
 "Λυπάμαι, πρέπει να είστε νόμιμης ηλικίας για να εισέλθετε σε αυτόν τον "
 "ιστότοπο."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "Προσθήκη Λογοτύπου"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "Επιλέξτε Λογότυπο"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "Καθαρισμός Λογοτύπου"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% Διαφάνεια"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% Διαφάνεια"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "Εμφάνιση σε όλες τις σελίδες"
@@ -224,6 +273,29 @@ msgstr "Σελίδα "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— Επιλέξτε μια Σελίδα —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(Αρχική)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(Δείκτης Blog)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "Δημοσιεύσεις Blog"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "Σελίδες Προϊόντων"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "Όλες οι Σελίδες WooCommerce"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -393,6 +465,60 @@ msgid ""
 msgstr ""
 "Το Λογότυπό σας <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "Η προσωρινή μνήμη WP Rocket εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "Η προσωρινή μνήμη W3TC εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "Η προσωρινή μνήμη WP Super Cache εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "Η προσωρινή μνήμη WP Fastest Cache εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "Η προσωρινή μνήμη WPEngine εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "Η προσωρινή μνήμη SiteGround Optimizer εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "Η προσωρινή μνήμη LiteSpeed εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Η προσωρινή μνήμη Cache Enabler εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Η προσωρινή μνήμη Pagely εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Η προσωρινή μνήμη Autoptimize εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Η προσωρινή μνήμη Comet Cache εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Η προσωρινή μνήμη Hummingbird εκκαθαρίστηκε."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"ΣΗΜΕΙΩΣΗ: Παρακαλώ βεβαιωθείτε ότι έχετε καθαρίσει οποιαδήποτε κρυφή μνήμη "
+"σελίδας για να εμφανιστούν οι νέες ρυθμίσεις."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -601,10 +727,6 @@ msgstr ""
 "Με την είσοδό σας σε αυτόν τον ιστότοπο, πιστοποιείτε ότι είστε της νόμιμης "
 "ηλικίας καπνίσματος στην τοποθεσία όπου διαμένετε (ηλικία 18+, 19+ και 21+ "
 "σε ορισμένες περιοχές)."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "Έλεγχος Ρυθμίσεων σε Πραγματικό Χρόνο"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -98,28 +98,29 @@ msgid "Include or exclude a certain page."
 msgstr "किसी विशेष पृष्ठ को शामिल या बाहर करें।"
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "रियलटाइम सेटिंग्स जाँच"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "कैशिंग समस्याओं में मदद कर सकता है, पॉपअप में देरी जोड़ता है।"
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"रीयलटाइम सेटिंग्स जांचें <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "और जानें"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "सत्यापन के लिए"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr ""
 "एक टर्नकी सेटिंग चुनें। टेक्स्ट और पृष्ठभूमि संपादित करने के लिए प्रीमियम "
 "में अपग्रेड करें।"
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -127,31 +128,31 @@ msgstr ""
 "बटन और त्रुटि संदेश पाठ संपादित करने के लिए अपग्रेड करें। प्रीमियम सभी पाठ "
 "के अनुवाद के लिए संपादन को अनलॉक करता है।"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "उम्र संकेत"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "आवश्यक प्रश्न।"
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(अधिकतम 50 अक्षर)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "अस्वीकृति"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "वैकल्पिक छोटे प्रिंट में HTML लिंक लेता है।"
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(अधिकतम 400 अक्षर)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "इस सामग्री के लिए उम्र सत्यापन की आवश्यकता है"
 
@@ -201,6 +202,54 @@ msgstr ""
 "क्षमा करें, इस वेबसाइट पर प्रवेश करने के लिए आपको कानूनी उम्र का होना "
 "आवश्यक है।"
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "लोगो जोड़ें"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "लोगो चुनें"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "लोगो हटाएं"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% पारदर्शिता"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% पारदर्शिता"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "सभी पृष्ठों पर दिखाएँ"
@@ -220,6 +269,29 @@ msgstr "पृष्ठ "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— एक पृष्ठ चुनें —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(होम)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(ब्लॉग अनुक्रमिका)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "ब्लॉग पोस्ट"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "उत्पाद पृष्ठ"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "सभी WooCommerce पृष्ठ"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -389,6 +461,60 @@ msgid ""
 msgstr ""
 "आपका लोगो <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "WP Rocket कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "W3TC कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "WP Super Cache कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "WP Fastest Cache कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "WPEngine कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "SiteGround Optimizer कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "LiteSpeed कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Cache Enabler कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Pagely कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Autoptimize कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Comet Cache कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Hummingbird कैश साफ़ किया गया।"
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"नोट: कृपया सुनिश्चित करें कि नए सेटिंग्स प्रदर्शित होने के लिए किसी भी "
+"पृष्ठ कैश को साफ़ करें।"
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -591,10 +717,6 @@ msgstr ""
 "इस वेबसाइट में प्रवेश करके, आप प्रमाणित करते हैं कि आप जिस स्थान पर रहते "
 "हैं, वहाँ कानूनी धूम्रपान उम्र के हैं (कुछ क्षेत्रों में उम्र 18+, 19+ और "
 "21+)।"
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "रियलटाइम सेटिंग्स जाँच"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

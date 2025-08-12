@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:53+0000\n"
+"PO-Revision-Date: 2025-08-12 19:17+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -98,26 +98,27 @@ msgid "Include or exclude a certain page."
 msgstr "כלול או השמט דף מסוים."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "בדיקת הגדרות בזמן אמת"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "עשוי לעזור בבעיות זיכרון מטמון, מוסיף עיכוב לחלון הקופץ."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"בדיקת הגדרות בזמן אמת <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "למד עוד"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "אמת עבור"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr "בחר הגדרה מוכנה. שדרג לגרסה פרימיום כדי לערוך טקסט ורקע."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -125,31 +126,31 @@ msgstr ""
 "שדרג כדי לערוך את כפתור הטקסט והודעת השגיאה. גרסת פרימיום פותחת עריכה של כל "
 "הטקסט לתרגום."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "הנחיית גיל"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "שאלה חובה."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(מקסימום 50 תווים)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "הבהרה"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "הדפסה קטנה אופציונלית לוקחת קישור HTML."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(מקסימום 400 תווים)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "דרוש אימות גיל עבור תוכן זה"
 
@@ -197,6 +198,54 @@ msgstr "לא, אני מתחת לגיל החוקי"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "סליחה, אתה חייב להיות בגיל החוקי כדי להיכנס לאתר הזה."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "הוסף לוגו"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "בחר לוגו"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "נקה לוגו"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% שקיפות"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% שקיפות"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "הצג בכל הדפים"
@@ -216,6 +265,29 @@ msgstr "דף "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— בחר דף —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(בית)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(אינדקס בלוג)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "פוסטים בבלוג"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "דפי מוצר"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "כל דפי WooCommerce"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -377,6 +449,58 @@ msgid ""
 msgstr ""
 "הלוגו שלך <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "מטמון WP Rocket פונה."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "מטמון W3TC פונה."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "מטמון WP Super Cache פונה."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "מטמון WP Fastest Cache פונה."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "מטמון WPEngine פונה."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "מטמון SiteGround Optimizer פונה."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "מטמון LiteSpeed פונה."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "מטמון Cache Enabler פונה."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "מטמון Pagely פונה."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "מטמון Autoptimize פונה."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "מטמון Comet Cache פונה."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "מטמון Hummingbird פונה."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr "הערה: אנא ודא שאתה מנקה את מטמון הדפים כדי שההגדרות החדשות יופיעו."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -572,10 +696,6 @@ msgstr ""
 "המוצרים באתר זה מיועדים למבוגרים בגיל החוקי לעישון.\n"
 "על ידי הכניסה לאתר זה, אתה מאשר שאתה בגיל החוקי לעישון במיקום שבו אתה גר "
 "(גיל 18+, 19+ ו-21+ באזורים מסוימים)."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "בדיקת הגדרות בזמן אמת"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"

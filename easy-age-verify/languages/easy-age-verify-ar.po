@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 06:52+0000\n"
+"PO-Revision-Date: 2025-08-12 19:16+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
@@ -97,26 +97,27 @@ msgid "Include or exclude a certain page."
 msgstr "تضمين أو استبعاد صفحة معينة."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:410
+msgid "Realtime Settings Check"
+msgstr "التحقق من إعدادات الوقت الحقيقي"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
 msgid "May help caching issues, adds delay to popup."
 msgstr "قد يساعد في مشاكل التخزين المؤقت، يضيف تأخيرًا للنافذة المنبثقة."
 
-#: includes/admin/class-easy-age-verify-admin.php:215
-msgid ""
-"Realtime Settings Check <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
-msgstr ""
-"تحقق من إعدادات الوقت الحقيقي <span class=\"dashicons dashicons-info "
-"evavoptionshovertip\" title=\""
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "تعرف على المزيد"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Verify For"
 msgstr "تحقق من أجل"
 
-#: includes/admin/class-easy-age-verify-admin.php:224
+#: includes/admin/class-easy-age-verify-admin.php:234
 msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
 msgstr "اختر إعدادًا جاهزًا. قم بالتحديث إلى النسخة المميزة لتعديل النص والخلفية."
 
-#: includes/admin/class-easy-age-verify-admin.php:237
+#: includes/admin/class-easy-age-verify-admin.php:247
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -124,31 +125,31 @@ msgstr ""
 "قم بالتحديث لتعديل نص الزر ورسالة الخطأ. النسخة المميزة تفتح تحرير جميع "
 "النصوص للترجمة."
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Age Prompt"
 msgstr "مطالبة العمر"
 
-#: includes/admin/class-easy-age-verify-admin.php:245
+#: includes/admin/class-easy-age-verify-admin.php:255
 msgid "Required question."
 msgstr "سؤال مطلوب."
 
-#: includes/admin/class-easy-age-verify-admin.php:246
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "(max 50 characters)"
 msgstr "(حد أقصى 50 حرفًا)"
 
-#: includes/admin/class-easy-age-verify-admin.php:254
+#: includes/admin/class-easy-age-verify-admin.php:264
 msgid "Disclaimer"
 msgstr "تنبيه"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Optional small print takes HTML link."
 msgstr "النص الصغير اختياري ويأخذ رابط HTML."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "(max 400 characters)"
 msgstr "(حد أقصى 400 حرفًا)"
 
-#: includes/admin/class-easy-age-verify-admin.php:337
+#: includes/admin/class-easy-age-verify-admin.php:347
 msgid "Require age verification for this content"
 msgstr "تطلب التحقق من العمر لهذا المحتوى"
 
@@ -196,6 +197,54 @@ msgstr "لا، أنا قاصر"
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "عذراً، يجب أن تكون في سن القانونية لدخول هذا الموقع."
 
+#: includes/admin/premium/settings-premium.php:187
+msgid "Add Logo"
+msgstr "أضف الشعار"
+
+#: includes/admin/premium/settings-premium.php:189
+msgid "Select Logo"
+msgstr "حدد الشعار"
+
+#: includes/admin/premium/settings-premium.php:191
+msgid "Clear Logo"
+msgstr "امسح الشعار"
+
+#: includes/admin/premium/settings-premium.php:218
+msgid "60% Opacity"
+msgstr "60% شفافية"
+
+#: includes/admin/premium/settings-premium.php:219
+msgid "65% Opacity"
+msgstr "65% شفافية"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "70% Opacity"
+msgstr "70% شفافية"
+
+#: includes/admin/premium/settings-premium.php:221
+msgid "75% Opacity"
+msgstr "75% شفافية"
+
+#: includes/admin/premium/settings-premium.php:222
+msgid "80% Opacity"
+msgstr "80% شفافية"
+
+#: includes/admin/premium/settings-premium.php:223
+msgid "85% Opacity"
+msgstr "85% شفافية"
+
+#: includes/admin/premium/settings-premium.php:224
+msgid "90% Opacity"
+msgstr "90% شفافية"
+
+#: includes/admin/premium/settings-premium.php:225
+msgid "95% Opacity"
+msgstr "95% شفافية"
+
+#: includes/admin/premium/settings-premium.php:226
+msgid "100% Opacity"
+msgstr "100% شفافية"
+
 #: includes/admin/premium/settings-premium.php:243
 msgid "Show on all pages"
 msgstr "عرض في جميع الصفحات"
@@ -215,6 +264,29 @@ msgstr "الصفحة "
 #: includes/admin/premium/settings-premium.php:274
 msgid "— Select a Page —"
 msgstr "— اختر صفحة —"
+
+#: includes/admin/premium/settings-premium.php:292
+msgid "(Home)"
+msgstr "(الرئيسية)"
+
+#: includes/admin/premium/settings-premium.php:297
+msgid "(Blog Index)"
+msgstr "(فهرس المدونة)"
+
+#: includes/admin/premium/settings-premium.php:307
+#: includes/admin/premium/settings-premium.php:309
+msgid "Blog Posts"
+msgstr "مشاركات المدونة"
+
+#: includes/admin/premium/settings-premium.php:314
+#: includes/admin/premium/settings-premium.php:316
+msgid "Product Pages"
+msgstr "صفحات المنتجات"
+
+#: includes/admin/premium/settings-premium.php:321
+#: includes/admin/premium/settings-premium.php:323
+msgid "All WooCommerce Pages"
+msgstr "جميع صفحات ووكومرس"
 
 #: includes/admin/premium/settings-premium.php:348
 msgid "Premium Options"
@@ -376,6 +448,58 @@ msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 msgstr "شعارك <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ WP Rocket."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ W3TC."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ WP Super Cache."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ WP Fastest Cache."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ WPEngine."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ SiteGround Optimizer."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ LiteSpeed."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ Cache Enabler."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ Pagely."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ Autoptimize."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ Comet Cache."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "تم مسح ذاكرة التخزين المؤقت لـ Hummingbird."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr "ملاحظة: يرجى التأكد من مسح أي ذاكرات مؤقتة للصفحة لعرض الإعدادات الجديدة."
 
 #: includes/admin/settings.php:124
 msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
@@ -574,10 +698,6 @@ msgstr ""
 "المنتجات على هذا الموقع مخصصة للبالغين في سن التدخين القانوني. <br/>بدخولك "
 "إلى هذا الموقع، تؤكد أنك في سن التدخين القانوني في المكان الذي تقيم فيه (سن "
 "18+، 19+ و21+ في بعض المناطق)."
-
-#: includes/admin/settings.php:410
-msgid "Realtime Settings Check"
-msgstr "التحقق من إعدادات الوقت الحقيقي"
 
 #: includes/admin/settings.php:414
 msgid "Confirm \"Enable Verification\" settings before showing popup"
