@@ -17,7 +17,7 @@ if ( !defined( 'WPINC' ) ) {
  * @since 0.1.0
  */
 function evav_load_textdomain() {
-    load_plugin_textdomain( 'easy-age-verify', false, plugin_basename( dirname( __FILE__ ) ) . '/includes/languages' );
+    load_plugin_textdomain( 'easy-age-verify', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'plugins_loaded', 'evav_load_textdomain' );
