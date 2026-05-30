@@ -233,6 +233,13 @@ function evav_settings_callback_adult_type_field() {
     $checked =  checked( 'disabled', $option , false );
     if( ! $option && $option !==  'disabled' )
     {$checked =  checked( 'disabled', $option , false );}
+    $birthdate_age = absint( get_option( '_evav_birthdate_age', 21 ) );
+	if ( $birthdate_age < 1 ) {
+		$birthdate_age = 1;
+	}
+    if ( $birthdate_age > 99 ) {
+		$birthdate_age = 99;
+	}
     ?>
 
 	<fieldset id="_evav_adult_type_radio">
@@ -266,8 +273,74 @@ function evav_settings_callback_adult_type_field() {
 				echo '<a href="https://5starplugins.com/wp-content/uploads/2022/08/EAV_Premium-Vape-2022.jpg" class="thickbox">Premium Screenshot</a>';
 		?>
 		<br />
+		<?php if ( function_exists( 'evav_get_age_requirement' ) ) : ?>
+		<label>
+			<input type="radio" name="_evav_adult_type" value="birthdate" <?php checked( 'birthdate', get_option( '_evav_adult_type', 'adult' ) ); ?>/>
+			 <?php esc_html_e( 'Birthdate', 'easy-age-verify' ); ?>
+		</label>
+		<?php
+			echo '<a href="https://5starplugins.com/wp-content/uploads/2026/05/EAV-Premium-Vape-Birthdate.jpg" class="thickbox">Premium Screenshot</a>';
+		?>
+		<br />
+		<div id="evav-birthdate-age-row" style="margin: 8px 0 0 24px; <?php echo 'birthdate' === get_option( '_evav_adult_type', 'adult' ) ? '' : 'display:none;'; ?>">
+			<label for="_evav_birthdate_age">
+				<?php esc_html_e( 'Verify Age over:', 'easy-age-verify' ); ?>
+			</label>
+			<input name="_evav_birthdate_age" type="number" id="_evav_birthdate_age" step="1" min="1" max="99" class="small-text" value="<?php echo esc_attr( $birthdate_age ); ?>" />
+		</div>
+		<?php else : ?>
+		<label>
+			<input type="radio" value="birthdate" disabled="disabled"/>
+			 <?php esc_html_e( 'Birthdate (upgrade to unlock)', 'easy-age-verify' ); ?>
+		</label>
+		<?php
+			echo '<a href="https://5starplugins.com/wp-content/uploads/2026/05/EAV-Premium-Vape-Birthdate.jpg" class="thickbox">Premium Screenshot</a>';
+		?>
+		<br />
+		<?php endif; ?>
 	</fieldset>
 <?php }
+
+/**
+ * Sanitizes birthdate age requirement.
+ *
+ * @param mixed $input Option value.
+ * @return int
+ */
+function evav_birthdate_age_sanitize( $input ) {
+	$age = absint( $input );
+
+	if ( $age < 1 ) {
+		return 1;
+	}
+
+	if ( $age > 99 ) {
+		return 99;
+	}
+
+	return $age;
+}
+
+/**
+ * Sanitizes the verification type and keeps birthdate premium-only.
+ *
+ * @param mixed $input Option value.
+ * @return string
+ */
+function evav_adult_type_sanitize( $input ) {
+	$allowed_types = array( 'adult', 'alcohol', 'vape' );
+	$input = sanitize_key( $input );
+
+	if ( function_exists( 'evav_fs' ) && evav_fs()->can_use_premium_code() ) {
+		$allowed_types[] = 'birthdate';
+	}
+
+	if ( in_array( $input, $allowed_types, true ) ) {
+		return $input;
+	}
+
+	return 'adult';
+}
 
 /**
  * Prints the minimum age settings field.
@@ -331,6 +404,9 @@ function evav_settings_callback_heading_field() {
 	    case 'vape':
 	        $text =  __("Are you of legal smoking age?", 'easy-age-verify' );
 		    break;
+	    case 'birthdate':
+	        $text =  __("Please verify your age before entering.", 'easy-age-verify' );
+		    break;
 	    default:
 	        $text =  __("Please verify you are 18 years or older to enter.", 'easy-age-verify' );
 		    break;
@@ -354,8 +430,9 @@ function evav_settings_callback_heading_field() {
 function evav_settings_callback_disclaimer_field() {
     $key = '_evav_disclaimer';
     $text =  __("", 'easy-age-verify' );
+	$current_value = get_option( $key, false );
 
-    if( empty( get_option($key) ) ) {
+    if ( false === $current_value ) {
 
 	    switch(get_option( '_evav_adult_type')) {
 	    case 'adult':
@@ -367,11 +444,15 @@ function evav_settings_callback_disclaimer_field() {
 	    case 'vape':
 	        $text =  __("THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\nBy entering this website, you certify that you are of legal smoking age in the location in which you reside (age 18+, 19+ and 21+ in some areas).", 'easy-age-verify' );
 		    break;
+	    case 'birthdate':
+	        $text =  '';
+		    break;
 	    default:
 	        $text =  __("WARNING ADULT CONTENT!\nThis website is intended for adults only and may contain content of an adult nature or age restricted, explicit material, which some viewers may find offensive. By entering you confirm that you are 18+ years and are not offended by viewing such material. If you are under the age of 18, if such material offends you or it is illegal to view in your location please exit now.", 'easy-age-verify' );
 		    break;
 		}
-	    update_option($key,$text);
+	    update_option( $key, $text );
+		$current_value = $text;
     }
 
 	// Define the allowed HTML tags and attributes
@@ -388,7 +469,7 @@ $allowed_html = array(
 );
 
 // Sanitize the message with wp_kses
-$message = wp_kses(get_option($key, $text), $allowed_html);
+$message = wp_kses( false === $current_value ? $text : $current_value, $allowed_html );
 
 printf(
     '<textarea name="%1$s" id="%1$s" maxlength="400" rows="6" class="regular-text">%2$s</textarea>',
@@ -487,10 +568,35 @@ function evav_settings_callback_input_type_field() { ?>
 function evav_pagetargeting_option_sanitize($input) {
 	$option = isset($input['option']) ? $input['option'] : 'none';
 	$input['option'] = in_array($option, ['include', 'exclude', 'none']) ? $option : 'none';
+	$page_id = isset($input['page_id']) ? $input['page_id'] : 0;
+	$category_ids = isset($input['category_ids']) && is_array($input['category_ids'])
+		? array_values(array_unique(array_filter(array_map('absint', $input['category_ids']))))
+		: array();
+	$tag_ids = isset($input['tag_ids']) && is_array($input['tag_ids'])
+		? array_values(array_unique(array_filter(array_map('absint', $input['tag_ids']))))
+		: array();
+	$page_ids = isset($input['page_ids']) && is_array($input['page_ids'])
+		? array_values(array_unique(array_filter(array_map('absint', $input['page_ids']))))
+		: array();
+	$input['category_ids'] = $category_ids;
+	$input['tag_ids'] = $tag_ids;
+	$input['page_ids'] = $page_ids;
 
 	// Set page_id to 0 if not numeric or if option is 'none'
 	if ($input['option'] === 'none' || !isset($input['page_id']) || !is_numeric($input['page_id'])) {
 		$input['page_id'] = 0;
+	}
+
+	if ($input['page_id'] !== '9999997') {
+		$input['category_ids'] = array();
+	}
+
+	if ($input['page_id'] !== '9999996') {
+		$input['tag_ids'] = array();
+	}
+
+	if ($input['page_id'] !== '9999995') {
+		$input['page_ids'] = array();
 	}
 
 	return $input;

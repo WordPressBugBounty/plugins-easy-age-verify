@@ -20,6 +20,31 @@
     transform: translateY(-50%)
 }
 
+#evav-overlay-box {
+    width: min(760px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 28px 32px 24px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+}
+
+#evav-overlay-box select {
+    min-width: 110px;
+    max-width: 100%;
+    padding: 12px 12px;
+    margin: 0 4px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fff;
+    color: #111;
+}
+
+#evav-overlay-box .disclaimer a,
+#evav-overlay-box .disclaimer a:hover {
+    color: inherit;
+}
+
 #evav_verify_form {
     margin-bottom: 8px !important;
 }
@@ -319,5 +344,78 @@ text-transform: initial;
 @media screen and (max-height: 320px) {
     #evav-overlay img {
         display: none;
+    }
+}
+/* Birth Date Fields Styling */
+.evav-birth-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.evav-birth-date-container select {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.evav-birth-date-container select:hover {
+    border-color: #999;
+}
+
+.evav-birth-date-container select:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px 1px rgba(0, 150, 255, 0.5);
+    border-color: #0096ff;
+}
+
+.evav-birth-date-container {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.evav-birth-date-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px !important;
+}
+
+.evav-birth-date-container select {
+    display: inline-block;
+    min-width: 80px;
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .evav-birth-date-container {
+        margin-bottom: 15px !important;
+    }
+    
+    .evav-birth-date-container select {
+        font-size: 13px;
+        width: 70px !important;
+        margin: 3px 2px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .evav-birth-date-container {
+        margin-bottom: 10px !important;
+    }
+    
+    .evav-birth-date-container select {
+        font-size: 12px;
+        width: 65px !important;
+        padding: 5px;
+        margin: 2px 1px;
     }
 }

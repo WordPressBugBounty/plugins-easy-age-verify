@@ -1,4 +1,4 @@
-# Copyright (C) 2025 5 Star Plugins
+# Copyright (C) 2026 5 Star Plugins
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
-"PO-Revision-Date: 2025-08-12 19:16+0000\n"
+"PO-Revision-Date: 2026-05-30 04:53+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easy-age-verify\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -87,9 +87,9 @@ msgstr ""
 "tijdens het instellen, en toon het wanneer het klaar is."
 
 #: includes/admin/class-easy-age-verify-admin.php:205
-#: includes/admin/premium/settings-premium.php:239
-#: includes/admin/settings.php:456
-#: includes/functions.php:655
+#: includes/admin/premium/settings-premium.php:401
+#: includes/admin/settings.php:537
+#: includes/functions.php:1029
 msgid "Page Targeting"
 msgstr "Pagina Targeting"
 
@@ -98,7 +98,7 @@ msgid "Include or exclude a certain page."
 msgstr "Inclusief of exclusief een bepaalde pagina."
 
 #: includes/admin/class-easy-age-verify-admin.php:215
-#: includes/admin/settings.php:410
+#: includes/admin/settings.php:491
 msgid "Realtime Settings Check"
 msgstr "Realtime Instellingen Controle"
 
@@ -120,7 +120,7 @@ msgstr ""
 "Selecteer een kant-en-klare instelling. Upgrade naar Premium om tekst en "
 "achtergrond te bewerken."
 
-#: includes/admin/class-easy-age-verify-admin.php:247
+#: includes/admin/class-easy-age-verify-admin.php:248
 msgid ""
 "Upgrade to edit button and error message text. Premium unlocks editing of "
 "all text for translation."
@@ -128,31 +128,31 @@ msgstr ""
 "Upgrade om de knop en foutbericht tekst te bewerken. Premium ontgrendelt "
 "het bewerken van alle tekst voor vertaling."
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "Age Prompt"
 msgstr "Leeftijdsverzoek"
 
-#: includes/admin/class-easy-age-verify-admin.php:255
+#: includes/admin/class-easy-age-verify-admin.php:256
 msgid "Required question."
 msgstr "Vereiste vraag."
 
-#: includes/admin/class-easy-age-verify-admin.php:256
+#: includes/admin/class-easy-age-verify-admin.php:257
 msgid "(max 50 characters)"
 msgstr "(max 50 tekens)"
 
-#: includes/admin/class-easy-age-verify-admin.php:264
+#: includes/admin/class-easy-age-verify-admin.php:265
 msgid "Disclaimer"
 msgstr "Onafhankelijkheidsverklaring"
 
-#: includes/admin/class-easy-age-verify-admin.php:265
+#: includes/admin/class-easy-age-verify-admin.php:266
 msgid "Optional small print takes HTML link."
 msgstr "Optionele kleine lettertjes nemen HTML-link."
 
-#: includes/admin/class-easy-age-verify-admin.php:266
+#: includes/admin/class-easy-age-verify-admin.php:267
 msgid "(max 400 characters)"
 msgstr "(max 400 tekens)"
 
-#: includes/admin/class-easy-age-verify-admin.php:347
+#: includes/admin/class-easy-age-verify-admin.php:348
 msgid "Require age verification for this content"
 msgstr "Leeftijdsverificatie vereist voor deze inhoud"
 
@@ -169,164 +169,288 @@ msgstr "Browser cookie vinkje"
 msgid "Show “Remember Me” checkbox"
 msgstr "Toon “Onthoud mij” vinkje"
 
-#: includes/admin/premium/settings-premium.php:68
+#: includes/admin/premium/settings-premium.php:66
+msgid "Form Box"
+msgstr "Vormvak"
+
+#: includes/admin/premium/settings-premium.php:69
+#: includes/admin/premium/settings-premium.php:717
+msgid "Show box around the form"
+msgstr "Toon kader rondom het formulier"
+
+#: includes/admin/premium/settings-premium.php:82
+msgid "Overlay Box Color"
+msgstr "Kleur overlayvak"
+
+#: includes/admin/premium/settings-premium.php:97
+#: includes/admin/premium/settings-premium.php:189
+msgid "Gradient"
+msgstr "Gradient"
+
+#: includes/admin/premium/settings-premium.php:100
+#: includes/admin/premium/settings-premium.php:731
+msgid "Use box gradient"
+msgstr "Gebruik vak gradient"
+
+#: includes/admin/premium/settings-premium.php:113
+msgid "Overlay Box Gradient Color"
+msgstr "Kleur overlayvakgradient"
+
+#: includes/admin/premium/settings-premium.php:128
+msgid "Overlay Box Gradient Angle"
+msgstr "Hoek overlayvakgradient"
+
+#: includes/admin/premium/settings-premium.php:131
+#: includes/admin/premium/settings-premium.php:223
+msgid "Center"
+msgstr "Midden"
+
+#: includes/admin/premium/settings-premium.php:132
+#: includes/admin/premium/settings-premium.php:224
+msgid "Top to Bottom"
+msgstr "Boven naar beneden"
+
+#: includes/admin/premium/settings-premium.php:133
+#: includes/admin/premium/settings-premium.php:225
+msgid "Top Left to Bottom Right"
+msgstr "Linksboven naar rechtsonder"
+
+#: includes/admin/premium/settings-premium.php:134
+#: includes/admin/premium/settings-premium.php:226
+msgid "Left to Right"
+msgstr "Links naar rechts"
+
+#: includes/admin/premium/settings-premium.php:135
+#: includes/admin/premium/settings-premium.php:227
+msgid "Bottom Left to Top Right"
+msgstr "Linksonder naar rechtsboven"
+
+#: includes/admin/premium/settings-premium.php:136
+#: includes/admin/premium/settings-premium.php:228
+msgid "Bottom to Top"
+msgstr "Beneden naar boven"
+
+#: includes/admin/premium/settings-premium.php:137
+#: includes/admin/premium/settings-premium.php:229
+msgid "Bottom Right to Top Left"
+msgstr "Rechtsonder naar linksboven"
+
+#: includes/admin/premium/settings-premium.php:138
+#: includes/admin/premium/settings-premium.php:230
+msgid "Right to Left"
+msgstr "Rechts naar links"
+
+#: includes/admin/premium/settings-premium.php:139
+#: includes/admin/premium/settings-premium.php:231
+msgid "Top Right to Bottom Left"
+msgstr "Rechtsboven naar linksonder"
+
+#: includes/admin/premium/settings-premium.php:152
+msgid "Enable Birth Date Verification"
+msgstr "Inschakelen verificatie geboortedatum"
+
+#: includes/admin/premium/settings-premium.php:156
+msgid "Require birth date entry for age verification"
+msgstr "Vereis invoer van geboortedatum voor leeftijdscontrole"
+
+#: includes/admin/premium/settings-premium.php:170
 msgid "Overlay Color"
 msgstr "Overlay Kleur"
 
-#: includes/admin/premium/settings-premium.php:88
+#: includes/admin/premium/settings-premium.php:192
+#: includes/admin/premium/settings-premium.php:683
+msgid "Use background gradient"
+msgstr "Gebruik achtergrondgradient"
+
+#: includes/admin/premium/settings-premium.php:205
+msgid "Overlay Gradient Color"
+msgstr "Kleur overlaygradient"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "Overlay Gradient Direction"
+msgstr "Richting overlaygradient"
+
+#: includes/admin/premium/settings-premium.php:245
 msgid "Styling"
 msgstr "Styling"
 
-#: includes/admin/premium/settings-premium.php:92
+#: includes/admin/premium/settings-premium.php:249
 msgid "Use built-in CSS on the front-end (recommended)"
 msgstr "Gebruik ingebouwde CSS aan de voorkant (aanbevolen)"
 
-#: includes/admin/premium/settings-premium.php:106
-#: includes/functions.php:368
-#: includes/premium/functions-premium.php:23
+#: includes/admin/premium/settings-premium.php:262
+#: includes/functions.php:416
+#: includes/premium/functions-premium.php:24
+msgid "Enter"
+msgstr "Enter"
+
+#: includes/admin/premium/settings-premium.php:263
+#: includes/functions.php:414
+#: includes/premium/functions-premium.php:25
 msgid "Yes I am of legal age"
 msgstr "Ja, ik ben meerderjarig"
 
-#: includes/admin/premium/settings-premium.php:136
-#: includes/functions.php:373
-#: includes/premium/functions-premium.php:87
+#: includes/admin/premium/settings-premium.php:296
+#: includes/functions.php:420
+#: includes/premium/functions-premium.php:139
 msgid "No I am under age"
 msgstr "Nee, ik ben minderjarig"
 
-#: includes/admin/premium/settings-premium.php:167
-#: includes/functions.php:390
-#: includes/functions.php:409
-#: includes/premium/functions-premium.php:58
+#: includes/admin/premium/settings-premium.php:327
+#: includes/functions.php:437
+#: includes/functions.php:456
+#: includes/premium/functions-premium.php:110
 msgid "Sorry, you must be of legal age to enter this website."
 msgstr "Sorry, je moet meerderjarig zijn om deze website te betreden."
 
-#: includes/admin/premium/settings-premium.php:187
+#: includes/admin/premium/settings-premium.php:347
 msgid "Add Logo"
 msgstr "Logo toevoegen"
 
-#: includes/admin/premium/settings-premium.php:189
+#: includes/admin/premium/settings-premium.php:349
 msgid "Select Logo"
 msgstr "Logo selecteren"
 
-#: includes/admin/premium/settings-premium.php:191
+#: includes/admin/premium/settings-premium.php:351
 msgid "Clear Logo"
 msgstr "Logo wissen"
 
-#: includes/admin/premium/settings-premium.php:218
+#: includes/admin/premium/settings-premium.php:378
 msgid "60% Opacity"
 msgstr "60% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:219
+#: includes/admin/premium/settings-premium.php:379
 msgid "65% Opacity"
 msgstr "65% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:220
+#: includes/admin/premium/settings-premium.php:380
 msgid "70% Opacity"
 msgstr "70% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:221
+#: includes/admin/premium/settings-premium.php:381
 msgid "75% Opacity"
 msgstr "75% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:222
+#: includes/admin/premium/settings-premium.php:382
 msgid "80% Opacity"
 msgstr "80% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:223
+#: includes/admin/premium/settings-premium.php:383
 msgid "85% Opacity"
 msgstr "85% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:224
+#: includes/admin/premium/settings-premium.php:384
 msgid "90% Opacity"
 msgstr "90% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:225
+#: includes/admin/premium/settings-premium.php:385
 msgid "95% Opacity"
 msgstr "95% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:226
+#: includes/admin/premium/settings-premium.php:386
 msgid "100% Opacity"
 msgstr "100% Doorzichtigheid"
 
-#: includes/admin/premium/settings-premium.php:243
+#: includes/admin/premium/settings-premium.php:405
 msgid "Show on all pages"
 msgstr "Toon op alle pagina's"
 
-#: includes/admin/premium/settings-premium.php:248
+#: includes/admin/premium/settings-premium.php:410
 msgid "Show on this page only"
 msgstr "Toon alleen op deze pagina"
 
-#: includes/admin/premium/settings-premium.php:253
+#: includes/admin/premium/settings-premium.php:415
 msgid "Show everywhere except this page"
 msgstr "Toon overal behalve deze pagina"
 
-#: includes/admin/premium/settings-premium.php:265
+#: includes/admin/premium/settings-premium.php:427
 msgid "Page "
 msgstr "Pagina "
 
-#: includes/admin/premium/settings-premium.php:274
+#: includes/admin/premium/settings-premium.php:436
 msgid "— Select a Page —"
 msgstr "— Selecteer een Pagina —"
 
-#: includes/admin/premium/settings-premium.php:292
+#: includes/admin/premium/settings-premium.php:454
 msgid "(Home)"
 msgstr "(Home)"
 
-#: includes/admin/premium/settings-premium.php:297
+#: includes/admin/premium/settings-premium.php:459
 msgid "(Blog Index)"
 msgstr "(Blog Index)"
 
-#: includes/admin/premium/settings-premium.php:307
-#: includes/admin/premium/settings-premium.php:309
+#: includes/admin/premium/settings-premium.php:469
+#: includes/admin/premium/settings-premium.php:471
 msgid "Blog Posts"
 msgstr "Blogberichten"
 
-#: includes/admin/premium/settings-premium.php:314
-#: includes/admin/premium/settings-premium.php:316
+#: includes/admin/premium/settings-premium.php:475
+#: includes/admin/premium/settings-premium.php:477
+#: includes/admin/premium/settings-premium.php:530
+msgid "Post Categories"
+msgstr "Berichtcategorieën"
+
+#: includes/admin/premium/settings-premium.php:481
+#: includes/admin/premium/settings-premium.php:483
+#: includes/admin/premium/settings-premium.php:548
+msgid "Post Tags"
+msgstr "Berichttags"
+
+#: includes/admin/premium/settings-premium.php:488
+#: includes/admin/premium/settings-premium.php:490
 msgid "Product Pages"
 msgstr "Productpagina's"
 
-#: includes/admin/premium/settings-premium.php:321
-#: includes/admin/premium/settings-premium.php:323
+#: includes/admin/premium/settings-premium.php:495
+#: includes/admin/premium/settings-premium.php:497
 msgid "All WooCommerce Pages"
 msgstr "Alle WooCommerce-pagina's"
 
-#: includes/admin/premium/settings-premium.php:348
+#: includes/admin/premium/settings-premium.php:502
+#: includes/admin/premium/settings-premium.php:504
+msgid "Multiple Pages"
+msgstr "Meerdere pagina's"
+
+#: includes/admin/premium/settings-premium.php:509
+msgid "Pages"
+msgstr "Pagina's"
+
+#: includes/admin/premium/settings-premium.php:589
 msgid "Premium Options"
 msgstr "Premium Opties"
 
-#: includes/admin/premium/settings-premium.php:354
+#: includes/admin/premium/settings-premium.php:595
 msgid "User Experience"
 msgstr "Gebruikerservaring"
 
-#: includes/admin/premium/settings-premium.php:360
+#: includes/admin/premium/settings-premium.php:601
 msgid "Return Visitor Cookie"
 msgstr "Terugkerende bezoeker cookie"
 
-#: includes/admin/premium/settings-premium.php:360
+#: includes/admin/premium/settings-premium.php:601
 msgid "A return visitor cookie allows verified visitors to skip next time."
 msgstr ""
 "Een terugkerende bezoeker cookie staat geverifieerde bezoekers toe om de "
 "volgende keer over te slaan."
 
-#: includes/admin/premium/settings-premium.php:368
+#: includes/admin/premium/settings-premium.php:609
 msgid "Return Visitor Text"
 msgstr "Terugkerende bezoeker Tekst"
 
-#: includes/admin/premium/settings-premium.php:372
-#: includes/functions.php:438
+#: includes/admin/premium/settings-premium.php:613
+#: includes/functions.php:541
 msgid "Remember me next time"
 msgstr "Vergeet me niet de volgende keer"
 
-#: includes/admin/premium/settings-premium.php:383
-msgid "Design Buttons"
-msgstr "Ontwerp Knoppen"
+#: includes/admin/premium/settings-premium.php:624
+msgid "Buttons"
+msgstr "Knoppen"
 
-#: includes/admin/premium/settings-premium.php:389
+#: includes/admin/premium/settings-premium.php:630
 msgid "Required to verify."
 msgstr "Vereist om te verifiëren."
 
-#: includes/admin/premium/settings-premium.php:389
+#: includes/admin/premium/settings-premium.php:630
 msgid ""
 "Yes Button Text <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
@@ -334,8 +458,8 @@ msgstr ""
 "Ja Knoptekst <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
-#: includes/admin/premium/settings-premium.php:397
-#: includes/admin/premium/settings-premium.php:413
+#: includes/admin/premium/settings-premium.php:638
+#: includes/admin/premium/settings-premium.php:654
 msgid ""
 "SMARTtext automatically sets text color to black or white based on button "
 "color."
@@ -343,7 +467,7 @@ msgstr ""
 "SMARTtext stelt automatisch de tekstkleur in op zwart of wit, afhankelijk "
 "van de knopkleur."
 
-#: includes/admin/premium/settings-premium.php:397
+#: includes/admin/premium/settings-premium.php:638
 msgid ""
 "Yes Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
@@ -351,11 +475,11 @@ msgstr ""
 "Ja Knopkleur <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
-#: includes/admin/premium/settings-premium.php:405
+#: includes/admin/premium/settings-premium.php:646
 msgid "Required to not verify."
 msgstr "Vereist om niet te verifiëren."
 
-#: includes/admin/premium/settings-premium.php:405
+#: includes/admin/premium/settings-premium.php:646
 msgid ""
 "No Button Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
@@ -363,7 +487,7 @@ msgstr ""
 "Nee Knoptekst <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
-#: includes/admin/premium/settings-premium.php:413
+#: includes/admin/premium/settings-premium.php:654
 msgid ""
 "No Button Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
@@ -371,11 +495,11 @@ msgstr ""
 "Nee Knopkleur <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
-#: includes/admin/premium/settings-premium.php:421
+#: includes/admin/premium/settings-premium.php:662
 msgid "Required. Appears when user clicks no button."
 msgstr "Vereist. Verschijnt wanneer de gebruiker op de nee-knop klikt."
 
-#: includes/admin/premium/settings-premium.php:421
+#: includes/admin/premium/settings-premium.php:662
 msgid ""
 "Error Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
@@ -383,12 +507,16 @@ msgstr ""
 "Fouttekst <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
-#: includes/admin/premium/settings-premium.php:429
-#: includes/functions.php:659
-msgid "Design Background"
-msgstr "Achtergrondontwerp"
+#: includes/admin/premium/settings-premium.php:670
+#: includes/functions.php:1033
+msgid "Background"
+msgstr "Achtergrond"
 
-#: includes/admin/premium/settings-premium.php:435
+#: includes/admin/premium/settings-premium.php:676
+msgid "Background Color"
+msgstr "Achtergrondkleur"
+
+#: includes/admin/premium/settings-premium.php:676
 msgid ""
 "SMARTtext automatically sets text color to black or white based on "
 "background color."
@@ -396,19 +524,48 @@ msgstr ""
 "SMARTtext stelt automatisch de tekstkleur in op zwart of wit, afhankelijk "
 "van de achtergrondkleur."
 
-#: includes/admin/premium/settings-premium.php:435
+#: includes/admin/premium/settings-premium.php:683
+#: includes/admin/premium/settings-premium.php:731
 msgid ""
-"Background Color <span class=\"dashicons dashicons-info "
+"Gradient <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"Gradient <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:690
+#: includes/admin/premium/settings-premium.php:738
+msgid "Second color used for the gradient."
+msgstr "Tweede kleur gebruikt voor de gradient."
+
+#: includes/admin/premium/settings-premium.php:690
+#: includes/admin/premium/settings-premium.php:738
+msgid ""
+"Gradient End Color <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 msgstr ""
-"Achtergrondkleur <span class=\"dashicons dashicons-info "
+"Eindkleur van de gradient <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
-#: includes/admin/premium/settings-premium.php:443
+#: includes/admin/premium/settings-premium.php:697
+#: includes/admin/premium/settings-premium.php:745
+msgid "Choose the direction of the gradient."
+msgstr "Kies de richting van de gradient."
+
+#: includes/admin/premium/settings-premium.php:697
+#: includes/admin/premium/settings-premium.php:745
+msgid ""
+"Gradient Direction <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Gradient Richting <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:705
 msgid "Hide content 0-100%."
 msgstr "Inhoud verbergen 0-100%."
 
-#: includes/admin/premium/settings-premium.php:443
+#: includes/admin/premium/settings-premium.php:705
 msgid ""
 "Background Opacity <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
@@ -416,15 +573,33 @@ msgstr ""
 "Achtergrondopaciteit <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
-#: includes/admin/premium/settings-premium.php:451
-msgid "Customize Branding"
-msgstr "Aanpassen van merkidentiteit"
+#: includes/admin/premium/settings-premium.php:712
+msgid "Box"
+msgstr "Vak"
 
-#: includes/admin/premium/settings-premium.php:457
+#: includes/admin/premium/settings-premium.php:717
+msgid ""
+"Form Box <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr "Vormvak <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:724
+msgid "Box Color"
+msgstr "Vak kleur"
+
+#: includes/admin/premium/settings-premium.php:724
+msgid "Background color for the boxed panel."
+msgstr "Achtergrondkleur voor het omhulde paneel."
+
+#: includes/admin/premium/settings-premium.php:753
+msgid "Branding"
+msgstr "Branding"
+
+#: includes/admin/premium/settings-premium.php:759
 msgid "Optional headline centers below logo."
 msgstr "Optionele kop staat onder het logo gecentreerd."
 
-#: includes/admin/premium/settings-premium.php:457
+#: includes/admin/premium/settings-premium.php:759
 msgid ""
 "Add Headline <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
@@ -432,11 +607,11 @@ msgstr ""
 "Kop toevoegen <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
 
-#: includes/admin/premium/settings-premium.php:465
+#: includes/admin/premium/settings-premium.php:767
 msgid "Optional body copy."
 msgstr "Optionele bodytekst."
 
-#: includes/admin/premium/settings-premium.php:465
+#: includes/admin/premium/settings-premium.php:767
 msgid ""
 "Add Text Below Headline <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
@@ -444,7 +619,7 @@ msgstr ""
 "Voeg tekst onder kop toe <span class=\"dashicons dashicons-info "
 "evavoptionshovertip\" title=\""
 
-#: includes/admin/premium/settings-premium.php:477
+#: includes/admin/premium/settings-premium.php:779
 msgid ""
 "Upload any size or dimension. The responsive display resizes it to 650 "
 "pixels max tall or wide."
@@ -452,7 +627,7 @@ msgstr ""
 "Upload elke grootte of dimensie. De responsieve weergave past deze aan tot "
 "maximaal 650 pixels hoog of breed."
 
-#: includes/admin/premium/settings-premium.php:477
+#: includes/admin/premium/settings-premium.php:779
 msgid ""
 "Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
 "title=\""
@@ -627,56 +802,72 @@ msgstr "Verificatie tonen, behalve voor ingelogde gebruikers"
 msgid "Show verification to all visitors"
 msgstr "Verificatie tonen aan alle bezoekers"
 
-#: includes/admin/settings.php:240
+#: includes/admin/settings.php:247
 msgid "Select verification type:"
 msgstr "Selecteer verificatietype:"
 
-#: includes/admin/settings.php:244
+#: includes/admin/settings.php:251
 msgid "Adults Only 18+"
 msgstr "Alleen volwassenen 18+"
 
-#: includes/admin/settings.php:253
+#: includes/admin/settings.php:260
 msgid "Alcohol"
 msgstr "Alcohol"
 
-#: includes/admin/settings.php:262
+#: includes/admin/settings.php:269
 msgid "Vape"
 msgstr "Vape"
 
 #: includes/admin/settings.php:279
+msgid "Birthdate"
+msgstr "Geboortedatum"
+
+#: includes/admin/settings.php:287
+msgid "Verify Age over:"
+msgstr "Verifieer leeftijd boven:"
+
+#: includes/admin/settings.php:294
+msgid "Birthdate (upgrade to unlock)"
+msgstr "Geboortedatum (upgrade om te ontgrendelen)"
+
+#: includes/admin/settings.php:352
 msgid "years old or older to view this site"
 msgstr "jaar of ouder om deze site te bekijken"
 
-#: includes/admin/settings.php:290
+#: includes/admin/settings.php:363
 msgid "minutes"
 msgstr "minuten"
 
-#: includes/admin/settings.php:303
+#: includes/admin/settings.php:376
 msgid "Membership"
 msgstr "Lidmaatschap"
 
-#: includes/admin/settings.php:307
+#: includes/admin/settings.php:380
 msgid "Require users to confirm their age before registering to this site"
 msgstr ""
 "Vereis dat gebruikers hun leeftijd bevestigen voordat ze zich registreren "
 "op deze site"
 
-#: includes/admin/settings.php:326
-#: includes/admin/settings.php:335
-#: includes/functions.php:583
+#: includes/admin/settings.php:399
+#: includes/admin/settings.php:411
+#: includes/functions.php:956
 msgid "Please verify you are 18 years or older to enter."
 msgstr "Bevestig alstublieft dat u 18 jaar of ouder bent om binnen te gaan."
 
-#: includes/admin/settings.php:329
+#: includes/admin/settings.php:402
 msgid "Are you of legal drinking age 21 or older?"
 msgstr "Bent u van de wettelijke drinkleeftijd van 21 jaar of ouder?"
 
-#: includes/admin/settings.php:332
+#: includes/admin/settings.php:405
 msgid "Are you of legal smoking age?"
 msgstr "Bent u van de wettelijke rokleeftijd?"
 
-#: includes/admin/settings.php:362
-#: includes/admin/settings.php:371
+#: includes/admin/settings.php:408
+msgid "Please verify your age before entering."
+msgstr "Verifieer uw leeftijd voordat u betreedt."
+
+#: includes/admin/settings.php:439
+#: includes/admin/settings.php:451
 msgid ""
 "WARNING ADULT CONTENT!\n"
 "This website is intended for adults only and may contain content of an "
@@ -695,7 +886,7 @@ msgstr ""
 "dergelijk materiaal u beledigt of het illegaal is om dit in uw locatie te "
 "bekijken, verlaat dan nu de site."
 
-#: includes/admin/settings.php:365
+#: includes/admin/settings.php:442
 msgid ""
 "THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
 "By entering this website, you certify that you are of legal drinking age in "
@@ -707,7 +898,7 @@ msgstr ""
 "drinkleeftijd heeft in de locatie waar u woont (leeftijd 21+ in de "
 "Verenigde Staten)."
 
-#: includes/admin/settings.php:368
+#: includes/admin/settings.php:445
 msgid ""
 "THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
 "By entering this website, you certify that you are of legal smoking age in "
@@ -719,35 +910,35 @@ msgstr ""
 "heeft in de locatie waar u woont (leeftijd 18+, 19+ en 21+ in sommige "
 "gebieden)."
 
-#: includes/admin/settings.php:414
+#: includes/admin/settings.php:495
 msgid "Confirm \"Enable Verification\" settings before showing popup"
 msgstr "Bevestig \"Verificatie Inschakelen\" instellingen voordat u de pop-up toont"
 
-#: includes/admin/settings.php:441
+#: includes/admin/settings.php:522
 msgid "Date dropdowns"
 msgstr "Datum keuzelijsten"
 
-#: includes/admin/settings.php:442
+#: includes/admin/settings.php:523
 msgid "Inputs"
 msgstr "Invoeren"
 
-#: includes/admin/settings.php:443
+#: includes/admin/settings.php:524
 msgid "Confirm checkbox"
 msgstr "Bevestig selectievakje"
 
-#: includes/admin/settings.php:460
+#: includes/admin/settings.php:541
 msgid "Show on all pages (upgrade to unlock)"
 msgstr "Toon op alle pagina's (upgrade om te ontgrendelen)"
 
-#: includes/admin/settings.php:465
+#: includes/admin/settings.php:546
 msgid "Show on this page only (upgrade to unlock)"
 msgstr "Toon alleen op deze pagina (upgrade om te ontgrendelen)"
 
-#: includes/admin/settings.php:470
+#: includes/admin/settings.php:551
 msgid "Show everywhere except this page (upgrade to unlock)"
 msgstr "Toon overal behalve deze pagina (upgrade om te ontgrendelen)"
 
-#: includes/class-easy-age-verify.php:345
+#: includes/class-easy-age-verify.php:344
 #. translators: %1$s: minimum age required, %2$s: URL to verify age
 #, php-format
 msgid ""
@@ -757,99 +948,171 @@ msgstr ""
 "Je moet %1$s jaar oud zijn om deze inhoud te bekijken. <a "
 "href=\"%2$s\">Verifieer alsjeblieft je leeftijd</a>."
 
-#: includes/functions.php:369
+#: includes/functions.php:415
 msgid "I am 18 or older [Enter Site]"
 msgstr "Ik ben 18 of ouder [Voer site in]"
 
-#: includes/functions.php:374
+#: includes/functions.php:421
 msgid "I am under 18"
 msgstr "Ik ben onder de 18"
 
-#: includes/functions.php:413
+#: includes/functions.php:460
 msgid "Enter Site &raquo;"
 msgstr "Voer Site &raquo; in"
 
-#: includes/functions.php:599
+#: includes/functions.php:481
+msgid "Select Your Birth Date"
+msgstr "Selecteer uw geboortedatum"
+
+#: includes/functions.php:485
+msgid "Month"
+msgstr "Maand"
+
+#: includes/functions.php:487
+msgid "January"
+msgstr "Januari"
+
+#: includes/functions.php:488
+msgid "February"
+msgstr "Februari"
+
+#: includes/functions.php:489
+msgid "March"
+msgstr "Maart"
+
+#: includes/functions.php:490
+msgid "April"
+msgstr "April"
+
+#: includes/functions.php:491
+msgid "May"
+msgstr "Mei"
+
+#: includes/functions.php:492
+msgid "June"
+msgstr "Juni"
+
+#: includes/functions.php:493
+msgid "July"
+msgstr "Juli"
+
+#: includes/functions.php:494
+msgid "August"
+msgstr "Augustus"
+
+#: includes/functions.php:495
+msgid "September"
+msgstr "September"
+
+#: includes/functions.php:496
+msgid "October"
+msgstr "Oktober"
+
+#: includes/functions.php:497
+msgid "November"
+msgstr "November"
+
+#: includes/functions.php:498
+msgid "December"
+msgstr "December"
+
+#: includes/functions.php:507
+msgid "Day"
+msgstr "Dag"
+
+#: includes/functions.php:518
+msgid "Year"
+msgstr "Jaar"
+
+#: includes/functions.php:972
 msgid "Please confirm your age"
 msgstr "Bevestig alstublieft uw leeftijd"
 
-#: includes/functions.php:621
+#: includes/functions.php:994
 msgid "Unlock Premium Features"
 msgstr "Ontgrendel Premium Functies"
 
-#: includes/functions.php:624
+#: includes/functions.php:997
 msgid "New Promo Text"
 msgstr "Nieuwe Promo Tekst"
 
-#: includes/functions.php:636
+#: includes/functions.php:1009
 msgid "Upgrade Now"
 msgstr "Upgrade Nu"
 
-#: includes/functions.php:642
+#: includes/functions.php:1015
 msgid "Start 14-Day Free Trial"
 msgstr "Start 14-daagse gratis proefperiode"
 
-#: includes/functions.php:643
+#: includes/functions.php:1016
 msgid "(risk free, no credit card)"
 msgstr "(risicoloos, geen creditcard)"
 
-#: includes/functions.php:655
+#: includes/functions.php:1028
+msgid "Birthdate Validation"
+msgstr "Geboorteverificatie"
+
+#: includes/functions.php:1028
+msgid "Require birthdate and set a custom age"
+msgstr "Vereis geboortedatum en stel een aangepaste leeftijd in"
+
+#: includes/functions.php:1029
 msgid "Include / exclude certain pages"
 msgstr "Bepaalde pagina's includeren / exclusiveren"
 
-#: includes/functions.php:656
+#: includes/functions.php:1030
 msgid "Customizable"
 msgstr "Aanpasbaar"
 
-#: includes/functions.php:656
+#: includes/functions.php:1030
 msgid "Free-form text option"
 msgstr "Vrije tekstoptie"
 
-#: includes/functions.php:657
+#: includes/functions.php:1031
 msgid "Translation Ready"
 msgstr "Vertaling gereed"
 
-#: includes/functions.php:657
+#: includes/functions.php:1031
 msgid "Self translate to any language"
 msgstr "Zelf vertalen naar elke taal"
 
-#: includes/functions.php:658
+#: includes/functions.php:1032
 msgid "Brand It"
 msgstr "Brand het"
 
-#: includes/functions.php:658
+#: includes/functions.php:1032
 msgid "Your logo and colors"
 msgstr "Uw logo en kleuren"
 
-#: includes/functions.php:659
+#: includes/functions.php:1033
 msgid "Set transparency and color"
 msgstr "Stel transparantie en kleur in"
 
-#: includes/functions.php:660
+#: includes/functions.php:1034
 msgid "Welcome Message"
 msgstr "Welkomstbericht"
 
-#: includes/functions.php:660
+#: includes/functions.php:1034
 msgid "Add a welcome message"
 msgstr "Voeg een welkomstbericht toe"
 
-#: includes/functions.php:661
+#: includes/functions.php:1035
 msgid "Remember Visitors"
 msgstr "Bezoekers onthouden"
 
-#: includes/functions.php:661
+#: includes/functions.php:1035
 msgid "\"Remember me\" checkbox"
 msgstr "\"Onthoud mij\" selectievakje"
 
-#: includes/functions.php:662
+#: includes/functions.php:1036
 msgid "Premium Support"
 msgstr "Premium ondersteuning"
 
-#: includes/functions.php:662
+#: includes/functions.php:1036
 msgid "World-class email support from the U.S."
 msgstr "Wereldklasse e-mailondersteuning vanuit de VS."
 
-#: includes/functions.php:675
+#: includes/functions.php:1049
 #. translators: %1$s: user first name, %2$s: plugin title
 #, php-format
 msgid ""
@@ -859,7 +1122,7 @@ msgstr ""
 "Hey %1$s,<br>Schrijf je in om ons te helpen %2$s te verbeteren! Sommige "
 "gebruiksgegevens worden naar ons platform Freemius gestuurd."
 
-#: includes/functions.php:696
+#: includes/functions.php:1070
 #. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
 #, php-format
 msgid ""
@@ -871,36 +1134,36 @@ msgstr ""
 "van de premium versie mogelijk te maken, wil %2$s gebruiksgegevens aan ons "
 "platform Freemius koppelen."
 
-#: includes/functions.php:749
-#: includes/premium/functions-premium.php:141
+#: includes/functions.php:1132
+#: includes/premium/functions-premium.php:193
 msgid "Please verify your age"
 msgstr "Verifieer alstublieft uw leeftijd"
 
-#: includes/functions.php:775
-#: includes/premium/functions-premium.php:128
+#: includes/functions.php:1160
+#: includes/premium/functions-premium.php:180
 msgid "You must be 21 years old to visit this site."
 msgstr "Je moet 21 jaar of ouder zijn om deze site te bezoeken."
 
-#: includes/premium/functions-premium.php:220
+#: includes/premium/functions-premium.php:272
 msgid "Self Validation"
 msgstr "Zelfvalidatie"
 
-#: includes/premium/functions-premium.php:228
+#: includes/premium/functions-premium.php:280
 msgid "Verify 18+ Recreational"
 msgstr "Verifieer 18+ Recreatief"
 
-#: includes/premium/functions-premium.php:236
+#: includes/premium/functions-premium.php:288
 msgid "Verify 19+ Recreational"
 msgstr "Verifieer 19+ Recreatief"
 
-#: includes/premium/functions-premium.php:244
+#: includes/premium/functions-premium.php:296
 msgid "Verify 21+ Recreational"
 msgstr "Verifieer 21+ Recreatief"
 
-#: includes/premium/functions-premium.php:252
+#: includes/premium/functions-premium.php:304
 msgid "Verify 18+ Medical"
 msgstr "Verifieer 18+ Medisch"
 
-#: includes/premium/functions-premium.php:260
+#: includes/premium/functions-premium.php:312
 msgid "Are you 21+ or a 18+ valid medical marijuana patient?"
 msgstr "Ben je 21+ of een 18+ geldige medische marihuanapatiënt?"

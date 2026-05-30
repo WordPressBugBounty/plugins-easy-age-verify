@@ -6,7 +6,7 @@
  * Description: Adds a mobile friendly age verification screen to adults only, vape or alcohol websites. Get set-up in minutes.
  * Author:      5 Star Plugins
  * Author URI:  https://5starplugins.com/
- * Version:     2.0.9
+ * Version:     2.0.11
  *
  * Requires at least: 4.6
  * Requires PHP: 5.6
@@ -53,23 +53,24 @@ if ( !function_exists( 'evav_fs' ) ) {
             // Include Freemius SDK.
             require_once EVAV_PLUGIN_DIR_PATH . 'includes/freemius/start.php';
             $evav_fs = fs_dynamic_init( array(
-                'id'              => '3551',
-                'slug'            => 'easy-age-verify',
-                'type'            => 'plugin',
-                'public_key'      => 'pk_88a8f3865bc74bf9dcbe507dd437a',
-                'is_premium'      => false,
-                'premium_suffix'  => 'Premium',
-                'has_addons'      => false,
-                'has_paid_plans'  => true,
-                'trial'           => array(
+                'id'               => '3551',
+                'slug'             => 'easy-age-verify',
+                'type'             => 'plugin',
+                'public_key'       => 'pk_88a8f3865bc74bf9dcbe507dd437a',
+                'is_premium'       => false,
+                'premium_suffix'   => 'Premium',
+                'has_addons'       => false,
+                'has_paid_plans'   => true,
+                'trial'            => array(
                     'days'               => 14,
                     'is_require_payment' => false,
                 ),
-                'has_affiliation' => 'all',
-                'menu'            => array(
+                'has_affiliation'  => 'all',
+                'menu'             => array(
                     'slug' => 'easy-age-verify',
                 ),
-                'is_live'         => true,
+                'is_live'          => true,
+                'is_org_compliant' => true,
             ) );
         }
         return $evav_fs;

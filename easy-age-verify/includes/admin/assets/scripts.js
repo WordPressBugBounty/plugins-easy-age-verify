@@ -15,8 +15,14 @@ jQuery(document).ready(function ($) {
 	var radioButtons = $('input[name="_evav_pagetargeting_option[option]"]');
 	var dropdown = $('#_evav_pagetargeting_option');
 	var pageLabel = $('#page-dropdown-label');
+    var categoryLabel = $('#category-dropdown-label');
+    var categorySelect = $('#_evav_pagetargeting_categories');
+    var tagLabel = $('#tag-dropdown-label');
+    var tagSelect = $('#_evav_pagetargeting_tags');
+    var pagesLabel = $('#pages-dropdown-label');
+    var pagesSelect = $('#_evav_pagetargeting_pages');
 	// Function to toggle the visibility of the dropdown based on the selected radio button
-	function toggleDropdownVisibility(speed) {
+    function toggleDropdownVisibility(speed) {
 		// Check which radio button is selected
 		var selectedOption = $('input[name="_evav_pagetargeting_option[option]"]:checked').val();
 		// If the "Show on this page only" or "Show everywhere except this page" option is selected, show the dropdown
@@ -24,20 +30,78 @@ jQuery(document).ready(function ($) {
 			if (speed === 'fast') {
 				pageLabel.fadeIn(); // Fade in the label
 				dropdown.fadeIn(); // Show the dropdown
+                toggleTargetingDetails('fast');
 			} else if (speed === 'slow') {
 				pageLabel.fadeIn(); // Fade in the label
 				dropdown.fadeIn(); // Show the dropdown
+                toggleTargetingDetails('slow');
 			}
 		} else {
 			if (speed === 'fast') {
 			pageLabel.hide(); // Fade in the label
 			dropdown.hide(); // Show the dropdown
+            hideTargetingDetails();
 		} else if (speed === 'slow') {
 			pageLabel.fadeOut(); // Fade in the label
 			dropdown.fadeOut(); // Show the dropdown
+            hideTargetingDetails();
 		}
 		}
 	}
+
+    function hideTargetingDetails() {
+        categoryLabel.hide();
+        categorySelect.hide();
+        tagLabel.hide();
+        tagSelect.hide();
+        pagesLabel.hide();
+        pagesSelect.hide();
+    }
+
+    function toggleTargetingDetails(speed) {
+        var pageId = dropdown.val();
+        var showCategories = pageId === '9999997';
+        var showTags = pageId === '9999996';
+        var showPages = pageId === '9999995';
+        if (showCategories) {
+            if (speed === 'fast') {
+                categoryLabel.show();
+                categorySelect.show();
+            } else {
+                categoryLabel.fadeIn();
+                categorySelect.fadeIn();
+            }
+        } else {
+            categoryLabel.hide();
+            categorySelect.hide();
+        }
+
+        if (showTags) {
+            if (speed === 'fast') {
+                tagLabel.show();
+                tagSelect.show();
+            } else {
+                tagLabel.fadeIn();
+                tagSelect.fadeIn();
+            }
+        } else {
+            tagLabel.hide();
+            tagSelect.hide();
+        }
+
+        if (showPages) {
+            if (speed === 'fast') {
+                pagesLabel.show();
+                pagesSelect.show();
+            } else {
+                pagesLabel.fadeIn();
+                pagesSelect.fadeIn();
+            }
+        } else {
+            pagesLabel.hide();
+            pagesSelect.hide();
+        }
+    }
 
 	// Add an event listener for when the form is submitted
     $('.evav-settings-form').on('submit', function() {
@@ -53,16 +117,37 @@ jQuery(document).ready(function ($) {
                    alert('Please select a page.');
                    return false; // Prevent form submission
               }
+
+              if (pageId === '9999997' && (!categorySelect.val() || categorySelect.val().length === 0)) {
+                  alert('Please select at least one category.');
+                  return false;
+              }
+
+              if (pageId === '9999996' && (!tagSelect.val() || tagSelect.val().length === 0)) {
+                  alert('Please select at least one tag.');
+                  return false;
+              }
+
+              if (pageId === '9999995' && (!pagesSelect.val() || pagesSelect.val().length === 0)) {
+                  alert('Please select at least one page.');
+                  return false;
+              }
         }
     });
 
 	// Initial call to toggleDropdownVisibility to set initial visibility
 	toggleDropdownVisibility('fast');
+    toggleTargetingDetails('fast');
 
 	// Add event listener to each radio button to listen for changes
 	radioButtons.on('change', function() {
 		toggleDropdownVisibility('slow');
 	});
+
+    // Update category/tag/page selectors when dropdown changes
+    dropdown.on('change', function() {
+        toggleTargetingDetails('slow');
+    });
 
     /* Testing the Logo Image onLoad */
     var csl_logo_url_val = $("#evav_logo_field_id").val();
@@ -80,7 +165,124 @@ jQuery(document).ready(function ($) {
         alert("That image was not found.");
     }
 
-	$('#_evav_adult_type_radio input').click(function () {
+	function toggleBirthdateAgeField() {
+		var selectedType = $("input[name='_evav_adult_type']:checked").val();
+		if (selectedType === 'birthdate') {
+			$('#evav-birthdate-age-row').fadeIn('fast');
+		} else {
+			$('#evav-birthdate-age-row').fadeOut('fast');
+		}
+	}
+
+    function toggleNoButtonSettings() {
+        var selectedType = $("input[name='_evav_adult_type']:checked").val();
+        var noButtonRows = [
+            $('#_evav_disagree_btn_text').closest('tr'),
+            $('#_evav_disAgree_btn_bgcolor').closest('tr'),
+            $('#_evav_disagree_error_text').closest('tr')
+        ];
+
+        if (selectedType === 'birthdate') {
+            $.each(noButtonRows, function (_, row) {
+                row.hide();
+            });
+        } else {
+            $.each(noButtonRows, function (_, row) {
+                row.show();
+            });
+        }
+    }
+
+    function toggleOverlayBoxGradientSettings() {
+        var gradientRows = [
+            $('#_evav_overlay_box_gradient_color').closest('tr'),
+            $('#_evav_overlay_box_gradient_angle').closest('tr')
+        ];
+        var isBoxEnabled = $('#_evav_enable_overlay_box').is(':checked');
+        var isEnabled = $('#_evav_enable_overlay_box_gradient').is(':checked');
+
+        $.each(gradientRows, function (_, row) {
+            if (isBoxEnabled && isEnabled) {
+                row.show();
+            } else {
+                row.hide();
+            }
+        });
+    }
+
+    function toggleOverlayBoxSettings() {
+        var isBoxEnabled = $('#_evav_enable_overlay_box').is(':checked');
+        var boxRows = [
+            $('#_evav_overlay_box_color').closest('tr'),
+            $('#_evav_enable_overlay_box_gradient').closest('tr'),
+            $('#_evav_overlay_box_gradient_color').closest('tr'),
+            $('#_evav_overlay_box_gradient_angle').closest('tr')
+        ];
+
+        $.each(boxRows, function (_, row) {
+            if (isBoxEnabled) {
+                row.show();
+            } else {
+                row.hide();
+            }
+        });
+
+        if (isBoxEnabled) {
+            toggleOverlayBoxGradientSettings();
+        }
+    }
+
+    function toggleOverlayBackgroundGradientSettings() {
+        var gradientRows = [
+            $('#_evav_overlay_gradient_color').closest('tr'),
+            $('#_evav_overlay_gradient_angle').closest('tr')
+        ];
+        var isEnabled = $('#_evav_enable_overlay_gradient').is(':checked');
+
+        $.each(gradientRows, function (_, row) {
+            if (isEnabled) {
+                row.show();
+            } else {
+                row.hide();
+            }
+        });
+    }
+
+    function toggleGradientStartLabels() {
+        var overlayStartLabel = $('#evav-overlay-color-label');
+        var boxStartLabel = $('#evav-box-color-label');
+
+        if (overlayStartLabel.length) {
+            overlayStartLabel.text($('#_evav_enable_overlay_gradient').is(':checked') ? 'Gradient Start Color' : 'Background Color');
+        }
+
+        if (boxStartLabel.length) {
+            boxStartLabel.text($('#_evav_enable_overlay_box_gradient').is(':checked') ? 'Gradient Start Color' : 'Box Color');
+        }
+    }
+
+	toggleBirthdateAgeField();
+    toggleNoButtonSettings();
+    toggleOverlayBackgroundGradientSettings();
+    toggleOverlayBoxSettings();
+    toggleGradientStartLabels();
+
+    $('#_evav_enable_overlay_gradient').on('change', function () {
+        toggleOverlayBackgroundGradientSettings();
+        toggleGradientStartLabels();
+    });
+
+    $('#_evav_enable_overlay_box_gradient').on('change', function () {
+        toggleOverlayBoxGradientSettings();
+        toggleGradientStartLabels();
+    });
+
+    $('#_evav_enable_overlay_box').on('change', function () {
+        toggleOverlayBoxSettings();
+        toggleGradientStartLabels();
+    });
+
+	$('#_evav_adult_type_radio input[type="radio"]').on('change', function () {
             if (confirm('Are you sure you want to change this? You will lose any text edits.')) {
             var evavatr = $("input[name='_evav_adult_type']:checked").val();
             if (evavatr == "adult") {
@@ -98,7 +300,14 @@ jQuery(document).ready(function ($) {
                 $('#_evav_disclaimer').val('THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\nBy entering this website, you certify that you are of legal smoking age in the location in which you reside (age 18+, 19+ and 21+ in some areas).');
                 $('#_evav_agree_btn_text').val('Yes I am of legal age');
                 $('#_evav_disagree_btn_text').val('No I am under age');
+            } else if (evavatr == "birthdate") {
+                $('#_evav_heading').val('Please verify your age before entering.');
+                $('#_evav_disclaimer').val('');
+                $('#_evav_agree_btn_text').val('Enter');
+                $('#_evav_disagree_btn_text').val('No I am under age');
             }
+			toggleBirthdateAgeField();
+            toggleNoButtonSettings();
         } else {
     		return false;
 		}
@@ -124,6 +333,9 @@ jQuery(document).ready(function ($) {
     });
 
     $('#_evav_overlay_color').wpColorPicker();
+    $('#_evav_overlay_box_color').wpColorPicker();
+    $('#_evav_overlay_gradient_color').wpColorPicker();
+    $('#_evav_overlay_box_gradient_color').wpColorPicker();
     $('#_evav_agree_btn_bgcolor').wpColorPicker();
     $('#_evav_disAgree_btn_bgcolor').wpColorPicker();
     // show character count

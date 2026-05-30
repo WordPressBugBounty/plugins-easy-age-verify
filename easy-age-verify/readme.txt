@@ -1,8 +1,8 @@
 === Easy Age Verify ===
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
-Tested up to: 6.8
-Stable tag: 2.0.9
+Tested up to: 7.0
+Stable tag: 2.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,7 @@ Essential built-in features.
 * Session cookie prevents repeating after verification.
 * [PREMIUM] Return visitor “remember me” checkbox.
 * [PREMIUM] Include / Exclude certain pages with page targeting.
+* [PREMIUM] Birthdate validation with custom age requirement.
 
 ### SIMPLE TO CUSTOMIZE
 Turnkey options pre-configured for the each industry.
@@ -61,7 +62,9 @@ Turnkey options pre-configured for the each industry.
 * Built-in cache and cookie clearing updates display.
 * [PREMIUM] Translation ready custom text option.
 * [PREMIUM] Add your logo and welcome message.
-* [PREMIUM] Set button and background colors. 
+* [PREMIUM] Set button, overlay background and boxed panel colors.
+* [PREMIUM] Enable overlay and box gradients with second color and direction controls.
+* [PREMIUM] Enable a boxed panel style for popup content.
 * [PREMIUM] SMARTtext color automation sets optimal contrast.
 * [PREMIUM] Set background transparency to hide page 0-100%.
 
@@ -75,9 +78,11 @@ Receive priority email support after purchasing [Easy Age Verify Premium](https:
 >Premium Benefits:
 
 >* **Page Targeting**
+>* **Birthdate Validation**
 >* **Translation Ready**
 >* **Edit All Text**
 >* **Logo & Color Options**
+>* **Boxed Panel + Gradients**
 >* **Set Background Transparency**
 >* **Add Welcome Message**
 >* **Return Visitor Checkbox**
@@ -165,11 +170,23 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 6. Alcohol Demo Display - Premium Version
 7. Vape Demo Display - Premium Version
 8. Design options and additional settings in WordPress Dashboard - Premium Version
+9. Birthdate Validation Demo - Premium Version
 
 == Upgrade Notice ==
-* Update! Updated Freemius SDK
+* Update! Updated Freemius SDK.
 
 == Changelog ==
+= 2.0.11 =
+* Added Premium boxed overlay panel option.
+* Added Premium box color and optional two-color gradient with direction control.
+* Added Premium overlay background gradient option with second color and direction control.
+* Updated Premium settings labels and UI behavior for gradient start/end colors.
+* Updated Freemius SDK.
+
+= 2.0.10 =
+* Added Category Selection to Premium.
+* Added Birth Date option to Premium. Bumped Tested to 6.9.1
+
 = 2.0.9 =
 * Updated Freemius SDK
 

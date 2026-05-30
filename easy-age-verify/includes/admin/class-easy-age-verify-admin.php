@@ -206,7 +206,8 @@ final class Easy_Age_Verify_Admin {
             'easy-age-verify',
             'evav_settings_general'
         );
-        register_setting( 'easy-age-verify', '_evav_adult_type', 'esc_attr' );
+        register_setting( 'easy-age-verify', '_evav_adult_type', 'evav_adult_type_sanitize' );
+        register_setting( 'easy-age-verify', '_evav_birthdate_age', 'evav_birthdate_age_sanitize' );
         // Option Title
         add_settings_field(
             '_evav_user_age_verify_option_title',

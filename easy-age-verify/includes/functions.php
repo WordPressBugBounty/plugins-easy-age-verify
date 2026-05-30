@@ -257,11 +257,49 @@ add_filter( 'body_class', 'evav_add_body_pagetargeting_classes' );
 function evav_add_body_pagetargeting_classes(  $classes  ) {
     $pagetargeting_option = get_option( '_evav_pagetargeting_option' );
     if ( $pagetargeting_option ) {
+        $selected_category_ids = ( isset( $pagetargeting_option['category_ids'] ) && is_array( $pagetargeting_option['category_ids'] ) ? array_map( 'intval', $pagetargeting_option['category_ids'] ) : array() );
+        $selected_tag_ids = ( isset( $pagetargeting_option['tag_ids'] ) && is_array( $pagetargeting_option['tag_ids'] ) ? array_map( 'intval', $pagetargeting_option['tag_ids'] ) : array() );
         // Add page targeting option to body class
         $classes[] = 'evav-targeting-' . esc_attr( $pagetargeting_option['option'] );
         if ( isset( $pagetargeting_option['page_id'] ) && $pagetargeting_option['page_id'] > 0 ) {
             // Get the page ID set in the option
             $targeted_page_id = $pagetargeting_option['page_id'];
+            if ( $targeted_page_id === '9999997' && !empty( $selected_category_ids ) ) {
+                foreach ( $selected_category_ids as $category_id ) {
+                    $classes[] = 'evav-targeted-category-' . esc_attr( $category_id );
+                }
+                if ( is_category() ) {
+                    $queried_category = get_queried_object();
+                    if ( isset( $queried_category->term_id ) ) {
+                        $classes[] = 'evav-current-category-' . esc_attr( $queried_category->term_id );
+                    }
+                } elseif ( is_singular( 'post' ) ) {
+                    $current_categories = get_the_category( get_the_ID() );
+                    if ( is_array( $current_categories ) ) {
+                        foreach ( $current_categories as $current_category ) {
+                            $classes[] = 'evav-current-category-' . esc_attr( $current_category->term_id );
+                        }
+                    }
+                }
+            }
+            if ( $targeted_page_id === '9999996' && !empty( $selected_tag_ids ) ) {
+                foreach ( $selected_tag_ids as $tag_id ) {
+                    $classes[] = 'evav-targeted-tag-' . esc_attr( $tag_id );
+                }
+                if ( is_tag() ) {
+                    $queried_tag = get_queried_object();
+                    if ( isset( $queried_tag->term_id ) ) {
+                        $classes[] = 'evav-current-tag-' . esc_attr( $queried_tag->term_id );
+                    }
+                } elseif ( is_singular( 'post' ) ) {
+                    $current_tags = get_the_terms( get_the_ID(), 'post_tag' );
+                    if ( is_array( $current_tags ) ) {
+                        foreach ( $current_tags as $current_tag ) {
+                            $classes[] = 'evav-current-tag-' . esc_attr( $current_tag->term_id );
+                        }
+                    }
+                }
+            }
             // Check if WooCommerce is active and if the current page is the shop page
             if ( class_exists( 'WooCommerce' ) && is_shop() ) {
                 // Add a specific class for the WooCommerce shop page
@@ -315,12 +353,20 @@ function evav_get_verify_form() {
         case 'vape':
             $optionID = 1;
             break;
+        case 'birthdate':
+            $optionID = 3;
+            break;
         default:
             $optionID = 1;
             break;
     }
     // Button Array Labels
-    $age_confirm_btn_arr = array('', __( 'Yes I am of legal age', 'easy-age-verify' ), __( 'I am 18 or older [Enter Site]', 'easy-age-verify' ));
+    $age_confirm_btn_arr = array(
+        '',
+        __( 'Yes I am of legal age', 'easy-age-verify' ),
+        __( 'I am 18 or older [Enter Site]', 'easy-age-verify' ),
+        __( 'Enter', 'easy-age-verify' )
+    );
     $age_btn_arr = array('', __( 'No I am under age', 'easy-age-verify' ), __( 'I am under 18', 'easy-age-verify' ));
     // Selected Button Label Option
     $age_confirm_btn_label = $age_confirm_btn_arr[$optionID];
@@ -339,15 +385,70 @@ function evav_get_verify_form() {
     $form .= '<form id="evav_verify_form" action="' . esc_url( home_url( '/' ) ) . '" method="post">';
     // This IF will be executed only if the user in a trial mode or have a valid license.
     if ( $evav_fs->can_use_premium_code() ) {
-        $form .= '<div style="display: none; color: ' . evav_getContrastYIQ( ltrim( evav_get_overlay_color(), '#' ) ) . ' !important;" class="evav-error">' . $no_error_text . '</div>';
+        $form .= '<div style="display: none; color: ' . evav_get_overlay_text_color() . ' !important;" class="evav-error">' . $no_error_text . '</div>';
     } else {
         $form .= '<div style="display: none;" class="evav-error">' . $no_error_text . '</div>';
     }
     do_action( 'evav_form_before_inputs' );
     $form .= '<input type="hidden" name="evav_verify_confirm" id="evav_verify_confirm" value="" />';
-    $form .= '<div class="evav_buttons"><input type="button" name="evav_confirm_age" id="evav_confirm_age" value="' . $age_confirm_btn_label . '" ' . $confirm_btn_style . ' />';
-    $form .= '<div class="evav_buttons_sep"></div>';
-    $form .= '<input type="button" name="evav_not_confirm_age" id="evav_not_confirm_age" value="' . $age_btn_label . '" ' . $not_confirm_btn_style . '></div>';
+    // This IF will be executed only if the user in a trial mode or have a valid license.
+    if ( $evav_fs->can_use_premium_code() ) {
+        // Add birth date fields if enabled
+        if ( evav_is_birth_date_enabled() ) {
+            $form .= '<div class="evav-birth-date-container">';
+            $form .= '<label style="color:' . evav_get_overlay_text_color() . ' !important; font-size: 16px !important;">' . esc_html__( 'Select Your Birth Date', 'easy-age-verify' ) . '</label>';
+            // Month dropdown
+            $form .= '<select id="evav_birth_month" name="evav_birth_month">';
+            $form .= '<option value="">' . esc_html__( 'Month', 'easy-age-verify' ) . '</option>';
+            $months = array(
+                '01' => __( 'January', 'easy-age-verify' ),
+                '02' => __( 'February', 'easy-age-verify' ),
+                '03' => __( 'March', 'easy-age-verify' ),
+                '04' => __( 'April', 'easy-age-verify' ),
+                '05' => __( 'May', 'easy-age-verify' ),
+                '06' => __( 'June', 'easy-age-verify' ),
+                '07' => __( 'July', 'easy-age-verify' ),
+                '08' => __( 'August', 'easy-age-verify' ),
+                '09' => __( 'September', 'easy-age-verify' ),
+                '10' => __( 'October', 'easy-age-verify' ),
+                '11' => __( 'November', 'easy-age-verify' ),
+                '12' => __( 'December', 'easy-age-verify' ),
+            );
+            foreach ( $months as $num => $name ) {
+                $form .= '<option value="' . esc_attr( $num ) . '">' . esc_html( $name ) . '</option>';
+            }
+            $form .= '</select>';
+            // Day dropdown
+            $form .= '<select id="evav_birth_day" name="evav_birth_day">';
+            $form .= '<option value="">' . esc_html__( 'Day', 'easy-age-verify' ) . '</option>';
+            for ($day = 1; $day <= 31; $day++) {
+                $day_formatted = str_pad(
+                    $day,
+                    2,
+                    '0',
+                    STR_PAD_LEFT
+                );
+                $form .= '<option value="' . esc_attr( $day_formatted ) . '">' . esc_html( $day_formatted ) . '</option>';
+            }
+            $form .= '</select>';
+            // Year dropdown
+            $current_year = (int) current_time( 'Y' );
+            $min_year = $current_year - 120;
+            $form .= '<select id="evav_birth_year" name="evav_birth_year">';
+            $form .= '<option value="">' . esc_html__( 'Year', 'easy-age-verify' ) . '</option>';
+            for ($year = $current_year; $year >= $min_year; $year--) {
+                $form .= '<option value="' . esc_attr( $year ) . '">' . esc_html( $year ) . '</option>';
+            }
+            $form .= '</select>';
+            $form .= '</div>';
+        }
+    }
+    $form .= '<div class="evav_buttons"><input type="button" name="evav_confirm_age" id="evav_confirm_age" value="' . $age_confirm_btn_label . '" data-min-age="' . esc_attr( ( function_exists( 'evav_get_age_requirement' ) ? evav_get_age_requirement() : evav_get_minimum_age() ) ) . '" ' . $confirm_btn_style . ' />';
+    if ( !($evav_fs->can_use_premium_code() && evav_is_birth_date_enabled()) ) {
+        $form .= '<div class="evav_buttons_sep"></div>';
+        $form .= '<input type="button" name="evav_not_confirm_age" id="evav_not_confirm_age" value="' . $age_btn_label . '" ' . $not_confirm_btn_style . '>';
+    }
+    $form .= '</div>';
     do_action( 'evav_form_after_inputs' );
     //$form .= '<input type="submit" name="evav_verify" id="evav_verify" value="' . esc_attr( $submit_button_label ) . '" /></p>';
     $form .= '</form>';
@@ -365,13 +466,278 @@ function evav_get_overlay_color() {
     global $evav_fs;
     // This IF will be executed only if the user in a trial mode or have a valid license.
     if ( $evav_fs->can_use_premium_code() ) {
-        if ( get_option( '_evav_overlay_color' ) ) {
-            $color = get_option( '_evav_overlay_color' );
-        }
+        $color = get_option( '_evav_overlay_color', '#727272' );
     } else {
         $color = '#000000';
     }
     return apply_filters( 'evav_overlay_color', $color );
+}
+
+/**
+ * Returns the overlay secondary color for gradients.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_gradient_color() {
+    global $evav_fs;
+    if ( $evav_fs->can_use_premium_code() ) {
+        $color = get_option( '_evav_overlay_gradient_color', '#3f3f3f' );
+    } else {
+        $color = '#000000';
+    }
+    return apply_filters( 'evav_overlay_gradient_color', $color );
+}
+
+/**
+ * Returns the overlay gradient angle.
+ *
+ * @return int
+ * @since 2.1
+ */
+function evav_get_overlay_gradient_angle() {
+    $angle = absint( get_option( '_evav_overlay_gradient_angle', 135 ) );
+    if ( !in_array( $angle, array(
+        0,
+        45,
+        90,
+        135,
+        180,
+        225,
+        270,
+        315,
+        999
+    ), true ) ) {
+        $angle = 135;
+    }
+    return (int) apply_filters( 'evav_overlay_gradient_angle', $angle );
+}
+
+/**
+ * Determines whether the overlay uses a gradient background.
+ *
+ * @return bool
+ * @since 2.1
+ */
+function evav_is_overlay_gradient_enabled() {
+    global $evav_fs;
+    $enabled = $evav_fs->can_use_premium_code() && '1' == get_option( '_evav_enable_overlay_gradient', 0 );
+    return (bool) apply_filters( 'evav_is_overlay_gradient_enabled', $enabled );
+}
+
+/**
+ * Converts a hex color to RGB integer components.
+ *
+ * @param string $hex Hex color.
+ * @return array{0:int,1:int,2:int}
+ * @since 2.1
+ */
+function evav_hex_to_rgb(  $hex  ) {
+    $hex = ltrim( (string) $hex, '#' );
+    if ( 3 === strlen( $hex ) ) {
+        $hex = $hex[0] . $hex[0] . $hex[1] . $hex[1] . $hex[2] . $hex[2];
+    }
+    if ( 6 !== strlen( $hex ) ) {
+        $hex = '000000';
+    }
+    return array(hexdec( substr( $hex, 0, 2 ) ), hexdec( substr( $hex, 2, 2 ) ), hexdec( substr( $hex, 4, 2 ) ));
+}
+
+/**
+ * Returns the overlay background CSS value.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_background() {
+    $opacity = ( function_exists( 'evav_get_transparency' ) ? (float) evav_get_transparency() : 0.8 );
+    $opacity = max( 0, min( 1, $opacity ) );
+    list( $r1, $g1, $b1 ) = evav_hex_to_rgb( evav_get_overlay_color() );
+    if ( evav_is_overlay_gradient_enabled() ) {
+        list( $r2, $g2, $b2 ) = evav_hex_to_rgb( evav_get_overlay_gradient_color() );
+        $angle = evav_get_overlay_gradient_angle();
+        if ( 999 === $angle ) {
+            return sprintf(
+                'radial-gradient(circle at center, rgba(%1$d, %2$d, %3$d, %7$.3f) 0%%, rgba(%4$d, %5$d, %6$d, %7$.3f) 100%%)',
+                $r1,
+                $g1,
+                $b1,
+                $r2,
+                $g2,
+                $b2,
+                $opacity
+            );
+        }
+        return sprintf(
+            'linear-gradient(%1$ddeg, rgba(%2$d, %3$d, %4$d, %8$.3f) 0%%, rgba(%5$d, %6$d, %7$d, %8$.3f) 100%%)',
+            $angle,
+            $r1,
+            $g1,
+            $b1,
+            $r2,
+            $g2,
+            $b2,
+            $opacity
+        );
+    }
+    return sprintf(
+        'rgba(%1$d, %2$d, %3$d, %4$.3f)',
+        $r1,
+        $g1,
+        $b1,
+        $opacity
+    );
+}
+
+/**
+ * Returns the overlay box background color.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_box_color() {
+    global $evav_fs;
+    if ( $evav_fs->can_use_premium_code() ) {
+        $color = get_option( '_evav_overlay_box_color', '#dddddd' );
+    } else {
+        $color = '#dddddd';
+    }
+    return apply_filters( 'evav_overlay_box_color', $color );
+}
+
+/**
+ * Returns the overlay box secondary color for gradients.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_box_gradient_color() {
+    global $evav_fs;
+    if ( $evav_fs->can_use_premium_code() ) {
+        $color = get_option( '_evav_overlay_box_gradient_color', '#f6f6f6' );
+    } else {
+        $color = '#f6f6f6';
+    }
+    return apply_filters( 'evav_overlay_box_gradient_color', $color );
+}
+
+/**
+ * Returns the overlay box gradient angle.
+ *
+ * @return int
+ * @since 2.1
+ */
+function evav_get_overlay_box_gradient_angle() {
+    $angle = absint( get_option( '_evav_overlay_box_gradient_angle', 135 ) );
+    if ( !in_array( $angle, array(
+        0,
+        45,
+        90,
+        135,
+        180,
+        225,
+        270,
+        315,
+        999
+    ), true ) ) {
+        $angle = 135;
+    }
+    return (int) apply_filters( 'evav_overlay_box_gradient_angle', $angle );
+}
+
+/**
+ * Determines whether the overlay box uses a gradient background.
+ *
+ * @return bool
+ * @since 2.1
+ */
+function evav_is_overlay_box_gradient_enabled() {
+    global $evav_fs;
+    $enabled = $evav_fs->can_use_premium_code() && evav_is_overlay_box_enabled() && '1' == get_option( '_evav_enable_overlay_box_gradient', 0 );
+    return (bool) apply_filters( 'evav_is_overlay_box_gradient_enabled', $enabled );
+}
+
+/**
+ * Returns the overlay box background CSS value.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_box_background() {
+    if ( evav_is_overlay_box_gradient_enabled() ) {
+        $angle = evav_get_overlay_box_gradient_angle();
+        if ( 999 === $angle ) {
+            return sprintf( 'radial-gradient(circle at center, %1$s 0%%, %2$s 100%%)', evav_get_overlay_box_color(), evav_get_overlay_box_gradient_color() );
+        }
+        return sprintf(
+            'linear-gradient(%1$ddeg, %2$s 0%%, %3$s 100%%)',
+            $angle,
+            evav_get_overlay_box_color(),
+            evav_get_overlay_box_gradient_color()
+        );
+    }
+    return evav_get_overlay_box_color();
+}
+
+/**
+ * Returns a contrast color for the overlay box.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_box_text_color() {
+    $primary_color = ltrim( evav_get_overlay_box_color(), '#' );
+    if ( evav_is_overlay_box_gradient_enabled() ) {
+        $secondary_color = ltrim( evav_get_overlay_box_gradient_color(), '#' );
+        $avg_r = (int) round( (hexdec( substr( $primary_color, 0, 2 ) ) + hexdec( substr( $secondary_color, 0, 2 ) )) / 2 );
+        $avg_g = (int) round( (hexdec( substr( $primary_color, 2, 2 ) ) + hexdec( substr( $secondary_color, 2, 2 ) )) / 2 );
+        $avg_b = (int) round( (hexdec( substr( $primary_color, 4, 2 ) ) + hexdec( substr( $secondary_color, 4, 2 ) )) / 2 );
+        return evav_getContrastYIQ( sprintf(
+            '%02x%02x%02x',
+            $avg_r,
+            $avg_g,
+            $avg_b
+        ) );
+    }
+    return evav_getContrastYIQ( $primary_color );
+}
+
+/**
+ * Determines whether the premium overlay box is enabled.
+ *
+ * @return bool
+ * @since 2.1
+ */
+function evav_is_overlay_box_enabled() {
+    global $evav_fs;
+    $enabled = $evav_fs->can_use_premium_code() && '1' == get_option( '_evav_enable_overlay_box', 0 );
+    return (bool) apply_filters( 'evav_is_overlay_box_enabled', $enabled );
+}
+
+/**
+ * Returns the foreground color used for content inside the overlay.
+ *
+ * @return string
+ * @since 2.1
+ */
+function evav_get_overlay_text_color() {
+    if ( evav_is_overlay_box_enabled() ) {
+        return evav_get_overlay_box_text_color();
+    }
+    if ( evav_is_overlay_gradient_enabled() ) {
+        $primary_color = ltrim( evav_get_overlay_color(), '#' );
+        $secondary_color = ltrim( evav_get_overlay_gradient_color(), '#' );
+        $avg_r = (int) round( (hexdec( substr( $primary_color, 0, 2 ) ) + hexdec( substr( $secondary_color, 0, 2 ) )) / 2 );
+        $avg_g = (int) round( (hexdec( substr( $primary_color, 2, 2 ) ) + hexdec( substr( $secondary_color, 2, 2 ) )) / 2 );
+        $avg_b = (int) round( (hexdec( substr( $primary_color, 4, 2 ) ) + hexdec( substr( $secondary_color, 4, 2 ) )) / 2 );
+        return evav_getContrastYIQ( sprintf(
+            '%02x%02x%02x',
+            $avg_r,
+            $avg_g,
+            $avg_b
+        ) );
+    }
+    return evav_getContrastYIQ( ltrim( evav_get_overlay_color(), '#' ) );
 }
 
 /***********************************************************/
@@ -527,14 +893,15 @@ function evav_display_upgrade_features() {
 
 function evav_premium_features() {
     $features = array(
-        __( 'Page Targeting', 'easy-age-verify' )    => __( 'Include / exclude certain pages', 'easy-age-verify' ),
-        __( 'Customizable', 'easy-age-verify' )      => __( 'Free-form text option', 'easy-age-verify' ),
-        __( 'Translation Ready', 'easy-age-verify' ) => __( 'Self translate to any language', 'easy-age-verify' ),
-        __( 'Brand It', 'easy-age-verify' )          => __( 'Your logo and colors', 'easy-age-verify' ),
-        __( 'Design Background', 'easy-age-verify' ) => __( 'Set transparency and color', 'easy-age-verify' ),
-        __( 'Welcome Message', 'easy-age-verify' )   => __( 'Add a welcome message', 'easy-age-verify' ),
-        __( 'Remember Visitors', 'easy-age-verify' ) => __( '"Remember me" checkbox', 'easy-age-verify' ),
-        __( 'Premium Support', 'easy-age-verify' )   => __( 'World-class email support from the U.S.', 'easy-age-verify' ),
+        __( 'Birthdate Validation', 'easy-age-verify' ) => __( 'Require birthdate and set a custom age', 'easy-age-verify' ),
+        __( 'Page Targeting', 'easy-age-verify' )       => __( 'Include / exclude certain pages', 'easy-age-verify' ),
+        __( 'Customizable', 'easy-age-verify' )         => __( 'Free-form text option', 'easy-age-verify' ),
+        __( 'Translation Ready', 'easy-age-verify' )    => __( 'Self translate to any language', 'easy-age-verify' ),
+        __( 'Brand It', 'easy-age-verify' )             => __( 'Your logo and colors', 'easy-age-verify' ),
+        __( 'Background', 'easy-age-verify' )           => __( 'Set transparency and color', 'easy-age-verify' ),
+        __( 'Welcome Message', 'easy-age-verify' )      => __( 'Add a welcome message', 'easy-age-verify' ),
+        __( 'Remember Visitors', 'easy-age-verify' )    => __( '"Remember me" checkbox', 'easy-age-verify' ),
+        __( 'Premium Support', 'easy-age-verify' )      => __( 'World-class email support from the U.S.', 'easy-age-verify' ),
     );
     return $features;
 }
@@ -601,6 +968,7 @@ function evav_freemius_new_message(
  */
 function evav_load_plugin_textdomain() {
     $locale = apply_filters( 'plugin_locale', get_locale(), 'easy-age-verify' );
+    $locale = preg_replace( '/[^a-zA-Z0-9_-]/', '', $locale );
     load_textdomain( 'easy-age-verify', WP_LANG_DIR . '/plugins/easy-age-verify-' . $locale . '.mo' );
     load_plugin_textdomain( 'easy-age-verify', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
@@ -609,7 +977,13 @@ function evav_load_plugin_textdomain() {
  * @return mixed|void
  */
 function evav_age_verify_option() {
-    return get_option( '_evav_adult_type' );
+    $adult_type = get_option( '_evav_adult_type', 'adult' );
+    if ( 'birthdate' === $adult_type ) {
+        if ( !function_exists( 'evav_fs' ) || !evav_fs()->can_use_premium_code() ) {
+            return 'adult';
+        }
+    }
+    return $adult_type;
 }
 
 /**
@@ -630,7 +1004,9 @@ function evav_the_disclaimer() {
  * @since 0.1
  */
 function evav_get_the_disclaimer() {
-    $desc = apply_filters( 'evav_disclaimer', get_option( '_evav_disclaimer', __( 'Please verify your age', 'easy-age-verify' ) ) );
+    $adult_type = get_option( '_evav_adult_type', 'adult' );
+    $default_disclaimer = ( 'birthdate' === $adult_type ? '' : __( 'Please verify your age', 'easy-age-verify' ) );
+    $desc = apply_filters( 'evav_disclaimer', get_option( '_evav_disclaimer', $default_disclaimer ) );
     if ( !empty( $desc ) ) {
         return $desc;
     } else {
@@ -710,7 +1086,7 @@ function evav_print_header() {
     } else {
         $title = $heading_text_arr[2];
     }
-    printf( '<h3 style="color:' . evav_getContrastYIQ( ltrim( evav_get_overlay_color(), '#' ) ) . ';">%s</h3>', $title );
+    printf( '<h3 style="color:' . evav_get_overlay_text_color() . ';">%s</h3>', $title );
 }
 
 function evav_print_disclaimer() {
@@ -728,7 +1104,7 @@ function evav_print_disclaimer() {
     );
     $disclaimer_decoded = html_entity_decode( $disclaimer );
     $sanitized_disclaimer = wp_kses( $disclaimer_decoded, $allowed_tags );
-    printf( '<div class="disclaimer"><p style="color:%s;">%s</p></div>', esc_attr( evav_getContrastYIQ( ltrim( evav_get_overlay_color(), '#' ) ) ), $sanitized_disclaimer );
+    printf( '<div class="disclaimer"><p style="color:%s;">%s</p></div>', esc_attr( evav_get_overlay_text_color() ), $sanitized_disclaimer );
 }
 
 add_filter( 'evav_before_form', 'evav_print_header', 4 );

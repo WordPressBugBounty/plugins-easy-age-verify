@@ -281,13 +281,31 @@ final class Easy_Age_Verify {
         ?>
             <div id="evav-overlay">
 				<?php 
+        if ( function_exists( 'evav_is_overlay_box_enabled' ) && evav_is_overlay_box_enabled() ) {
+            ?>
+					<div id="evav-overlay-box" style="background: <?php 
+            echo esc_attr( evav_get_overlay_box_background() );
+            ?>; color: <?php 
+            echo esc_attr( evav_get_overlay_text_color() );
+            ?>;">
+				<?php 
+        }
+        ?>
+					<?php 
         do_action( 'evav_before_form' );
         ?>
-				<?php 
+					<?php 
         evav_verify_form();
         ?>
-				<?php 
+					<?php 
         do_action( 'evav_after_form' );
+        ?>
+				<?php 
+        if ( function_exists( 'evav_is_overlay_box_enabled' ) && evav_is_overlay_box_enabled() ) {
+            ?>
+				</div>
+				<?php 
+        }
         ?>
             </div>
 			<?php 
