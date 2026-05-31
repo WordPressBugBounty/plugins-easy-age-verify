@@ -27,6 +27,12 @@ Easy Age Verify was developed in the United States by 5 Star Plugins. For cannab
 
 [Adult Novelty Demo](https://premiumadultageverify.5starplugins.com/) | [Vape Shop Demo](https://premiumvapeageverify.5starplugins.com/) | [Craft Beer Demo](https://premiumalcoholageverify.5starplugins.com/)
 
+View our video overview:
+
+[youtube https://www.youtube.com/watch?v=tWnG9yATtYg]
+
+[or use this YouTube link](https://www.youtube.com/watch?v=tWnG9yATtYg)
+
 ### EASY TURNKEY SETUP
 Take the guesswork out of website age verification.
 
