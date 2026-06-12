@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 7.0
-Stable tag: 2.0.11
+Stable tag: 2.0.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -182,6 +182,10 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 * Update! Updated Freemius SDK.
 
 == Changelog ==
+= 2.0.12 =
+* Improved birthdate drop-down styling compatibility with themes that apply global form select styling.
+* Add Super Page Cache for Cloudflare cache purging on save.
+
 = 2.0.11 =
 * Added Premium boxed overlay panel option.
 * Added Premium box color and optional two-color gradient with direction control.

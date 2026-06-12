@@ -1,0 +1,1178 @@
+# Copyright (C) 2026 5 Star Plugins
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Age Verify 2.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-age-verify\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-22T01:09:05+00:00\n"
+"PO-Revision-Date: 2026-05-30 04:53+0000\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: easy-age-verify\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de-DE\n"
+
+#: easy-age-verify.php
+#: includes/admin/settings.php:107
+#. Plugin Name of the plugin
+msgid "Easy Age Verify"
+msgstr "Einfache Altersprüfung"
+
+#: easy-age-verify.php
+#. Description of the plugin
+msgid ""
+"Adds a mobile friendly age verification screen to adults only, vape or "
+"alcohol websites. Get set-up in minutes."
+msgstr ""
+"Fügt einen mobilfreundlichen Altersverifikationsbildschirm für nur "
+"Erwachsene, Dampf- oder Alkohol-Websites hinzu. In wenigen Minuten "
+"einsatzbereit."
+
+#: easy-age-verify.php
+#. Author of the plugin
+msgid "5 Star Plugins"
+msgstr "5-Sterne-Plugins"
+
+#: easy-age-verify.php
+#. Author URI of the plugin
+msgid "https://5starplugins.com/"
+msgstr "https://5starplugins.com/"
+
+#: easy-age-verify.php:178
+msgid "Enjoying Easy Age Verify?"
+msgstr "Genießen Sie die einfache Altersverifikation?"
+
+#: easy-age-verify.php:182
+#. translators: %s: review URL
+#, php-format
+msgid ""
+"Please <a href=\"%s\" target=\"_blank\">leave a 5-star review</a> to "
+"support us! 🙌"
+msgstr ""
+"Bitte <a href=\"%s\" target=\"_blank\">hinterlassen Sie eine "
+"5-Sterne-Bewertung</a>, um uns zu unterstützen! 🙌"
+
+#: easy-age-verify.php:192
+msgid "Remind me later"
+msgstr "Erinnere mich später"
+
+#: easy-age-verify.php:194
+msgid "Dismiss"
+msgstr "Abweisen"
+
+#: includes/admin/class-easy-age-verify-admin.php:136
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/admin/class-easy-age-verify-admin.php:152
+#: includes/admin/class-easy-age-verify-admin.php:163
+#: includes/class-easy-age-verify.php:162
+#: includes/class-easy-age-verify.php:173
+msgid "Cheatin&#8217; huh?"
+msgstr "Schummeln&#8217; huh?"
+
+#: includes/admin/class-easy-age-verify-admin.php:196
+msgid "Enable Verification"
+msgstr "Verifizierung aktivieren"
+
+#: includes/admin/class-easy-age-verify-admin.php:196
+msgid ""
+"Popup will not show when disabled. Use Testing Mode during setup, then show "
+"when it's ready."
+msgstr ""
+"Popup wird nicht angezeigt, wenn deaktiviert. Verwenden Sie den Testmodus "
+"während der Einrichtung und zeigen Sie es an, wenn es bereit ist."
+
+#: includes/admin/class-easy-age-verify-admin.php:205
+#: includes/admin/premium/settings-premium.php:401
+#: includes/admin/settings.php:537
+#: includes/functions.php:1029
+msgid "Page Targeting"
+msgstr "Seitenzielsetzung"
+
+#: includes/admin/class-easy-age-verify-admin.php:205
+msgid "Include or exclude a certain page."
+msgstr "Eine bestimmte Seite einbeziehen oder ausschließen."
+
+#: includes/admin/class-easy-age-verify-admin.php:215
+#: includes/admin/settings.php:491
+msgid "Realtime Settings Check"
+msgstr "Echtzeit-Einstellungen überprüfen"
+
+#: includes/admin/class-easy-age-verify-admin.php:217
+msgid "May help caching issues, adds delay to popup."
+msgstr "Kann bei Cache-Problemen helfen, fügt dem Popup eine Verzögerung hinzu."
+
+#: includes/admin/class-easy-age-verify-admin.php:223
+msgid "Learn more"
+msgstr "Mehr erfahren"
+
+#: includes/admin/class-easy-age-verify-admin.php:234
+msgid "Verify For"
+msgstr "Verifizieren für"
+
+#: includes/admin/class-easy-age-verify-admin.php:234
+msgid "Select a turnkey setting. Upgrade to Premium to edit text and background."
+msgstr ""
+"Wählen Sie eine schlüsselfertige Einstellung. Upgrade auf Premium, um Text "
+"und Hintergrund zu bearbeiten."
+
+#: includes/admin/class-easy-age-verify-admin.php:248
+msgid ""
+"Upgrade to edit button and error message text. Premium unlocks editing of "
+"all text for translation."
+msgstr ""
+"Upgrade, um den Text des Buttons und der Fehlermeldung zu bearbeiten. "
+"Premium schaltet die Bearbeitung aller Texte für Übersetzungen frei."
+
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "Age Prompt"
+msgstr "Altersabfrage"
+
+#: includes/admin/class-easy-age-verify-admin.php:256
+msgid "Required question."
+msgstr "Erforderliche Frage."
+
+#: includes/admin/class-easy-age-verify-admin.php:257
+msgid "(max 50 characters)"
+msgstr "(max 50 Zeichen)"
+
+#: includes/admin/class-easy-age-verify-admin.php:265
+msgid "Disclaimer"
+msgstr "Haftungsausschluss"
+
+#: includes/admin/class-easy-age-verify-admin.php:266
+msgid "Optional small print takes HTML link."
+msgstr "Optionale Fußnote nimmt HTML-Link auf."
+
+#: includes/admin/class-easy-age-verify-admin.php:267
+msgid "(max 400 characters)"
+msgstr "(max 400 Zeichen)"
+
+#: includes/admin/class-easy-age-verify-admin.php:348
+msgid "Require age verification for this content"
+msgstr "Altersverifikation für diesen Inhalt erforderlich"
+
+#: includes/admin/premium/settings-premium.php:26
+#: includes/admin/premium/settings-premium.php:37
+msgid "Enter text..."
+msgstr "Text eingeben..."
+
+#: includes/admin/premium/settings-premium.php:49
+msgid "Browser cookie checkbox"
+msgstr "Browser-Cookie-Checkbox"
+
+#: includes/admin/premium/settings-premium.php:53
+msgid "Show “Remember Me” checkbox"
+msgstr "„Erinnere mich“ Checkbox anzeigen"
+
+#: includes/admin/premium/settings-premium.php:66
+msgid "Form Box"
+msgstr "Formularfeld"
+
+#: includes/admin/premium/settings-premium.php:69
+#: includes/admin/premium/settings-premium.php:717
+msgid "Show box around the form"
+msgstr "Rahmen um das Formular anzeigen"
+
+#: includes/admin/premium/settings-premium.php:82
+msgid "Overlay Box Color"
+msgstr "Overlay-Box-Farbe"
+
+#: includes/admin/premium/settings-premium.php:97
+#: includes/admin/premium/settings-premium.php:189
+msgid "Gradient"
+msgstr "Verlauf"
+
+#: includes/admin/premium/settings-premium.php:100
+#: includes/admin/premium/settings-premium.php:731
+msgid "Use box gradient"
+msgstr "Box-Verlauf verwenden"
+
+#: includes/admin/premium/settings-premium.php:113
+msgid "Overlay Box Gradient Color"
+msgstr "Overlay-Box-Verlaufsfarbe"
+
+#: includes/admin/premium/settings-premium.php:128
+msgid "Overlay Box Gradient Angle"
+msgstr "Overlay-Box-Verlaufwinkel"
+
+#: includes/admin/premium/settings-premium.php:131
+#: includes/admin/premium/settings-premium.php:223
+msgid "Center"
+msgstr "Zentriert"
+
+#: includes/admin/premium/settings-premium.php:132
+#: includes/admin/premium/settings-premium.php:224
+msgid "Top to Bottom"
+msgstr "Von oben nach unten"
+
+#: includes/admin/premium/settings-premium.php:133
+#: includes/admin/premium/settings-premium.php:225
+msgid "Top Left to Bottom Right"
+msgstr "Von oben links nach unten rechts"
+
+#: includes/admin/premium/settings-premium.php:134
+#: includes/admin/premium/settings-premium.php:226
+msgid "Left to Right"
+msgstr "Von links nach rechts"
+
+#: includes/admin/premium/settings-premium.php:135
+#: includes/admin/premium/settings-premium.php:227
+msgid "Bottom Left to Top Right"
+msgstr "Von unten links nach oben rechts"
+
+#: includes/admin/premium/settings-premium.php:136
+#: includes/admin/premium/settings-premium.php:228
+msgid "Bottom to Top"
+msgstr "Von unten nach oben"
+
+#: includes/admin/premium/settings-premium.php:137
+#: includes/admin/premium/settings-premium.php:229
+msgid "Bottom Right to Top Left"
+msgstr "Von unten rechts nach oben links"
+
+#: includes/admin/premium/settings-premium.php:138
+#: includes/admin/premium/settings-premium.php:230
+msgid "Right to Left"
+msgstr "Von rechts nach links"
+
+#: includes/admin/premium/settings-premium.php:139
+#: includes/admin/premium/settings-premium.php:231
+msgid "Top Right to Bottom Left"
+msgstr "Von oben rechts nach unten links"
+
+#: includes/admin/premium/settings-premium.php:152
+msgid "Enable Birth Date Verification"
+msgstr "Geburtsdatum-Verifizierung aktivieren"
+
+#: includes/admin/premium/settings-premium.php:156
+msgid "Require birth date entry for age verification"
+msgstr "Geburtsdatum für Altersverifikation erforderlich"
+
+#: includes/admin/premium/settings-premium.php:170
+msgid "Overlay Color"
+msgstr "Überlagerungsfarbe"
+
+#: includes/admin/premium/settings-premium.php:192
+#: includes/admin/premium/settings-premium.php:683
+msgid "Use background gradient"
+msgstr "Hintergrund-Verlauf verwenden"
+
+#: includes/admin/premium/settings-premium.php:205
+msgid "Overlay Gradient Color"
+msgstr "Overlay-Verlaufsfarbe"
+
+#: includes/admin/premium/settings-premium.php:220
+msgid "Overlay Gradient Direction"
+msgstr "Overlay-Verlauf-Richtung"
+
+#: includes/admin/premium/settings-premium.php:245
+msgid "Styling"
+msgstr "Styling"
+
+#: includes/admin/premium/settings-premium.php:249
+msgid "Use built-in CSS on the front-end (recommended)"
+msgstr "Verwenden Sie das integrierte CSS auf der Front-End (empfohlen)"
+
+#: includes/admin/premium/settings-premium.php:262
+#: includes/functions.php:416
+#: includes/premium/functions-premium.php:24
+msgid "Enter"
+msgstr "Eingeben"
+
+#: includes/admin/premium/settings-premium.php:263
+#: includes/functions.php:414
+#: includes/premium/functions-premium.php:25
+msgid "Yes I am of legal age"
+msgstr "Ja, ich bin volljährig"
+
+#: includes/admin/premium/settings-premium.php:296
+#: includes/functions.php:420
+#: includes/premium/functions-premium.php:139
+msgid "No I am under age"
+msgstr "Nein, ich bin minderjährig"
+
+#: includes/admin/premium/settings-premium.php:327
+#: includes/functions.php:437
+#: includes/functions.php:456
+#: includes/premium/functions-premium.php:110
+msgid "Sorry, you must be of legal age to enter this website."
+msgstr "Entschuldigung, Sie müssen volljährig sein, um diese Website zu betreten."
+
+#: includes/admin/premium/settings-premium.php:347
+msgid "Add Logo"
+msgstr "Logo hinzufügen"
+
+#: includes/admin/premium/settings-premium.php:349
+msgid "Select Logo"
+msgstr "Logo auswählen"
+
+#: includes/admin/premium/settings-premium.php:351
+msgid "Clear Logo"
+msgstr "Logo löschen"
+
+#: includes/admin/premium/settings-premium.php:378
+msgid "60% Opacity"
+msgstr "60% Opazität"
+
+#: includes/admin/premium/settings-premium.php:379
+msgid "65% Opacity"
+msgstr "65% Opazität"
+
+#: includes/admin/premium/settings-premium.php:380
+msgid "70% Opacity"
+msgstr "70% Opazität"
+
+#: includes/admin/premium/settings-premium.php:381
+msgid "75% Opacity"
+msgstr "75% Opazität"
+
+#: includes/admin/premium/settings-premium.php:382
+msgid "80% Opacity"
+msgstr "80% Opazität"
+
+#: includes/admin/premium/settings-premium.php:383
+msgid "85% Opacity"
+msgstr "85% Opazität"
+
+#: includes/admin/premium/settings-premium.php:384
+msgid "90% Opacity"
+msgstr "90% Opazität"
+
+#: includes/admin/premium/settings-premium.php:385
+msgid "95% Opacity"
+msgstr "95% Opazität"
+
+#: includes/admin/premium/settings-premium.php:386
+msgid "100% Opacity"
+msgstr "100% Opazität"
+
+#: includes/admin/premium/settings-premium.php:405
+msgid "Show on all pages"
+msgstr "Auf allen Seiten anzeigen"
+
+#: includes/admin/premium/settings-premium.php:410
+msgid "Show on this page only"
+msgstr "Nur auf dieser Seite anzeigen"
+
+#: includes/admin/premium/settings-premium.php:415
+msgid "Show everywhere except this page"
+msgstr "Überall außer auf dieser Seite anzeigen"
+
+#: includes/admin/premium/settings-premium.php:427
+msgid "Page "
+msgstr "Seite "
+
+#: includes/admin/premium/settings-premium.php:436
+msgid "— Select a Page —"
+msgstr "— Wählen Sie eine Seite —"
+
+#: includes/admin/premium/settings-premium.php:454
+msgid "(Home)"
+msgstr "(Startseite)"
+
+#: includes/admin/premium/settings-premium.php:459
+msgid "(Blog Index)"
+msgstr "(Blog-Index)"
+
+#: includes/admin/premium/settings-premium.php:469
+#: includes/admin/premium/settings-premium.php:471
+msgid "Blog Posts"
+msgstr "Blog-Beiträge"
+
+#: includes/admin/premium/settings-premium.php:475
+#: includes/admin/premium/settings-premium.php:477
+#: includes/admin/premium/settings-premium.php:530
+msgid "Post Categories"
+msgstr "Beitragskategorien"
+
+#: includes/admin/premium/settings-premium.php:481
+#: includes/admin/premium/settings-premium.php:483
+#: includes/admin/premium/settings-premium.php:548
+msgid "Post Tags"
+msgstr "Beitragstags"
+
+#: includes/admin/premium/settings-premium.php:488
+#: includes/admin/premium/settings-premium.php:490
+msgid "Product Pages"
+msgstr "Produktseiten"
+
+#: includes/admin/premium/settings-premium.php:495
+#: includes/admin/premium/settings-premium.php:497
+msgid "All WooCommerce Pages"
+msgstr "Alle WooCommerce-Seiten"
+
+#: includes/admin/premium/settings-premium.php:502
+#: includes/admin/premium/settings-premium.php:504
+msgid "Multiple Pages"
+msgstr "Mehrere Seiten"
+
+#: includes/admin/premium/settings-premium.php:509
+msgid "Pages"
+msgstr "Seiten"
+
+#: includes/admin/premium/settings-premium.php:589
+msgid "Premium Options"
+msgstr "Premium-Optionen"
+
+#: includes/admin/premium/settings-premium.php:595
+msgid "User Experience"
+msgstr "Benutzererfahrung"
+
+#: includes/admin/premium/settings-premium.php:601
+msgid "Return Visitor Cookie"
+msgstr "Rückkehrbesucher-Cookie"
+
+#: includes/admin/premium/settings-premium.php:601
+msgid "A return visitor cookie allows verified visitors to skip next time."
+msgstr ""
+"Ein Rückkehrbesucher-Cookie ermöglicht verifizierten Besuchern, beim "
+"nächsten Mal zu überspringen."
+
+#: includes/admin/premium/settings-premium.php:609
+msgid "Return Visitor Text"
+msgstr "Rückkehrbesucher-Text"
+
+#: includes/admin/premium/settings-premium.php:613
+#: includes/functions.php:541
+msgid "Remember me next time"
+msgstr "Erinnere mich beim nächsten Mal"
+
+#: includes/admin/premium/settings-premium.php:624
+msgid "Buttons"
+msgstr "Schaltflächen"
+
+#: includes/admin/premium/settings-premium.php:630
+msgid "Required to verify."
+msgstr "Erforderlich zur Überprüfung."
+
+#: includes/admin/premium/settings-premium.php:630
+msgid ""
+"Yes Button Text <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Ja Schaltflächen-Text <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:638
+#: includes/admin/premium/settings-premium.php:654
+msgid ""
+"SMARTtext automatically sets text color to black or white based on button "
+"color."
+msgstr ""
+"SMARTtext setzt die Textfarbe automatisch auf schwarz oder weiß, basierend "
+"auf der Schaltflächenfarbe."
+
+#: includes/admin/premium/settings-premium.php:638
+msgid ""
+"Yes Button Color <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Ja Schaltflächenfarbe <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:646
+msgid "Required to not verify."
+msgstr "Erforderlich, um nicht zu überprüfen."
+
+#: includes/admin/premium/settings-premium.php:646
+msgid ""
+"No Button Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"Nein Schaltflächen-Text <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:654
+msgid ""
+"No Button Color <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Nein Schaltflächenfarbe <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:662
+msgid "Required. Appears when user clicks no button."
+msgstr "Erforderlich. Erscheint, wenn der Benutzer auf die Nein-Schaltfläche klickt."
+
+#: includes/admin/premium/settings-premium.php:662
+msgid ""
+"Error Text <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"Fehlertext <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:670
+#: includes/functions.php:1033
+msgid "Background"
+msgstr "Hintergrund"
+
+#: includes/admin/premium/settings-premium.php:676
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: includes/admin/premium/settings-premium.php:676
+msgid ""
+"SMARTtext automatically sets text color to black or white based on "
+"background color."
+msgstr ""
+"SMARTtext setzt die Textfarbe automatisch auf schwarz oder weiß, basierend "
+"auf der Hintergrundfarbe."
+
+#: includes/admin/premium/settings-premium.php:683
+#: includes/admin/premium/settings-premium.php:731
+msgid ""
+"Gradient <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr "Verlauf <span class=\"dashicons dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:690
+#: includes/admin/premium/settings-premium.php:738
+msgid "Second color used for the gradient."
+msgstr "Zweite Farbe, die für den Verlauf verwendet wird."
+
+#: includes/admin/premium/settings-premium.php:690
+#: includes/admin/premium/settings-premium.php:738
+msgid ""
+"Gradient End Color <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Verlaufs-Endfarbe <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:697
+#: includes/admin/premium/settings-premium.php:745
+msgid "Choose the direction of the gradient."
+msgstr "Wähle die Richtung des Verlaufs."
+
+#: includes/admin/premium/settings-premium.php:697
+#: includes/admin/premium/settings-premium.php:745
+msgid ""
+"Gradient Direction <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Verlaufsrichtung <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:705
+msgid "Hide content 0-100%."
+msgstr "Inhalt 0-100% ausblenden."
+
+#: includes/admin/premium/settings-premium.php:705
+msgid ""
+"Background Opacity <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Hintergrunddeckkraft <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:712
+msgid "Box"
+msgstr "Box"
+
+#: includes/admin/premium/settings-premium.php:717
+msgid ""
+"Form Box <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"Formularbox <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/premium/settings-premium.php:724
+msgid "Box Color"
+msgstr "Box-Farbe"
+
+#: includes/admin/premium/settings-premium.php:724
+msgid "Background color for the boxed panel."
+msgstr "Hintergrundfarbe für das Boxen-Panel."
+
+#: includes/admin/premium/settings-premium.php:753
+msgid "Branding"
+msgstr "Branding"
+
+#: includes/admin/premium/settings-premium.php:759
+msgid "Optional headline centers below logo."
+msgstr "Optionale Überschrift zentriert unter dem Logo."
+
+#: includes/admin/premium/settings-premium.php:759
+msgid ""
+"Add Headline <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"Überschrift hinzufügen <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:767
+msgid "Optional body copy."
+msgstr "Optionaler Fließtext."
+
+#: includes/admin/premium/settings-premium.php:767
+msgid ""
+"Add Text Below Headline <span class=\"dashicons dashicons-info "
+"evavoptionshovertip\" title=\""
+msgstr ""
+"Text unter der Überschrift hinzufügen <span class=\"dashicons "
+"dashicons-info evavoptionshovertip\" title=\""
+
+#: includes/admin/premium/settings-premium.php:779
+msgid ""
+"Upload any size or dimension. The responsive display resizes it to 650 "
+"pixels max tall or wide."
+msgstr ""
+"Laden Sie jede Größe oder Dimension hoch. Die responsive Anzeige passt sie "
+"auf maximal 650 Pixel hoch oder breit an."
+
+#: includes/admin/premium/settings-premium.php:779
+msgid ""
+"Your Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+msgstr ""
+"Ihr Logo <span class=\"dashicons dashicons-info evavoptionshovertip\" "
+"title=\""
+
+#: includes/admin/settings.php:16
+msgid "WP Rocket cache cleared."
+msgstr "WP Rocket-Cache geleert."
+
+#: includes/admin/settings.php:22
+msgid "W3TC cache cleared."
+msgstr "W3TC-Cache geleert."
+
+#: includes/admin/settings.php:28
+msgid "WP Super Cache cache cleared."
+msgstr "WP Super Cache-Cache geleert."
+
+#: includes/admin/settings.php:34
+msgid "WP Fastest Cache cache cleared."
+msgstr "WP Fastest Cache-Cache geleert."
+
+#: includes/admin/settings.php:41
+msgid "WPEngine cache cleared."
+msgstr "WPEngine-Cache geleert."
+
+#: includes/admin/settings.php:47
+msgid "SiteGround Optimizer cache cleared."
+msgstr "SiteGround Optimizer-Cache geleert."
+
+#: includes/admin/settings.php:53
+msgid "LiteSpeed cache cleared."
+msgstr "LiteSpeed-Cache geleert."
+
+#: includes/admin/settings.php:59
+msgid "Cache Enabler cache cleared."
+msgstr "Cache Enabler-Cache geleert."
+
+#: includes/admin/settings.php:65
+msgid "Pagely cache cleared."
+msgstr "Pagely-Cache geleert."
+
+#: includes/admin/settings.php:71
+msgid "Autoptimize cache cleared."
+msgstr "Autoptimize-Cache geleert."
+
+#: includes/admin/settings.php:77
+msgid "Comet Cache cache cleared."
+msgstr "Comet Cache-Cache geleert."
+
+#: includes/admin/settings.php:83
+msgid "Hummingbird cache cleared."
+msgstr "Hummingbird-Cache geleert."
+
+#: includes/admin/settings.php:87
+msgid "NOTE: Please be sure to clear any page caches for new settings to display."
+msgstr ""
+"HINWEIS: Bitte stellen Sie sicher, dass Sie alle Seiten-Caches leeren, "
+"damit neue Einstellungen angezeigt werden."
+
+#: includes/admin/settings.php:124
+msgid "<strong>Clear Cookie:</strong> Popup stopped after clicking yes? <br/>"
+msgstr ""
+"<strong>Cookie löschen:</strong> Popup wurde nach dem Klicken auf Ja "
+"gestoppt? <br/>"
+
+#: includes/admin/settings.php:125
+msgid ""
+"Detects if a cookie is set in your browser from this plugin and clears it. "
+"Refresh this page to recheck."
+msgstr ""
+"Erkennt, ob ein Cookie in Ihrem Browser von diesem Plugin gesetzt wurde und "
+"löscht es. Aktualisieren Sie diese Seite, um erneut zu überprüfen."
+
+#: includes/admin/settings.php:139
+msgid ""
+"Need Help? Click the  icon on the bottom right to search our <a "
+"href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
+"target=\"_blank\">Knowledge Base</a> or to send an email for Premium "
+"support."
+msgstr ""
+"Brauchen Sie Hilfe? Klicken Sie auf das  Symbol in der unteren rechten "
+"Ecke, um unsere <a "
+"href=\"https://support.5starplugins.com/collection/69-easy-age-verify\" "
+"target=\"_blank\">Wissensdatenbank</a> zu durchsuchen oder um eine E-Mail "
+"für Premium-Support zu senden."
+
+#: includes/admin/settings.php:140
+msgid ""
+"Read: <a "
+"href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
+"not-popping-up\"  target=\"_blank\">My age window isn't showing.</a>"
+msgstr ""
+"Lesen: <a "
+"href=\"https://support.5starplugins.com/article/79-my-age-verify-window-is-"
+"not-popping-up\"  target=\"_blank\">Mein Altersfenster wird nicht "
+"angezeigt.</a>"
+
+#: includes/admin/settings.php:141
+msgid ""
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Contact Us</a> "
+"to report a bug, suggest a feature, ask a billing question, or request "
+"Premium support."
+msgstr ""
+"<a href=\"/wp-admin/admin.php?page=easy-age-verify-contact\">Kontaktieren "
+"Sie uns</a>, um einen Fehler zu melden, eine Funktion vorzuschlagen, eine "
+"Abrechnungsfrage zu stellen oder Premium-Support anzufordern."
+
+#: includes/admin/settings.php:142
+msgid ""
+"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Visit The "
+"Support Center</a> for more."
+msgstr ""
+"<a href=\"https://5starplugins.com/get-support/\" target=_blank>Besuchen "
+"Sie das Support-Center</a> für mehr."
+
+#: includes/admin/settings.php:143
+msgid ""
+"Use Age Verify with Pretty Simple Popup for <a "
+"href=\"https://get.5starplugins.com/pspforageverify/\" "
+"target=\"_blank\">perfectly timed marketing popups</a>."
+msgstr ""
+"Verwenden Sie Age Verify mit Pretty Simple Popup für <a "
+"href=\"https://get.5starplugins.com/pspforageverify/\" "
+"target=\"_blank\">perfekt getimte Marketing-Popups</a>."
+
+#: includes/admin/settings.php:144
+msgid ""
+"Like this? <a "
+"href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
+"?rate=5#new-post\" target=_blank>Rate This Plugin</a>"
+msgstr ""
+"Gefällt Ihnen das? <a "
+"href=\"http://wordpress.org/support/view/plugin-reviews/easy-age-verify/"
+"?rate=5#new-post\" target=_blank>Bewerten Sie dieses Plugin</a>"
+
+#: includes/admin/settings.php:147
+#. translators: %s: URL to 5 Star Plugins website
+#, php-format
+msgid ""
+"Developed and supported by <a href=\"%s\" target=_blank>5 Star Plugins</a> "
+"in San Diego, CA"
+msgstr ""
+"Entwickelt und unterstützt von <a href=\"%s\" target=_blank>5 Star "
+"Plugins</a> in San Diego, CA"
+
+#: includes/admin/settings.php:174
+msgid "Require Verification For:"
+msgstr "Verifizierung erforderlich für:"
+
+#: includes/admin/settings.php:178
+msgid "Entire site"
+msgstr "Die gesamte Website"
+
+#: includes/admin/settings.php:183
+msgid "Specific content"
+msgstr "Bestimmte Inhalte"
+
+#: includes/admin/settings.php:202
+msgid "Enable Verification:"
+msgstr "Verifizierung aktivieren:"
+
+#: includes/admin/settings.php:206
+msgid "Disable verification to all visitors"
+msgstr "Verifizierung für alle Besucher deaktivieren"
+
+#: includes/admin/settings.php:211
+msgid "[TESTING MODE] Show only to logged-in Admins"
+msgstr "[TESTMODUS] Nur für eingeloggte Administratoren anzeigen"
+
+#: includes/admin/settings.php:216
+msgid "Show verification except to logged-in users"
+msgstr "Verifizierung außer für eingeloggte Benutzer anzeigen"
+
+#: includes/admin/settings.php:221
+msgid "Show verification to all visitors"
+msgstr "Verifizierung für alle Besucher anzeigen"
+
+#: includes/admin/settings.php:247
+msgid "Select verification type:"
+msgstr "Verifizierungstyp auswählen:"
+
+#: includes/admin/settings.php:251
+msgid "Adults Only 18+"
+msgstr "Nur Erwachsene 18+"
+
+#: includes/admin/settings.php:260
+msgid "Alcohol"
+msgstr "Alkohol"
+
+#: includes/admin/settings.php:269
+msgid "Vape"
+msgstr "Vape"
+
+#: includes/admin/settings.php:279
+msgid "Birthdate"
+msgstr "Geburtsdatum"
+
+#: includes/admin/settings.php:287
+msgid "Verify Age over:"
+msgstr "Alter überprüfen ab:"
+
+#: includes/admin/settings.php:294
+msgid "Birthdate (upgrade to unlock)"
+msgstr "Geburtsdatum (Upgrade zum Freischalten)"
+
+#: includes/admin/settings.php:352
+msgid "years old or older to view this site"
+msgstr "Jahre alt oder älter, um diese Seite zu besuchen"
+
+#: includes/admin/settings.php:363
+msgid "minutes"
+msgstr "Minuten"
+
+#: includes/admin/settings.php:376
+msgid "Membership"
+msgstr "Mitgliedschaft"
+
+#: includes/admin/settings.php:380
+msgid "Require users to confirm their age before registering to this site"
+msgstr ""
+"Benutzer müssen ihr Alter bestätigen, bevor sie sich auf dieser Seite "
+"registrieren"
+
+#: includes/admin/settings.php:399
+#: includes/admin/settings.php:411
+#: includes/functions.php:956
+msgid "Please verify you are 18 years or older to enter."
+msgstr "Bitte bestätigen Sie, dass Sie 18 Jahre oder älter sind, um einzutreten."
+
+#: includes/admin/settings.php:402
+msgid "Are you of legal drinking age 21 or older?"
+msgstr ""
+"Sind Sie im gesetzlichen Mindestalter für den Alkoholkonsum von 21 Jahren "
+"oder älter?"
+
+#: includes/admin/settings.php:405
+msgid "Are you of legal smoking age?"
+msgstr "Sind Sie im gesetzlichen Mindestalter für den Tabakkonsum?"
+
+#: includes/admin/settings.php:408
+msgid "Please verify your age before entering."
+msgstr "Bitte bestätigen Sie Ihr Alter, bevor Sie fortfahren."
+
+#: includes/admin/settings.php:439
+#: includes/admin/settings.php:451
+msgid ""
+"WARNING ADULT CONTENT!\n"
+"This website is intended for adults only and may contain content of an "
+"adult nature or age restricted, explicit material, which some viewers may "
+"find offensive. By entering you confirm that you are 18+ years and are not "
+"offended by viewing such material. If you are under the age of 18, if such "
+"material offends you or it is illegal to view in your location please exit "
+"now."
+msgstr ""
+"WARNUNG: ERWACHSENENINHALT!\n"
+"Diese Website ist nur für Erwachsene gedacht und kann Inhalte mit "
+"erwachsenen Charakter oder altersbeschränkte, explizite Materialien "
+"enthalten, die einige Zuschauer als anstößig empfinden könnten. Durch das "
+"Betreten bestätigen Sie, dass Sie 18 Jahre oder älter sind und nicht "
+"anstößig finden, solche Materialien zu sehen. Wenn Sie unter 18 Jahre alt "
+"sind, wenn solche Materialien Sie anstößig finden oder es illegal ist, "
+"diese an Ihrem Standort zu sehen, verlassen Sie bitte jetzt die Seite."
+
+#: includes/admin/settings.php:442
+msgid ""
+"THE ALCOHOL PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS ONLY.\n"
+"By entering this website, you certify that you are of legal drinking age in "
+"the location in which you reside (age 21+ in the United States)."
+msgstr ""
+"DIE ALKOHOLPRODUKTE AUF DIESER WEBSITE SIND NUR FÜR ERWACHSENE BESTIMMT.\n"
+"Durch den Besuch dieser Website bestätigen Sie, dass Sie das gesetzliche "
+"Mindestalter für den Alkoholkonsum an dem Ort, an dem Sie wohnen, erreicht "
+"haben (Alter 21+ in den Vereinigten Staaten)."
+
+#: includes/admin/settings.php:445
+msgid ""
+"THE PRODUCTS ON THIS WEBSITE ARE INTENDED FOR ADULTS OF LEGAL SMOKING AGE.\n"
+"By entering this website, you certify that you are of legal smoking age in "
+"the location in which you reside (age 18+, 19+ and 21+ in some areas)."
+msgstr ""
+"DIE PRODUKTE AUF DIESER WEBSITE SIND FÜR ERWACHSENE DES GESETZLICHEN "
+"TABAKKONSUMALTERS BESTIMMT.\n"
+"Durch den Besuch dieser Website bestätigen Sie, dass Sie das gesetzliche "
+"Mindestalter für den Tabakkonsum an dem Ort, an dem Sie wohnen, erreicht "
+"haben (Alter 18+, 19+ und 21+ in einigen Gebieten)."
+
+#: includes/admin/settings.php:495
+msgid "Confirm \"Enable Verification\" settings before showing popup"
+msgstr ""
+"Bestätigen Sie die Einstellungen \"Überprüfung aktivieren\", bevor das "
+"Popup angezeigt wird"
+
+#: includes/admin/settings.php:522
+msgid "Date dropdowns"
+msgstr "Datumsdropdowns"
+
+#: includes/admin/settings.php:523
+msgid "Inputs"
+msgstr "Eingaben"
+
+#: includes/admin/settings.php:524
+msgid "Confirm checkbox"
+msgstr "Bestätigungs-Checkbox"
+
+#: includes/admin/settings.php:541
+msgid "Show on all pages (upgrade to unlock)"
+msgstr "Auf allen Seiten anzeigen (Upgrade zur Freischaltung)"
+
+#: includes/admin/settings.php:546
+msgid "Show on this page only (upgrade to unlock)"
+msgstr "Nur auf dieser Seite anzeigen (Upgrade zur Freischaltung)"
+
+#: includes/admin/settings.php:551
+msgid "Show everywhere except this page (upgrade to unlock)"
+msgstr "Überall außer auf dieser Seite anzeigen (Upgrade zur Freischaltung)"
+
+#: includes/class-easy-age-verify.php:344
+#. translators: %1$s: minimum age required, %2$s: URL to verify age
+#, php-format
+msgid ""
+"You must be %1$s years old to view this content. <a href=\"%2$s\">Please "
+"verify your age</a>."
+msgstr ""
+"Sie müssen %1$s Jahre alt sein, um diesen Inhalt anzuzeigen. <a "
+"href=\"%2$s\">Bitte verifizieren Sie Ihr Alter</a>."
+
+#: includes/functions.php:415
+msgid "I am 18 or older [Enter Site]"
+msgstr "Ich bin 18 Jahre oder älter [Website betreten]"
+
+#: includes/functions.php:421
+msgid "I am under 18"
+msgstr "Ich bin unter 18"
+
+#: includes/functions.php:460
+msgid "Enter Site &raquo;"
+msgstr "Website eingeben &raquo;"
+
+#: includes/functions.php:481
+msgid "Select Your Birth Date"
+msgstr "Wählen Sie Ihr Geburtsdatum"
+
+#: includes/functions.php:485
+msgid "Month"
+msgstr "Monat"
+
+#: includes/functions.php:487
+msgid "January"
+msgstr "Januar"
+
+#: includes/functions.php:488
+msgid "February"
+msgstr "Februar"
+
+#: includes/functions.php:489
+msgid "March"
+msgstr "März"
+
+#: includes/functions.php:490
+msgid "April"
+msgstr "April"
+
+#: includes/functions.php:491
+msgid "May"
+msgstr "Mai"
+
+#: includes/functions.php:492
+msgid "June"
+msgstr "Juni"
+
+#: includes/functions.php:493
+msgid "July"
+msgstr "Juli"
+
+#: includes/functions.php:494
+msgid "August"
+msgstr "August"
+
+#: includes/functions.php:495
+msgid "September"
+msgstr "September"
+
+#: includes/functions.php:496
+msgid "October"
+msgstr "Oktober"
+
+#: includes/functions.php:497
+msgid "November"
+msgstr "November"
+
+#: includes/functions.php:498
+msgid "December"
+msgstr "Dezember"
+
+#: includes/functions.php:507
+msgid "Day"
+msgstr "Tag"
+
+#: includes/functions.php:518
+msgid "Year"
+msgstr "Jahr"
+
+#: includes/functions.php:972
+msgid "Please confirm your age"
+msgstr "Bitte bestätigen Sie Ihr Alter"
+
+#: includes/functions.php:994
+msgid "Unlock Premium Features"
+msgstr "Premium-Funktionen freischalten"
+
+#: includes/functions.php:997
+msgid "New Promo Text"
+msgstr "Neuer Werbetext"
+
+#: includes/functions.php:1009
+msgid "Upgrade Now"
+msgstr "Jetzt upgraden"
+
+#: includes/functions.php:1015
+msgid "Start 14-Day Free Trial"
+msgstr "14-tägige kostenlose Testversion starten"
+
+#: includes/functions.php:1016
+msgid "(risk free, no credit card)"
+msgstr "(risikofrei, keine Kreditkarte erforderlich)"
+
+#: includes/functions.php:1028
+msgid "Birthdate Validation"
+msgstr "Geburtsdatum-Validierung"
+
+#: includes/functions.php:1028
+msgid "Require birthdate and set a custom age"
+msgstr "Geburtsdatum erforderlich und ein benutzerdefiniertes Alter festlegen"
+
+#: includes/functions.php:1029
+msgid "Include / exclude certain pages"
+msgstr "Bestimmte Seiten ein- / ausschließen"
+
+#: includes/functions.php:1030
+msgid "Customizable"
+msgstr "Anpassbar"
+
+#: includes/functions.php:1030
+msgid "Free-form text option"
+msgstr "Freitextoption"
+
+#: includes/functions.php:1031
+msgid "Translation Ready"
+msgstr "Übersetzungsbereit"
+
+#: includes/functions.php:1031
+msgid "Self translate to any language"
+msgstr "Selbstübersetzung in jede Sprache"
+
+#: includes/functions.php:1032
+msgid "Brand It"
+msgstr "Branding"
+
+#: includes/functions.php:1032
+msgid "Your logo and colors"
+msgstr "Ihr Logo und Farben"
+
+#: includes/functions.php:1033
+msgid "Set transparency and color"
+msgstr "Transparenz und Farbe einstellen"
+
+#: includes/functions.php:1034
+msgid "Welcome Message"
+msgstr "Willkommensnachricht"
+
+#: includes/functions.php:1034
+msgid "Add a welcome message"
+msgstr "Fügen Sie eine Willkommensnachricht hinzu"
+
+#: includes/functions.php:1035
+msgid "Remember Visitors"
+msgstr "Besucher merken"
+
+#: includes/functions.php:1035
+msgid "\"Remember me\" checkbox"
+msgstr "\"Erinnere mich\" Checkbox"
+
+#: includes/functions.php:1036
+msgid "Premium Support"
+msgstr "Premium-Support"
+
+#: includes/functions.php:1036
+msgid "World-class email support from the U.S."
+msgstr "Weltklasse E-Mail-Support aus den USA."
+
+#: includes/functions.php:1049
+#. translators: %1$s: user first name, %2$s: plugin title
+#, php-format
+msgid ""
+"Hey %1$s,<br>Opt-in to help us improve %2$s! Some usage data will be sent "
+"to our platform Freemius."
+msgstr ""
+"Hey %1$s,<br>Melden Sie sich an, um uns zu helfen, %2$s zu verbessern! "
+"Einige Nutzungsdaten werden an unsere Plattform Freemius gesendet."
+
+#: includes/functions.php:1070
+#. translators: %1$s: user first name %2$s: plugin title (HTML allowed)
+#, php-format
+msgid ""
+"Hey %1$s,<br>In order to enjoy all of the features, functionality and "
+"enable a free trial of premium version, %2$s wants to connect usage data to "
+"our platform Freemius."
+msgstr ""
+"Hey %1$s,<br>Um alle Funktionen und Möglichkeiten zu genießen und eine "
+"kostenlose Testversion der Premium-Version zu aktivieren, möchte %2$s "
+"Nutzungsdaten mit unserer Plattform Freemius verbinden."
+
+#: includes/functions.php:1132
+#: includes/premium/functions-premium.php:193
+msgid "Please verify your age"
+msgstr "Bitte bestätigen Sie Ihr Alter"
+
+#: includes/functions.php:1160
+#: includes/premium/functions-premium.php:180
+msgid "You must be 21 years old to visit this site."
+msgstr "Sie müssen 21 Jahre alt sein, um diese Seite zu besuchen."
+
+#: includes/premium/functions-premium.php:272
+msgid "Self Validation"
+msgstr "Selbstvalidierung"
+
+#: includes/premium/functions-premium.php:280
+msgid "Verify 18+ Recreational"
+msgstr "18+ Freizeit überprüfen"
+
+#: includes/premium/functions-premium.php:288
+msgid "Verify 19+ Recreational"
+msgstr "19+ Freizeit überprüfen"
+
+#: includes/premium/functions-premium.php:296
+msgid "Verify 21+ Recreational"
+msgstr "21+ Freizeit überprüfen"
+
+#: includes/premium/functions-premium.php:304
+msgid "Verify 18+ Medical"
+msgstr "18+ Medizinisch überprüfen"
+
+#: includes/premium/functions-premium.php:312
+msgid "Are you 21+ or a 18+ valid medical marijuana patient?"
+msgstr "Sind Sie 21+ oder ein 18+ gültiger medizinischer Marihuana-Patient?"
