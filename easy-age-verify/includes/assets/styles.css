@@ -81,7 +81,8 @@
     display: inline-block;
 }
 
-#evav-overlay-wrap #evav-overlay-box input:not([type=checkbox]) {
+#evav-overlay-wrap #evav-overlay-box input:not([type=checkbox]),
+#evav-overlay-wrap #evav_verify_form input:not([type=checkbox]) {
     border-color: transparent;
     border-width: 0;
     width: 250px;
@@ -100,12 +101,14 @@
     text-decoration: none !important;
 }
 
-#evav-overlay-wrap #evav-overlay-box input:focus:not([type=checkbox]) {
+#evav-overlay-wrap #evav-overlay-box input:focus:not([type=checkbox]),
+#evav-overlay-wrap #evav_verify_form input:focus:not([type=checkbox]) {
     outline: none;
     box-shadow: 0px 0px 12px 1px cyan;
 }
 
-#evav-overlay-wrap #evav-overlay-box input:hover:not([type=checkbox]) {
+#evav-overlay-wrap #evav-overlay-box input:hover:not([type=checkbox]),
+#evav-overlay-wrap #evav_verify_form input:hover:not([type=checkbox]) {
     box-shadow: 0px 0px 3px 1px blanchedalmond;
     text-decoration: none !important;
 }
@@ -139,20 +142,24 @@
     padding: 0px;
 }
 
-#evav-overlay-wrap #evav-overlay-box .submit {
+#evav-overlay-wrap #evav-overlay-box .submit,
+#evav-overlay-wrap #evav_verify_form .submit {
     margin-bottom: 0;
 }
 
-#evav-overlay-wrap #evav-overlay-box .evav_buttons input {
+#evav-overlay-wrap #evav-overlay-box .evav_buttons input,
+#evav-overlay-wrap #evav_verify_form .evav_buttons input {
 text-transform: initial;
 }
 
-#evav-overlay-wrap #evav-overlay-box input[type=text] {
+#evav-overlay-wrap #evav-overlay-box input[type=text],
+#evav-overlay-wrap #evav_verify_form input[type=text] {
     width: 50px;
     outline: none;
 }
 
-#evav-overlay-wrap #evav-overlay-box #evav_verify_y {
+#evav-overlay-wrap #evav-overlay-box #evav_verify_y,
+#evav-overlay-wrap #evav_verify_form #evav_verify_y {
     width: 70px;
 }
 
@@ -175,13 +182,15 @@ text-transform: initial;
     background-color: #cc3232;
 }
 
-#evav-overlay-wrap #evav-overlay-box #evav_verify_form label {
+#evav-overlay-wrap #evav-overlay-box #evav_verify_form label,
+#evav-overlay-wrap #evav_verify_form label {
     font-size: 12px !important;
     font-weight: normal !important;
     color: #FFF !important;
 }
 
-#evav-overlay-wrap #evav-overlay-box input[type=checkbox] {
+#evav-overlay-wrap #evav-overlay-box input[type=checkbox],
+#evav-overlay-wrap #evav_verify_form input[type=checkbox] {
     width: auto !important;
     margin-top: 1em;
     vertical-align: initial;
@@ -225,7 +234,8 @@ text-transform: initial;
         margin-bottom: 5px;
     }
 
-    #evav-overlay-wrap #evav-overlay-box input[type=checkbox] {
+    #evav-overlay-wrap #evav-overlay-box input[type=checkbox],
+    #evav-overlay-wrap #evav_verify_form input[type=checkbox] {
         margin-top: 1em;
         height: 10px;
     }
@@ -257,17 +267,20 @@ text-transform: initial;
         margin-bottom: 2px;
     }
 
-    #evav-overlay-wrap #evav-overlay-box input {
+    #evav-overlay-wrap #evav-overlay-box input,
+    #evav-overlay-wrap #evav_verify_form input {
         width: 175px;
         padding: 15px 0;
         display: inline-block;
     }
 
-    #evav-overlay-wrap #evav-overlay-box .submit {
+    #evav-overlay-wrap #evav-overlay-box .submit,
+    #evav-overlay-wrap #evav_verify_form .submit {
         font-size: small;
     }
 
-    #evav-overlay-wrap #evav-overlay-box input[type=checkbox] {
+    #evav-overlay-wrap #evav-overlay-box input[type=checkbox],
+    #evav-overlay-wrap #evav_verify_form input[type=checkbox] {
         margin-top: 1em;
     }
 }
@@ -329,15 +342,18 @@ text-transform: initial;
         max-height: 12vh;
     }
 
-    #evav-overlay-wrap #evav-overlay-box input:not([type=checkbox]) {
+    #evav-overlay-wrap #evav-overlay-box input:not([type=checkbox]),
+    #evav-overlay-wrap #evav_verify_form input:not([type=checkbox]) {
         padding: 12px 0;
     }
 
-    #evav-overlay-wrap #evav-overlay-box .submit {
+    #evav-overlay-wrap #evav-overlay-box .submit,
+    #evav-overlay-wrap #evav_verify_form .submit {
         font-size: small;
     }
 
-    #evav-overlay-wrap #evav-overlay-box input[type=checkbox] {
+    #evav-overlay-wrap #evav-overlay-box input[type=checkbox],
+    #evav-overlay-wrap #evav_verify_form input[type=checkbox] {
         margin-top: .5em;
         height: 10px;
     }

@@ -6,7 +6,7 @@
  * Description: Adds a mobile friendly age verification screen to adults only, vape or alcohol websites. Get set-up in minutes.
  * Author:      5 Star Plugins
  * Author URI:  https://5starplugins.com/
- * Version:     2.0.12
+ * Version:     2.0.13
  *
  * Requires at least: 4.6
  * Requires PHP: 5.6
@@ -117,6 +117,33 @@ if ( is_admin() ) {
     require EVAV_PLUGIN_DIR_PATH . 'includes/admin/class-easy-age-verify-admin.php';
     // Get the plugin's admin running.
     add_action( 'plugins_loaded', array('Easy_Age_Verify_Admin', 'get_instance') );
+    add_action( 'admin_init', function () {
+        if ( !current_user_can( 'manage_options' ) ) {
+            return;
+        }
+        if ( !isset( $_GET['page'] ) || 'easy-age-verify' !== $_GET['page'] ) {
+            return;
+        }
+        $action = '';
+        if ( isset( $_GET['evav_review_action'] ) ) {
+            $action = sanitize_key( wp_unslash( $_GET['evav_review_action'] ) );
+        }
+        if ( !in_array( $action, array('dismiss', 'remind'), true ) ) {
+            return;
+        }
+        $user_id = get_current_user_id();
+        $meta_key_base = 'evav_review_notice';
+        $remind_transient = "{$meta_key_base}_remind_{$user_id}";
+        $settings_page_url = add_query_arg( 'page', 'easy-age-verify', admin_url( 'admin.php' ) );
+        if ( 'dismiss' === $action ) {
+            update_user_meta( $user_id, "{$meta_key_base}_dismissed", 'dismissed' );
+            delete_transient( $remind_transient );
+        } else {
+            set_transient( $remind_transient, time(), 7 * DAY_IN_SECONDS );
+        }
+        wp_safe_redirect( $settings_page_url );
+        exit;
+    } );
     add_action( 'admin_notices', function () {
         if ( !current_user_can( 'manage_options' ) ) {
             return;
@@ -125,6 +152,7 @@ if ( is_admin() ) {
         $meta_key_base = 'evav_review_notice';
         $first_seen = get_user_meta( $user_id, "{$meta_key_base}_first_seen", true );
         $dismissed = get_user_meta( $user_id, "{$meta_key_base}_dismissed", true );
+        $remind_transient = get_transient( "{$meta_key_base}_remind_{$user_id}" );
         // Record first visit timestamp
         if ( !$first_seen ) {
             update_user_meta( $user_id, "{$meta_key_base}_first_seen", time() );
@@ -141,23 +169,14 @@ if ( is_admin() ) {
         if ( !isset( $_GET['page'] ) || $_GET['page'] !== 'easy-age-verify' ) {
             return;
         }
-        // Handle dismiss/remind actions
-        if ( isset( $_GET['evav_review_action'] ) ) {
-            if ( $_GET['evav_review_action'] === 'dismiss' ) {
-                update_user_meta( $user_id, "{$meta_key_base}_dismissed", 'dismissed' );
-            } elseif ( $_GET['evav_review_action'] === 'remind' ) {
-                update_user_meta( $user_id, "{$meta_key_base}_dismissed", time() );
-            }
-            wp_redirect( remove_query_arg( 'evav_review_action' ) );
-            exit;
-        }
         // Handle 7-day reminder delay
-        if ( is_numeric( $dismissed ) && time() - $dismissed < 7 * DAY_IN_SECONDS ) {
+        if ( $remind_transient ) {
             return;
         }
         $review_url = 'http://wordpress.org/support/view/plugin-reviews/easy-age-verify/?rate=5#new-post';
-        $remind_url = add_query_arg( 'evav_review_action', 'remind' );
-        $dismiss_url = add_query_arg( 'evav_review_action', 'dismiss' );
+        $settings_url = add_query_arg( 'page', 'easy-age-verify', admin_url( 'admin.php' ) );
+        $remind_url = add_query_arg( 'evav_review_action', 'remind', $settings_url );
+        $dismiss_url = add_query_arg( 'evav_review_action', 'dismiss', $settings_url );
         echo '<div class="notice notice-success is-dismissible">';
         echo '<p><strong>' . esc_html__( 'Enjoying Easy Age Verify?', 'easy-age-verify' ) . '</strong> ' . sprintf( wp_kses( 
             /* translators: %s: review URL */

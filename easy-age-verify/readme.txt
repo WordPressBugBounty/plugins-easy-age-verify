@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 7.0
-Stable tag: 2.0.12
+Stable tag: 2.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -179,9 +179,13 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 9. Birthdate Validation Demo - Premium Version
 
 == Upgrade Notice ==
-* Update! Updated Freemius SDK.
+* Update! Fixed button padding issue, updated Freemius SDK.
 
 == Changelog ==
+= 2.0.13 =
+* Fixed button padding issue.
+* Updated Freemius SDK.
+
 = 2.0.12 =
 * Improved birthdate drop-down styling compatibility with themes that apply global form select styling.
 * Add Super Page Cache for Cloudflare cache purging on save.
@@ -198,13 +202,13 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 * Added Birth Date option to Premium. Bumped Tested to 6.9.1
 
 = 2.0.9 =
-* Updated Freemius SDK
+* Updated Freemius SDK.
 
 = 2.0.8 =
-* Fixed a few more translation issues
+* Fixed a few more translation issues.
 
 = 2.0.7 =
-* Updated language files, fixed translation bugs
+* Updated language files, fixed translation bugs.
 
 = 2.0.6 =
 * Fixed languages path.

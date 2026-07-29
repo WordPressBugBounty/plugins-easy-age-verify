@@ -83,6 +83,12 @@ if( ! function_exists('evav_clear_cache') ) {
 			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Hummingbird cache cleared.', 'easy-age-verify' ) . "</p></div>";
 			$evav_cleared = TRUE;
 		}
+		// Super Page Cache for Cloudflare
+		if ( has_action( 'swcfpc_purge_cache' ) ) {
+			do_action( 'swcfpc_purge_cache' );
+			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'Super Page Cache cleared.', 'easy-age-verify' ) . "</p></div>";
+			$evav_cleared = TRUE;
+		}
 		if (! $evav_cleared == TRUE) {
 			echo "<div class='notice notice-success is-dismissible'><p>" . esc_html__( 'NOTE: Please be sure to clear any page caches for new settings to display.', 'easy-age-verify' ) . "</p></div>";
 		}
