@@ -2,7 +2,7 @@
 Contributors: 5starplugins
 Tags: age gate, age verify, adult content warning, adult age check, alcohol age check
 Tested up to: 7.0
-Stable tag: 2.0.13
+Stable tag: 2.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -167,6 +167,9 @@ Our plugin is 100% ad free and we do not collect or store visitor data.
 = I have other questions =
 If your question is not listed here visit our [Knowledge Base](https://support.5starplugins.com/collection/69-easy-age-verify).
 
+= Where do I report security bugs found in this plugin? =
+Please report security bugs found in the source code of the Easy Age Verify plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/9e5fb74c-6286-4d84-bb7b-34e1d7a94e0e). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 == Screenshots ==
 1. Adult Demo Display - Free
 2. Alcohol Demo Display - Free
@@ -179,9 +182,12 @@ If your question is not listed here visit our [Knowledge Base](https://support.5
 9. Birthdate Validation Demo - Premium Version
 
 == Upgrade Notice ==
-* Update! Fixed button padding issue, updated Freemius SDK.
+* Update! Updated Freemius SDK to v2.13.5.
 
 == Changelog ==
+= 2.0.14 =
+* Updated Freemius SDK to v2.13.5.
+
 = 2.0.13 =
 * Fixed button padding issue.
 * Updated Freemius SDK.
